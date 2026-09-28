@@ -1,0 +1,16 @@
+isEnabled: true
+material: NETHERITE_SWORD
+name: '&4Mandoble del Paladín Caído'
+lore:
+- '&8[Arma Legendaria de Élite - Rango D/C]'
+- '&7Forjada en la época dorada de los reyes sagrados,'
+- '&7mancillada por siglos en la tumba de Lord Valerius.'
+- '&cEl acero exhala una niebla fúnebre que drena vitalidad.'
+- '&8--------------------------------'
+- '&6Pasiva Rúnica: &eRobo de Vida Profano'
+- '&7Restaura un 6% del daño infligido al golpear enemigos.'
+- '&8Nivel de maestría requerido: 45'
+enchantments:
+- DAMAGE_ALL,5
+- FIRE_ASPECT,2
+- UNBREAKING,4

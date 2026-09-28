@@ -1,0 +1,33 @@
+isEnabled: true
+name: <g:#2E7D32:#81C784>Lysandra, Maestra Alquimista</g>
+role: <g:#1B5E20:#4CAF50><Alquimia y Boticas de Élite></g>
+profession: cleric
+spawnLocation: em_adventurers_guild,282.5,91,222.5,0,0
+spawnLocations: []
+greetings:
+- ¿Hueles a azufre y lágrimas de ghast?\nBienvenido a mi laboratorio.
+- Un guerrero sin elixires es carne de cementerio.
+- ¿Deseas conocer los secretos de la alquimia de combate?
+dialog:
+- PREPARACIÓN PREVIA A LA INCURSIÓN:\nBebe una poción de Resistencia al Fuego antes\nde
+  cruzar la niebla contra Ignis o Solarius.
+- ANTÍDOTO CONTRA EL VENENO:\nEl veneno de las arañas abisales no se quita solo.\nLleva
+  frascos de purificación para no perder vida por segundo.
+- PURIFICACIÓN DEL WITHER:\nLord Valerius corrompe tus corazones con wither.\nElixir
+  sagrado o leche neutralizan la podredumbre al instante.
+- POCIONES ARROJADIZAS EN GRUPO:\nLanza pociones arrojadizas de Curación Instantánea\nal
+  suelo entre tus compañeros para salvarlos en momentos críticos.
+- POCIÓN DE FUERZA Y VELOCIDAD:\nPara los jefes con saltos telegrafiados, la poción\nde
+  velocidad te permite salir del radio rojo sin agotarte.
+- TRANSMUTACIÓN DE INGREDIENTES:\nLos ojos fermentados y lágrimas de jefes sirven
+  para\ncrear los elixires más potentes del Gremio.
+farewell:
+- No bebas de frascos sin etiqueta.
+- Que tus viales nunca se rompan en tu bolsa.
+- Vuelve con más ingredientes exóticos de los jefes.
+canTalk: true
+activationRadius: 3.5
+interactionType: CHAT
+syncMovement: true
+scripts: []
+transportRoutes: []

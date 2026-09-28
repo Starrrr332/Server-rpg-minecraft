@@ -1,0 +1,46 @@
+isEnabled: true
+name: '&8[&4&lRANGO S&8] <g:#D50000:#AA00FF>El Juicio de las Tres Calamidades</g>'
+questLevel: 125
+questLore:
+- '&4★ CONTRATO DE CAZA SUPREMO Y DEFINITIVO ★'
+- '&7Las profecías antiguas se han cumplido: los tres señores del'
+- '&7cataclismo han despertado en sus respectivas guaridas:'
+- '&c- Lord Valerius, el Caballero de la Peste en las Criptas Olvidadas.'
+- '&5- Morgath, la Reina del Enjambre Abisal en las Fosas Subterráneas.'
+- '&6- Solarius, el Archidruida de la Llama Solar en la Cumbre Mística.'
+- '&eErradica a los tres titanes y conviértete en Maestro Supremo de Caza.'
+questAcceptDialog:
+- '&e[Kaelen]&f Ésta es la prueba definitiva de tu existencia como aventurero.'
+- '&e[Kaelen]&f Pocos han desafiado a uno de estos señores; nadie los ha vencido a
+  los tres.'
+- '&e[Kaelen]&f ¡Que los vientos de la victoria guíen tu espada!'
+questCompleteMessage:
+- '&e[Kaelen]&f ¡¡¡HISTÓRICO E INIGUALABLE!!! ¡Has derrotado a las tres calamidades!'
+- '&e[Kaelen]&f ¡Me arrodillo ante ti! ¡Recibe la sagrada Corona del Maestro de Caza
+  Supremo!'
+customObjectives:
+  DerrotarLordValerius:
+    objectiveType: KILL_CUSTOM
+    filename: lord_valerius_caballero_peste.yml
+    amount: '1'
+  DerrotarReinaMorgath:
+    objectiveType: KILL_CUSTOM
+    filename: morgath_reina_enjambre.yml
+    amount: '1'
+  DerrotarArchidruidaSolarius:
+    objectiveType: KILL_CUSTOM
+    filename: solarius_archidruida_solar.yml
+    amount: '1'
+customRewards:
+- currencyAmount=6000:amount=1:chance=1.0
+- filename=elite_scrap_huge.yml:amount=10:chance=1.0
+- filename=corona_del_maestro_cazador_s.yml:amount=1:chance=1.0
+questCompleteCommands:
+- skills xp add $player fighting 5000
+- broadcast &4&l[GREMIO] &6¡¡ATENCIÓN A TODO EL REINO!! &f$player &6¡ha completado
+  el &4RANGO S &6y es el nuevo &c&lMAESTRO DE CAZA SUPREMO&6!
+turnInNPC: maestro_cacerias_guild.yml
+questLockoutMinutes: 4320
+questAcceptPermission: ''
+questLockoutPermission: ''
+temporaryPermissions: []

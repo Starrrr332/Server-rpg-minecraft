@@ -1,0 +1,33 @@
+isEnabled: true
+shopName: '&2&lArmería del Flechero - Flechas Especiales'
+insufficientFundsMessage: '&c[Gremio] &7¡No tienes suficientes Monedas de Élite! Requieres
+  &f%price% &7monedas.'
+purchaseSuccessMessage: '&a[Gremio] &7¡Has comprado &f%amount%x %item% &7por &f%price%
+  &7Monedas de Élite!'
+inventoryFullMessage: '&c[Gremio] &7¡Tu inventario está completamente lleno!'
+arrowSmallStackPrice: 10
+arrowSmallStackAmount: 16
+arrowLargeStackPrice: 35
+arrowLargeStackAmount: 64
+spectralArrowPrice: 40
+spectralArrowAmount: 16
+tippedArrowPoisonPrice: 50
+tippedArrowPoisonAmount: 8
+tippedArrowSlownessPrice: 50
+tippedArrowSlownessAmount: 8
+tippedArrowWeaknessPrice: 50
+tippedArrowWeaknessAmount: 8
+tippedArrowHarmingPrice: 75
+tippedArrowHarmingAmount: 8
+tippedArrowHealingPrice: 75
+tippedArrowHealingAmount: 8
+arrowDisplayName: '&fFlechas Estándar'
+spectralArrowDisplayName: '&eFlechas Espectrales'
+arrowOfPoisonDisplayName: '&2Flecha de Veneno'
+arrowOfSlownessDisplayName: '&8Flecha de Lentitud'
+arrowOfWeaknessDisplayName: '&7Flecha de Debilidad'
+arrowOfHarmingDisplayName: '&4Flecha de Daño Inmediato'
+arrowOfHealingDisplayName: '&dFlecha de Curación'
+shopItemAmountFormat: '&7Amount: &f$amount'
+shopItemPriceFormat: '&7Price: &6$price &7Elite Coins'
+shopItemClickToPurchase: '&eClick to purchase!'

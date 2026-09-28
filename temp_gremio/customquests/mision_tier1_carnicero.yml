@@ -1,0 +1,30 @@
+questAcceptPermission: ''
+questLockoutPermission: ''
+temporaryPermissions: []
+isEnabled: true
+name: '&8[&7Tier I&8] <g:#8B0000:#B22222>La Purga del Carnicero</g>'
+questLevel: 10
+questLore:
+- '&7Los aldeanos y exploradores tiemblan'
+- '&7ante el despertar del Carnicero de Almas.'
+- '&7Adéntrate en las criptas o en la Arena y'
+- '&7acaba con su terror sangriento.'
+questAcceptDialog:
+- '&e[Kaelen]&f ¡Ten mucho cuidado! Sus cadenas pueden jalarte y su aliento venenoso
+  es letal.'
+questCompleteMessage:
+- '&e[Kaelen]&f ¡Magnífico trabajo! Las criptas vuelven a respirar en paz... por ahora.
+  Toma tu recompensa.'
+customObjectives:
+  ObjetivoCarnicero:
+    objectiveType: KILL_CUSTOM
+    filename: carnicero_de_almas.yml
+    amount: '1'
+customRewards:
+- currencyAmount=250:amount=1:chance=1.0
+- filename=elite_scrap_medium.yml:amount=2:chance=1.0
+- filename=totem_de_osamenta.yml:amount=1:chance=0.5
+questCompleteCommands:
+- skills xp add $player fighting 300
+turnInNPC: maestro_cacerias_guild.yml
+questLockoutMinutes: 720

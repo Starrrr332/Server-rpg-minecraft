@@ -1,0 +1,29 @@
+isEnabled: true
+name: '&8[&4Caza Élite&8] <g:#8B0000:#DC143C>Lord Valerius, el Caballero Peste</g>'
+questLevel: 45
+questLore:
+- '&7En las Criptas Olvidadas mora Lord Valerius, paladín corrompido.'
+- '&7Su mandoble infecto drena el vigor vital y quiebra el suelo.'
+- '&7Adéntrate en su tumba y pon fin a su maldición eterna.'
+questAcceptDialog:
+- '&e[Kaelen]&f ¡Aléjate de sus saltos sísmicos! Cuando el suelo se tiña de rojo,'
+- '&e[Kaelen]&f salta hacia atrás con doble pulsación de F para evadir el impacto.'
+questCompleteMessage:
+- '&e[Kaelen]&f ¡Lord Valerius ha encontrado la paz! Las criptas están seguras. Toma
+  tu recompensa.'
+customObjectives:
+  CazarValerius:
+    objectiveType: KILL_CUSTOM
+    filename: lord_valerius_caballero_peste.yml
+    amount: '1'
+customRewards:
+- currencyAmount=800:amount=1:chance=1.0
+- filename=elite_scrap_medium.yml:amount=3:chance=1.0
+- filename=espada_del_paladin_caido.yml:amount=1:chance=0.4
+questCompleteCommands:
+- skills xp add $player fighting 1000
+turnInNPC: maestro_cacerias_guild.yml
+questLockoutMinutes: 720
+questAcceptPermission: ''
+questLockoutPermission: ''
+temporaryPermissions: []

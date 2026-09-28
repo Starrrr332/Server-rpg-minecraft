@@ -1,0 +1,30 @@
+nameplateScale: 1.0
+nameplateLineGap: 0.1
+patrol:
+  enabled: true
+  mode: LOOP
+  speed: 0.5
+  pauseNearPlayersRadius: 3.0
+  faceNearbyPlayers: true
+  nodes:
+  - 0,0,0
+  - 0.126,0,12.284
+  - 13.895,0,12.206
+  - 14.014,0,0.002
+isEnabled: true
+name: <g:#A3C75B:#5F8A36>Gribble the Lookout</g>
+role: <g:#7A9A45:#4D6B2C><Reino Goblin></g>
+profession: armorer
+spawnLocation: em_adventurers_guild,286.531,92,284.350,0,0
+spawnLocations: []
+greetings: []
+dialog: []
+farewell: []
+canTalk: false
+activationRadius: 3.0
+interactionType: COMMAND
+command: em dungeontp goblin_kingdom.yml
+customModel: em_ag_gribble
+syncMovement: true
+scripts: []
+transportRoutes: []

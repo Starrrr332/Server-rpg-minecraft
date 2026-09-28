@@ -1,0 +1,31 @@
+isEnabled: true
+name: '&8[&5Caza Abisal&8] <g:#4A0E4E:#AA00FF>Morgath, Reina del Enjambre</g>'
+questLevel: 75
+questLore:
+- '&7En las fosas subterráneas más oscuras habita la Reina Morgath.'
+- '&7Teje redes ácidas y genera vórtices gravitatorios que arrastran'
+- '&7a los intrusos directamente hacia sus colmillos venenosos.'
+- '&7Corta sus hilos de seda oscura y purga la madriguera.'
+questAcceptDialog:
+- '&e[Kaelen]&f Cuando Morgath invoque el vórtice, corre en sentido opuesto sin parar.'
+- '&e[Kaelen]&f Usa flechas a distancia para desgastarla antes de acercarte con tu
+  arma.'
+questCompleteMessage:
+- '&e[Kaelen]&f ¡La Reina del Enjambre ha caído! El nido se desintegra. ¡Excelente
+  caza!'
+customObjectives:
+  CazarMorgath:
+    objectiveType: KILL_CUSTOM
+    filename: morgath_reina_enjambre.yml
+    amount: '1'
+customRewards:
+- currencyAmount=1500:amount=1:chance=1.0
+- filename=elite_scrap_large.yml:amount=3:chance=1.0
+- filename=arco_del_tejedor_abisal.yml:amount=1:chance=0.4
+questCompleteCommands:
+- skills xp add $player fighting 1800
+turnInNPC: maestro_cacerias_guild.yml
+questLockoutMinutes: 1440
+questAcceptPermission: ''
+questLockoutPermission: ''
+temporaryPermissions: []

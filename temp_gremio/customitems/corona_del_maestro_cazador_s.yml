@@ -1,0 +1,17 @@
+isEnabled: true
+material: NETHERITE_HELMET
+name: '&4&lCorona del Maestro de Caza Supremo'
+lore:
+- '&8[Insignia Máxima del Gran Consejo del Gremio]'
+- '&6Otorgada exclusivamente a los héroes legendarios que han derrotado'
+- '&6a las tres calamidades del reino en el Rango S.'
+- '&c"Tu temple es de acero; tu voluntad, una leyenda imperecedera."'
+- '&8--------------------------------'
+- '&ePrestigio de Rango S: &f+15% Daño contra Jefes de Mazmorra'
+- '&8Nivel de maestría requerido: 120'
+enchantments:
+- PROTECTION_ENVIRONMENTAL,7
+- PROTECTION_PROJECTILE,6
+- PROTECTION_EXPLOSIONS,6
+- MENDING,1
+- UNBREAKING,7

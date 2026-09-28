@@ -1,0 +1,10 @@
+isEnabled: true
+material: POTION
+name: '&aElixir de Vigor del Novicio'
+lore:
+- '&7Brebaje reconfortante entregado a los reclutas del gremio.'
+- '&2Otorga regeneración y resistencia básica en combate.'
+- '&8Consumible de campo'
+potionEffects:
+- REGENERATION,0,120
+- SPEED,0,180

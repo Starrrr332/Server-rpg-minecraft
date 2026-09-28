@@ -1,0 +1,51 @@
+isEnabled: true
+customRewards:
+- filename=ag_adventurer_helmet.yml:amount=1:chance=1
+- filename=ag_adventurer_chestplate.yml:amount=1:chance=1
+- filename=ag_adventurer_leggings.yml:amount=1:chance=1
+- filename=ag_adventurer_boots.yml:amount=1:chance=1
+- filename=ag_adventurer_sword.yml:amount=1:chance=1
+- filename=ag_adventurer_axe.yml:amount=1:chance=1
+- filename=ag_adventurer_bow.yml:amount=1:chance=1
+- filename=ag_adventurer_crossbow.yml:amount=1:chance=1
+- filename=ag_adventurer_trident.yml:amount=1:chance=1
+- filename=ag_adventurer_scythe.yml:amount=1:chance=1
+- filename=ag_adventurer_mace.yml:amount=1:chance=1
+- filename=ag_adventurer_spear.yml:amount=1:chance=1
+- filename=ag_adventurer_staff.yml:amount=1:chance=1
+- filename=ag_adventurer_wand.yml:amount=1:chance=1
+questAcceptPermission: elitequest.ag_welcome_quest_1.yml
+questLockoutPermission: elitequest.ag_adventurer_training.yml
+name: '&2Tu Primera Clase de Combate'
+questLore:
+- Habla con los instructores del Gremio y elige tu primera clase RPG para desbloquear
+  habilidades marciales.
+temporaryPermissions: []
+questAcceptDialog:
+- '&8[&aCasus&8]&f Now that you know the guild, it is time to earn your first class.'
+- Find Rowan with the Adventurer Instructor title beside Charles. His trial costs
+  one coin.
+- Once you have unlocked Adventurer, come back for your equipment.
+questCompleteMessage:
+- '&8[&aCasus&8]&f Welcome to the Adventurers! Here is your armor and a weapon of
+  every type.'
+- Try them all. Adventurers are proficient with every weapon!
+- 'Talk to me again for two new journeys: the Story Mode dungeons and the Primis expedition.'
+questCompleteCommands: []
+turnInNPC: guide_1.yml
+questLevel: 1
+customObjectives:
+  Objective2:
+    objectiveType: CLASS_UNLOCK
+    filename: class_trainer_adventurer.yml
+    class: adventurer
+  Objective1:
+    npcName: Rowan, Adventurer Instructor
+    filename: class_trainer_adventurer.yml
+    objectiveType: DIALOG
+    dialog:
+    - '&8[&aRowan&8]&f Ready to become an Adventurer? Talk to me again to open your
+      training menu.'
+    - Choose my trial. It costs one coin and takes place in the Wood League arena.
+    - Defeat the instructor to unlock Adventurer, then return to Casus.
+    location: beside Charles, near the main building

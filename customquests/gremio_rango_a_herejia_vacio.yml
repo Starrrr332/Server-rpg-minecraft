@@ -1,0 +1,41 @@
+isEnabled: true
+name: '&8[&dRango A&8] <g:#7B1FA2:#BA68C8>La Herejía de las Sombras</g>'
+questLevel: 100
+questLore:
+- '&7Nigromantes heréticos y evocadores oscuros intentan desgarrar'
+- '&7el tejido cósmico entre las dimensiones del Fin y el reino terrenal.'
+- '&7Endermans corrompidos por el vacío acechan en los templos prohibidos.'
+- '&7Solo los más insignes Campeones tienen el poder de restaurar el orden.'
+questAcceptDialog:
+- '&e[Kaelen]&f Los Evocadores convocan espíritus voraces y colmillos que surgen del
+  suelo.'
+- '&e[Kaelen]&f Mantente siempre en movimiento; un segundo de titubeo y serás historia.'
+questCompleteMessage:
+- '&e[Kaelen]&f ¡¡IMPRESIONANTE!! ¡Has quebrado la herejía en sus cimientos!'
+- '&e[Kaelen]&f El Gran Consejo te nombra Campeón Rango A del Gremio de Aventureros.'
+customObjectives:
+  EliminarEndermans:
+    objectiveType: KILL
+    entityType: ENDERMAN
+    amount: 25
+  EliminarEvocadores:
+    objectiveType: KILL
+    entityType: EVOKER
+    amount: 10
+  EliminarBrujas:
+    objectiveType: KILL
+    entityType: WITCH
+    amount: 8
+customRewards:
+- currencyAmount=2800:amount=1:chance=1.0
+- filename=elite_scrap_huge.yml:amount=4:chance=1.0
+- filename=reliquia_del_campeon_eterno.yml:amount=1:chance=0.6
+questCompleteCommands:
+- skills xp add $player fighting 3200
+- broadcast &e[GREMIO] &6¡El aventurero &f$player &6ha ascendido a &dCampeón Rango
+  A &6del Gremio de Aventureros!
+turnInNPC: maestro_cacerias_guild.yml
+questLockoutMinutes: 2880
+questAcceptPermission: ''
+questLockoutPermission: ''
+temporaryPermissions: []

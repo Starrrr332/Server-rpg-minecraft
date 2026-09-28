@@ -1,0 +1,16 @@
+isEnabled: true
+material: BOW
+name: '&5Arco del Tejedor Abisal'
+lore:
+- '&8[Arma Mítica de Élite - Rango C/B]'
+- '&7Tallado con los colmillos y la seda endurecida de Morgath.'
+- '&dLas flechas disparadas silban como un enjambre voraz.'
+- '&8--------------------------------'
+- '&6Pasiva Rúnica: &dTela Inmovilizadora'
+- '&7Aplica lentitud y ceguera momentánea a la presa impactada.'
+- '&8Nivel de maestría requerido: 70'
+enchantments:
+- ARROW_DAMAGE,6
+- ARROW_KNOCKBACK,2
+- ARROW_INFINITE,1
+- UNBREAKING,5

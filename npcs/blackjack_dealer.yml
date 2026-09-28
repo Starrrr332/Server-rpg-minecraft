@@ -1,0 +1,27 @@
+isEnabled: true
+name: <g:#2F4F4F:#708090>Vincent</g>
+role: <g:#696969:#A9A9A9><Crupier de Blackjack></g>
+profession: librarian
+spawnLocation: em_adventurers_guild,282.5,81,211.5,-45,0
+spawnLocations: []
+greetings:
+- ¿Quieres probar tu suerte en las mesas de juego?
+- ¡Veintiuno! ¡Llega a 21 y llévate el gran pozo de monedas!
+- La casa siempre triunfa... tarde o temprano.
+- ¡Acércate, no temas tentar a tu destino!
+dialog:
+- 'Recuerda: el objetivo es acercarse lo más posible a 21 sin pasarte.'
+- ¿Pides otra carta o te plantas? La decisión es tuya.
+- ¡Un veintiuno natural te otorga un pago extra en monedas!
+- ¡Ten cuidado de no pasarte de 21 o perderás tu apuesta!
+farewell:
+- Good luck at the tables!
+- May the cards be in your favor!
+- Come back when you're feeling lucky!
+- The tables will be waiting...
+canTalk: true
+activationRadius: 3.0
+interactionType: GAMBLING_BLACKJACK
+syncMovement: true
+scripts: []
+transportRoutes: []

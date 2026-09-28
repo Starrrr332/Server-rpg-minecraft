@@ -1,0 +1,186 @@
+joinDungeonAsPlayerText: '&aEntrar a $dungeonName como jugador'
+joinDungeonAsSpectatorText: '&7Entrar a $dungeonName como espectador'
+instancedDungeonTitle: Start $difficulty difficulty dungeon!
+instancedDungeonDescription:
+- '&fCreate a new instance of the dungeon'
+- $dungeonName &ffor yourself and maybe
+- '&fsome friends!'
+allowSpectatorsInInstancedContent: true
+instancedDungeonCompleteMessage: '[EliteMobs] Dungeon completed! It will self-destruct
+  in 2 minutes!'
+instancedDungeonClosingInstanceMessage: '[EliteMobs] Closing instance!'
+friendlyFireInDungeons: false
+fireDamageMultiplier: 0.5
+witherDamageMultiplier: 0.5
+poisonDamageMultiplier: 0.5
+enableDungeonFoodRegeneration: true
+dungeonFoodRegenerationCombatTimeoutSeconds: 20
+dungeonFoodRegenerationIntervalSeconds: 5
+dungeonFoodRegenerationCombatStartMessage: '&cCombat start'
+dungeonFoodRegenerationCombatEndMessage: '&aCombat end'
+dynamicDungeonLevelSelectionMenuTitle: '&8Select Dungeon Level'
+dynamicDungeonLevelSelectionItemTitle: '&fLevel $level'
+dynamicDungeonLevelSelectionClickToSelect: '&7Click to select level &e$level'
+dynamicDungeonLevelSelectionMobsWillBeLevel: '&7All mobs will be level &e$level'
+dynamicDungeonLevelSelectionRecommended: '&a&lRecommended level!'
+dynamicDungeonLevelSelectionEasier: '&eEasier than recommended'
+dynamicDungeonLevelSelectionHarder: '&6Harder than recommended'
+dynamicDungeonDifficultySelectionMenuTitle: '&8Select Difficulty'
+dynamicDungeonDifficultySelectionSelectedLevel: '&7Selected Level: &e$level'
+dungeonLockoutTitle: ''
+dungeonLockoutSubtitle: '&cLockout!'
+dungeonLockoutChatMessage: '&c[EliteMobs] &7You killed &c$bossName &7in the last lockout
+  period and must wait another &e$remainingTime &7before it will drop loot for you
+  again.'
+invalidInstancedDungeonMessage: '[EliteMobs] Not a valid instanced dungeon!'
+invalidDynamicDungeonMessage: '[EliteMobs] Not a valid dynamic dungeon!'
+matchAlreadyEndedMessage: '[EliteMobs] This match already ended! Can''t join it!'
+dungeonBrowserPlayersLabel: '&2Players:'
+dungeonBrowserPlayerEntryFormat: '&f- $playerName'
+dungeonBrowserLevelLabel: '&7Level: &e$level'
+dungeonPreparingQueueMessage: '[EliteMobs] Preparing your dungeon... (Queue position:
+  $position)'
+dungeonPreparingMessage: '[EliteMobs] Preparing your dungeon...'
+dungeonPrepareFailedMessage: '[EliteMobs] Failed to prepare dungeon. Please try again.'
+dungeonLoadFailedMessage: '[EliteMobs] Failed to load dungeon. Please try again.'
+dungeonCancelledShutdownMessage: '[EliteMobs] Dungeon preparation cancelled due to
+  server shutdown.'
+dungeonDataFailedMessage: '[EliteMobs] Failed to get data for dungeon $dungeon! The
+  dungeon will not start.'
+dungeonNoPermissionMessage: '[EliteMobs] You don''t have the permission to go to this
+  dungeon!'
+dungeonCancelledEventMessage: '[EliteMobs] Something cancelled the instancing event!
+  The dungeon will not start.'
+dungeonCopyFailedMessage: '[EliteMobs] Failed to copy the world! Report this to the
+  dev. The dungeon will not start.'
+dungeonWorldLoadFailedMessage: '[EliteMobs] Failed to load the world! Report this
+  to the dev. The dungeon will not start.'
+dungeonDifficultyMessage: '[EliteMobs] Dungeon difficulty is set to $difficulty! Level
+  sync caps your item level to $levelSync.'
+dynamicDungeonDataFailedMessage: '[EliteMobs] Failed to get data for dynamic dungeon
+  $dungeon! The dungeon will not start.'
+dynamicDungeonNoPermissionMessage: '[EliteMobs] You don''t have the permission to
+  go to this dungeon!'
+dynamicDungeonWorldLoadFailedMessage: '[EliteMobs] Failed to load the world! Report
+  this to the dev. The dungeon will not start.'
+dynamicDungeonLevelSetMessage: '[EliteMobs] Dynamic dungeon level set to $level!'
+enchantNoChallengeMessage: '&8[EliteMobs] &cYou rolled challenge but your server has
+  not installed any challenge dungeons! &2This will count as an automatic enchantment
+  success.'
+enchantChallengeCompleteMessage: '&8[EliteMobs] &2Challenge complete! Instance will
+  close in 10 seconds. &6You can leave earlier by doing &9/em quit&6!'
+enchantChallengeSuccessMessage: '&8[EliteMobs] &2You succeeded your item enchantment
+  challenge! Your item has been successfully enchanted.'
+enchantCriticalFailureMessage: '&8[EliteMobs] &4Critical enchantment failure! You
+  have lost $item!'
+enchantChallengeFailedMessage: '&8[EliteMobs] &cYou have failed the enchantment challenge!
+  Your item $item was not enchanted.'
+contentInstalledMessage: '[EliteMobs] Successfully installed $name! To uninstall,
+  do /em setup again and click on this content again.'
+contentUninstallFailedMessage: '&c[EliteMobs] Failed to uninstall $name! There may
+  still be players in the world.'
+contentUninstalledMessage: '&a[EliteMobs] Successfully uninstalled $name!'
+dynamicDungeonAccessMessage1: '&6Dynamic dungeons must be accessed either through
+  the &a/em &6menu or an NPC! NPCs for premade EliteMobs content can be found at the
+  Adventurer''s Guild Hub map.'
+dynamicDungeonAccessMessage2: Dynamic dungeons allow you to select the level before
+  entering based on your guild rank!
+dynamicDungeonAccessMessage3: Remember that instanced dungeons create a world when
+  you join them and remove that world when you are done playing in them!
+contentInstalledLine1: '&aContent is installed and up to date.'
+contentInstalledLine2: '&7Click to uninstall.'
+contentNotInstalledLine1: Content is not installed!
+contentNotInstalledLine2: Click to install!
+contentPartialLine1: Content partially installed!
+contentPartialLine2: This is either because you haven't downloaded all of it,
+contentPartialLine3: or because some elements have been manually disabled.
+contentPartialLine4: Click to download!
+bundledContentPartialLine1: Content partially installed!
+bundledContentPartialLine2: Some of this plugin-bundled content is disabled.
+bundledContentPartialLine3: Click to enable all of it!
+contentToggleInProgressMessage: '&cStill applying a previous content change! Wait
+  for the reload to finish, then try again.'
+contentNotDownloadedLine1: Content is not downloaded!
+contentNotDownloadedLine2: Click to download!
+contentNeedAccessMessage: '&cYou need access to download this content!'
+contentAccessClickMessage: '&eClick to see how to get access.'
+contentAvailablePatreon: '&7Available via: &6Patreon'
+contentAvailableItch: '&7Available via: &ditch.io'
+contentUpdateAvailable: '&eUpdate available!'
+contentUpdateClickMessage: '&aClick to update automatically!'
+contentUpdateNeedAccess: '&cYou need access to download this update.'
+contentUpdateAccessClick: '&7Click to see how to get access.'
+contentDownloadLegacyMessage: '&4Download this at &9$link &4!'
+contentDownloadSeparator: <g:#8B0000:#CC4400:#DAA520>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬</g>
+contentNightbreakPromptLine1: '&eThis content can be downloaded automatically after
+  connecting this server.'
+contentNightbreakPromptLine2: '<g:#B8860B:#DAA520>Step 1:</g> &7Get your token at: '
+contentNightbreakPromptLine3: '<g:#B8860B:#DAA520>Step 2:</g> &7Run: &e/nightbreaklogin
+  <your-token>'
+contentNightbreakPromptLine4: '&8Or download manually at: '
+contentCheckingAccessMessage: '&7[EliteMobs] Checking access for $name...'
+contentAccessFailedMessage: '&c[EliteMobs] Failed to check access. Try again later
+  or download manually:'
+contentAccessFailedLink: '&9https://nightbreak.io/plugin/elitemobs'
+contentInvalidTokenMessage: '&e[EliteMobs] The saved account token needs to be updated.'
+contentInvalidTokenInstructions: '&7Get a new token here, then run &e/nightbreaklogin
+  <token>&7: '
+contentDownloadedReloadMessage: '&a[EliteMobs] Content downloaded! Reloading EliteMobs...'
+contentNoAccessMessage: '&cYou don''t have access to: &f$name'
+contentGetAccessMessage: '&eYou can get access through:'
+contentNightbreakLink: '&a• Plugin page: '
+contentPatreonLink: '&6• Patreon: '
+contentItchLink: '&d• itch.io: '
+contentLinkAccountMessage: '&7After purchasing, use &e/nightbreaklogin <token> &7to
+  link your account.'
+instancedDungeonInstalledMessage: '&2Dungeon $name installed!'
+instancedDungeonAccessMessage: '&6Instanced dungeons must be accessed either through
+  the &a/em &6menu or an NPC! NPCs for premade EliteMobs content can be found at the
+  Adventurer''s Guild Hub map.'
+instancedDungeonInstallNote: Remember that instanced dungeons create a world when
+  you join them and remove that world when you are done playing in them!
+enchantmentDungeonInstalledMessage: '&8[EliteMobs] &2Enchantment instanced dungeon
+  installed! This dungeon can only be accessed when attempting to enchant items and
+  getting a challenge as a result!'
+instancePunchToRez: '&2Punch to rez!'
+instanceLivesLeft: $amount lives left!
+skillMigrationSeparator: <g:#8B0000:#CC4400:#DAA520>▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬</g>
+skillMigrationTitle: <g:#7B2FBE:#A855F7>&lSKILL SYSTEM ACTIVATED</g>
+skillMigrationLine1: '&7EliteMobs now uses a new skill leveling system!'
+skillMigrationLine2: '&eYou now level individual skills by killing mobs:'
+skillMigrationLine3: '&7- Swords, Axes, Bows, Crossbows, Tridents, Hoes'
+skillMigrationLine4: '&7- Armor levels on every kill at 1/3 XP rate'
+skillMigrationLine5: '&cAll players start fresh with Level 1 in all skills.'
+skillMigrationLine6: '&7Type '
+skillMigrationLine6Suffix: ' &7and click &5Skills &7to view your progress!'
+dynamicDungeonInstalledMessage: '&2Dynamic dungeon $name installed!'
+vorpalStrikeReadyMessage: §6Vorpal Strike §aready!
+soulSiphonDecayMessage: §7Soul Siphon stacks decayed
+spectralScytheCooldownMessage: '§cSpectral Scythe on cooldown: $times'
+skillLevelUpTitle: '&6&lLEVEL UP!'
+skillLevelUpSubtitle: '&e$skill &7→ &aLevel $level'
+skillLevelUpBroadcast: '&6$player &7reached &e$skill &7level &a$level&7!'
+skillLevelUpBroadcastEnabled: true
+skillXpNoGainMessage: '&7[&eEliteMobs&7] &cNo XP gained &7- this mob (level &f$mobLevel&7)
+  is too far below your &e$skill &7level (&f$playerLevel&7). Fight stronger mobs!'
+skillXpCappedMessage: '&7[&eEliteMobs&7] &6XP capped &7- this mob (level &f$mobLevel&7)
+  is below your &e$skill &7level (&f$playerLevel&7). XP reduced to &f$xp&7.'
+skillActivationFormat: '&6&l$skillName!'
+skillStackFormat: '&6&l$skillName &7($current/$max stacks)'
+tazeShockedTitle: ''
+tazeShockedSubtitle: Shocked!
+legionsDisciplineBrokenMessage: '&7Combat rhythm lost...'
+avatarFadesMessage: '&7Avatar fades...'
+modelsAutoInstallMessage: Models are installed automatically, you can't do this manually!
+modelsCannotUninstallMessage: Models can't currently be uninstalled via this menu!
+  Delete the Models folder in EliteMobs if you want to remove them.
+itemsInstallingMessage: '&2Installing $count items...'
+itemsUninstallingMessage: '&2Uninstalling $count items...'
+itemsSavingMessage: '&2Saving $count item files...'
+itemsReloadingMessage: Reloading EliteMobs to apply item changes!
+eventsInstallingMessage: '&2Installing $count events...'
+eventsUninstallingMessage: '&2Uninstalling $count events...'
+eventsSavingMessage: '&2Saving $count event files...'
+eventsReloadingMessage: Reloading EliteMobs to apply event changes!
+contentConfigurationSaveFailedMessage: '&cCould not save all content configuration
+  files. Check the console; EliteMobs was not reloaded.'

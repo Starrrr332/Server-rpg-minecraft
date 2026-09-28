@@ -1,0 +1,6 @@
+isEnabled: true
+material: PAPER
+name: '&6Pergamino: Lluvia de Meteoros'
+lore:
+- '&7Un manuscrito arcano obtenido del núcleo ardiente de Ignis.'
+- '&ePermite imbuir armas con daño de fuego abrasador.'

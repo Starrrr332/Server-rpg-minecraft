@@ -1,0 +1,18 @@
+isEnabled: true
+entityType: ZOMBIE
+name: '&8[&7Tier I&8] <g:#8B0000:#B22222>Carnicero de Almas</g>'
+level: 15
+healthMultiplier: 3.0
+damageMultiplier: 1.2
+announcementPriority: 1
+spawnMessage: '&8[ALERTA]&c ¡El Carnicero de Almas arrastra sus ganchos por el suelo
+  ensangrentado!'
+deathMessage: '&8[GREMIO]&a ¡El Carnicero de Almas ha sido ejecutado por &f$players&a!'
+powers:
+- attack_poison.yml
+- attack_vacuum.yml
+- invulnerability_knockback.yml
+uniqueLootList:
+- totem_de_osamenta.yml:1
+dropsEliteMobsLoot: true
+dropsVanillaLoot: false

@@ -1,0 +1,40 @@
+isEnabled: true
+name: '&8[&6Rango B&8] <g:#E65100:#FFB74D>La Forja del Inframundo</g>'
+questLevel: 80
+questLore:
+- '&7Fisuras dimensionales en el Nether se han ensanchado.'
+- '&7Las fortalezas infernales hierven bajo el asedio de legiones'
+- '&7de esqueletos del wither, blazes centinela y piglins brutos.'
+- '&7Incursiona en el fuego eterno y sofoca la rebelión abisal.'
+questAcceptDialog:
+- '&e[Kaelen]&f En el Nether, el calor funde la cordura. Los Piglin Brutes no conocen
+  el miedo'
+- '&e[Kaelen]&f y las espadas del wither secarán tus venas. ¡Poción de fuego es indispensable!'
+questCompleteMessage:
+- '&e[Kaelen]&f ¡Hazaña colosal! Has purificado la fortaleza con sangre y fuego.'
+- '&e[Kaelen]&f Eres un auténtico Héroe del Reino (Rango B). Toma tus reliquias.'
+customObjectives:
+  EliminarEsqueletosWither:
+    objectiveType: KILL
+    entityType: WITHER_SKELETON
+    amount: 18
+  EliminarBlazes:
+    objectiveType: KILL
+    entityType: BLAZE
+    amount: 15
+  EliminarPiglinBrutes:
+    objectiveType: KILL
+    entityType: PIGLIN_BRUTE
+    amount: 6
+customRewards:
+- currencyAmount=1800:amount=1:chance=1.0
+- filename=elite_scrap_huge.yml:amount=2:chance=1.0
+- filename=nucleo_de_magma_ancestral.yml:amount=1:chance=0.7
+questCompleteCommands:
+- skills xp add $player fighting 2200
+- tell $player &6[Gremio] ¡Eres ahora un Héroe del Reino (Rango B) respetado por todos!
+turnInNPC: maestro_cacerias_guild.yml
+questLockoutMinutes: 1440
+questAcceptPermission: ''
+questLockoutPermission: ''
+temporaryPermissions: []

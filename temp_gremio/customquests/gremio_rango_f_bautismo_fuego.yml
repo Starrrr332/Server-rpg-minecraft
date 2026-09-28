@@ -1,0 +1,42 @@
+isEnabled: true
+name: '&8[&7Rango F&8] <g:#90A4AE:#CFD8DC>El Juramento del Novicio</g>'
+questLevel: 5
+questLore:
+- '&7Todo gran héroe comienza forjando su temple en el barro.'
+- '&7Las inmediaciones de la ciudadela han sido asediadas'
+- '&7por zombis errantes y arqueros esqueléticos.'
+- '&7Empuña tus armas y limpia los alrededores del gremio.'
+questAcceptDialog:
+- '&e[Kaelen]&f ¡Bienvenido, recluta! Antes de confiarte misiones de caza mayor,'
+- '&e[Kaelen]&f debemos comprobar si tu acero no vacila ante los no-muertos.'
+- '&e[Kaelen]&f Acaba con los merodeadores y regresa con vida.'
+questCompleteMessage:
+- '&e[Kaelen]&f ¡Excelente trabajo! Has demostrado que tu espíritu no se quiebra.'
+- '&e[Kaelen]&f Aquí tienes tu paga y suministros de novicio. ¡Estás listo para el
+  Rango E!'
+customObjectives:
+  EliminarZombis:
+    objectiveType: KILL
+    entityType: ZOMBIE
+    amount: 12
+  EliminarEsqueletos:
+    objectiveType: KILL
+    entityType: SKELETON
+    amount: 8
+  RecolectarCarnePodrida:
+    objectiveType: FETCH
+    material: ROTTEN_FLESH
+    amount: 15
+customRewards:
+- currencyAmount=150:amount=1:chance=1.0
+- filename=pocion_vigor_novicio.yml:amount=2:chance=1.0
+- filename=elite_scrap_tiny.yml:amount=2:chance=1.0
+questCompleteCommands:
+- skills xp add $player fighting 250
+- tell $player &a[Gremio] ¡Prueba de Rango F superada! Habla con Kaelen para reclamar
+  misiones de Rango E.
+turnInNPC: maestro_cacerias_guild.yml
+questLockoutMinutes: 360
+questAcceptPermission: ''
+questLockoutPermission: ''
+temporaryPermissions: []

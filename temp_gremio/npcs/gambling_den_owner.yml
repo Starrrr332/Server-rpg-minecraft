@@ -1,0 +1,27 @@
+isEnabled: true
+name: <g:#9A7A40:#AA8A50>The Baron</g>
+role: <g:#8A6A30:#9A7A40><Dueño de la Taberna de Apuestas></g>
+profession: weaponsmith
+spawnLocation: em_adventurers_guild,286.5,81,231.5,-90,0
+spawnLocations: []
+greetings:
+- ¡Bienvenido a mi modesto establecimiento!
+- La casa siempre gana, suelen decir los cobardes...
+- ¿Te atreves a desafiar a la suerte hoy?
+- ¡La fortuna favorece a los audaces!
+dialog:
+- ¡Mis crupieres son los más diestros de todo el reino!
+- Veintiuno, tragaperras, cartas... ¡tú eliges tu juego!
+- No te preocupes por las pérdidas, aquí somos... comprensivos.
+- ¡Las probabilidades son justas, te lo aseguro por mi honor!
+farewell:
+- Come back soon, I enjoy your... patronage.
+- May luck be on your side! Or not...
+- The tables will be waiting!
+- 'Remember: you can''t win if you don''t play!'
+canTalk: true
+activationRadius: 3.0
+interactionType: CHAT
+syncMovement: true
+scripts: []
+transportRoutes: []

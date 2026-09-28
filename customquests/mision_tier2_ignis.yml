@@ -1,0 +1,29 @@
+questAcceptPermission: ''
+questLockoutPermission: ''
+temporaryPermissions: []
+isEnabled: true
+name: '&8[&6Tier II&8] <g:#FF4500:#FFD700>El Corazón del Volcán</g>'
+questLevel: 35
+questLore:
+- '&7El calor en el Nether se ha vuelto insoportable.'
+- '&7Ignis, el Coloso de Lava, amenaza con fundir'
+- '&7las defensas del mundo mortal.'
+- '&7Extingue sus llamas antes de que sea tarde.'
+questAcceptDialog:
+- '&e[Kaelen]&f No te quedes quieto en un mismo sitio, sus erupciones calcinan el
+  suelo entero.'
+questCompleteMessage:
+- '&e[Kaelen]&f ¡Increíble hazaña! Has sofocado la ira de Ignis. Aquí tienes tu paga.'
+customObjectives:
+  ObjetivoIgnis:
+    objectiveType: KILL_CUSTOM
+    filename: ignis_coloso_lava.yml
+    amount: '1'
+customRewards:
+- currencyAmount=600:amount=1:chance=1.0
+- filename=elite_scrap_large.yml:amount=2:chance=1.0
+- filename=pergamino_lluvia_meteoros.yml:amount=1:chance=0.75
+questCompleteCommands:
+- skills xp add $player fighting 800
+turnInNPC: maestro_cacerias_guild.yml
+questLockoutMinutes: 720

@@ -1,0 +1,39 @@
+isEnabled: true
+name: '&8[&9Rango D&8] <g:#0288D1:#4FC3F7>La Marea de los Ahogados</g>'
+questLevel: 40
+questLore:
+- '&7Naufragios ancestrales han sido perturbados en las costas.'
+- '&7Hordas de ahogados armados con tridentes encantados emergen'
+- '&7de los arrecifes, apoyados por creepers volátiles.'
+- '&7Protege las líneas de costa del reino con valentía.'
+questAcceptDialog:
+- '&e[Kaelen]&f Los tridentes de los ahogados perforan cualquier armadura ligera.'
+- '&e[Kaelen]&f Mantén distancia, esquiva sus proyectiles náuticos y rompe sus líneas.'
+questCompleteMessage:
+- '&e[Kaelen]&f ¡Las aguas vuelven a estar en calma! Eres oficialmente'
+- '&e[Kaelen]&f un Veterano de Frontera Rango D. Toma esta chatarra de refuerzo.'
+customObjectives:
+  EliminarAhogados:
+    objectiveType: KILL
+    entityType: DROWNED
+    amount: 20
+  EliminarCreepers:
+    objectiveType: KILL
+    entityType: CREEPER
+    amount: 10
+  RecolectarCobre:
+    objectiveType: FETCH
+    material: COPPER_INGOT
+    amount: 12
+customRewards:
+- currencyAmount=600:amount=1:chance=1.0
+- filename=elite_scrap_medium.yml:amount=2:chance=1.0
+- filename=amuleto_marea_abismal.yml:amount=1:chance=0.75
+questCompleteCommands:
+- skills xp add $player fighting 900
+- tell $player &a[Gremio] ¡Condecoración Rango D otorgada por el Consejo del Gremio!
+turnInNPC: maestro_cacerias_guild.yml
+questLockoutMinutes: 720
+questAcceptPermission: ''
+questLockoutPermission: ''
+temporaryPermissions: []

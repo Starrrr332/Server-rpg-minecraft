@@ -1,0 +1,33 @@
+isEnabled: true
+name: '&8[&6World Boss&8] <g:#FF6F00:#FFD54F>Solarius, Archidruida de la Llama</g>'
+questLevel: 110
+questLore:
+- '&7En la Cumbre Solar, el Archidruida Solarius canaliza la furia de los astros.'
+- '&7Lanza lluvias de meteoros incandescentes, rayos estelares y canaliza'
+- '&7trances de regeneración cósmica si sus agresores pierden la concentración.'
+- '&7Reúne a tu mejor grupo y desafía al señor del solsticio.'
+questAcceptDialog:
+- '&e[Kaelen]&f ¡Cuidado extremo! Cuando Solarius comience a canalizar su trance regenerativo,'
+- '&e[Kaelen]&f todos deben golpearlo con sus ataques más potentes para interrumpir
+  el hechizo.'
+questCompleteMessage:
+- '&e[Kaelen]&f ¡El fuego solar se apaga y el cielo recupera la calma! ¡Eres una leyenda
+  viva!'
+customObjectives:
+  CazarSolarius:
+    objectiveType: KILL_CUSTOM
+    filename: solarius_archidruida_solar.yml
+    amount: '1'
+customRewards:
+- currencyAmount=3000:amount=1:chance=1.0
+- filename=elite_scrap_huge.yml:amount=5:chance=1.0
+- filename=baculo_de_la_corona_solar.yml:amount=1:chance=0.5
+questCompleteCommands:
+- skills xp add $player fighting 3500
+- broadcast &6[GREMIO] &e¡El aventurero &f$player &eha sofocado la ira de Solarius,
+  Archidruida Solar!
+turnInNPC: maestro_cacerias_guild.yml
+questLockoutMinutes: 2880
+questAcceptPermission: ''
+questLockoutPermission: ''
+temporaryPermissions: []

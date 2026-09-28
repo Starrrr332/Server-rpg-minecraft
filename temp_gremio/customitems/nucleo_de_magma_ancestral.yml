@@ -1,0 +1,9 @@
+isEnabled: true
+material: MAGMA_BLOCK
+name: '&6Núcleo de Magma Ancestral'
+lore:
+- '&8[Reliquia de Rango B]'
+- '&7Piedra ígnea del corazón de una fortaleza del Nether.'
+- '&cIrradia un calor que entibia el acero y fortalece los golpes.'
+enchantments:
+- FIRE_ASPECT,2

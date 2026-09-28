@@ -1,0 +1,111 @@
+enableEconomy: true
+itemResaleValue: 5.0
+currencyName: Monedas de Élite
+useVault: false
+enableCurrencyShower: true
+currencyShowerTierMultiplier: 1.0
+chatCurrencyShowerMessage: '&7[Gremio] ¡Has recogido &a$amount $currency_name&7!'
+actionbarCurrencyShowerMessage: '&7[Gremio] +&a$amount $currency_name'
+lootShowerDataV2:
+  '1': elitemobs:coins/coin1
+  '5': elitemobs:coins/coin1
+  '10': elitemobs:coins/coin2
+  '20': elitemobs:coins/coin3
+  '50': elitemobs:coins/coin4
+  '100': elitemobs:coins/coin4
+  '500': elitemobs:coins/coin4
+  '1000': elitemobs:coins/coin4
+adventurersGuildNotificationMessages: '&7[Gremio] ¿Monedas para gastar? ¡Usa &a/ag&7
+  para ir a la sede!'
+playerToPlayerPaymentTaxes: 0.2
+economyPayMessageV2: '&2You have paid &2$amount_sent $currency_name &2to $receiver&2,
+  who got $amount_received after taxes!'
+economyCurrencyLeftMessage: You now have &2$amount_left $currency_name
+economyPaymentReceivedMessage: You have received &2$amount_received $currency_name
+  &ffrom $sender
+economyPaymentInsufficientCurrency: '&cYou don''t have enough $currency_name to do
+  that!'
+walletCommandMessage: Tienes &2$balance $currency_name
+shopBuyMessage: '&a¡Has comprado $item_name &apor $item_value $currency_name!'
+shopCurrentBalanceMessage: '&aTu saldo actual: $currency_amount $currency_name.'
+shopInsufficientFundsMessage: '&cYou don''t have enough $currency_name!'
+shopItemCostMessage: That item costs &c$item_value $currency_name.
+shopSellMessage: '&aYou have sold $item_name &afor $currency_amount $currency_name!'
+shopSalePlayerItemsWarning: '&cYou can''t sell items that are not currently soulbound
+  to you!'
+shopSaleInstructions: '&cYou can only sell EliteMobs loot here! (Armor / weapons dropped
+  from elites showing a value on their lore)'
+shopBatchSellItem: '&aYou have sold your items &afor $currency_amount $currency_name!'
+lootShowerMaterial:
+  '1': GOLD_NUGGET
+  '5': GOLD_INGOT
+  '10': GOLD_BLOCK
+  '20': EMERALD
+  '50': EMERALD_BLOCK
+  '100': DIAMOND
+  '500': DIAMOND_BLOCK
+  '1000': NETHER_STAR
+lootShowerData:
+  '1': 1
+materialWorth:
+  DIAMOND_AXE: 17.0
+  DIAMOND_BOOTS: 17.0
+  DIAMOND_CHESTPLATE: 17.0
+  DIAMOND_LEGGINGS: 17.0
+  DIAMOND_HELMET: 17.0
+  DIAMOND_PICKAXE: 17.0
+  DIAMOND_SHOVEL: 17.0
+  DIAMOND_SWORD: 17.0
+  DIAMOND_HOE: 17.0
+  IRON_AXE: 16.0
+  IRON_BOOTS: 16.0
+  IRON_LEGGINGS: 16.0
+  IRON_CHESTPLATE: 16.0
+  IRON_HELMET: 16.0
+  IRON_PICKAXE: 16.0
+  IRON_SHOVEL: 16.0
+  IRON_HOE: 16.0
+  IRON_SWORD: 16.0
+  SHIELD: 16.0
+  BOW: 16.0
+  CHAINMAIL_BOOTS: 15.0
+  CHAINMAIL_LEGGINGS: 15.0
+  CHAINMAIL_CHESTPLATE: 15.0
+  CHAINMAIL_HELMET: 15.0
+  STONE_SWORD: 15.0
+  STONE_AXE: 15.0
+  STONE_PICKAXE: 15.0
+  STONE_SHOVEL: 15.0
+  STONE_HOE: 15.0
+  GOLDEN_AXE: 13.0
+  GOLDEN_BOOTS: 13.0
+  GOLDEN_LEGGINGS: 13.0
+  GOLDEN_CHESTPLATE: 13.0
+  GOLDEN_HELMET: 13.0
+  GOLDEN_SWORD: 13.0
+  GOLDEN_SHOVEL: 13.0
+  GOLDEN_PICKAXE: 13.0
+  GOLDEN_HOE: 13.0
+  GOLDEN_APPLE: 17.0
+  ENCHANTED_GOLDEN_APPLE: 17.0
+  LEATHER_BOOTS: 13.0
+  LEATHER_LEGGINGS: 13.0
+  LEATHER_CHESTPLATE: 13.0
+  LEATHER_HELMET: 13.0
+  WOODEN_SWORD: 13.0
+  WOODEN_AXE: 13.0
+  WOODEN_HOE: 13.0
+  WOODEN_PICKAXE: 13.0
+  TRIDENT: 17.0
+  ELYTRA: 17.0
+  TURTLE_HELMET: 13.0
+  NETHERITE_AXE: 18.0
+  NETHERITE_PICKAXE: 18.0
+  NETHERITE_SHOVEL: 18.0
+  NETHERITE_HOE: 18.0
+  NETHERITE_SWORD: 18.0
+  NETHERITE_HELMET: 18.0
+  NETHERITE_CHESTPLATE: 18.0
+  NETHERITE_LEGGINGS: 18.0
+  NETHERITE_BOOTS: 18.0
+  defaultMaterialWorth: 1.0

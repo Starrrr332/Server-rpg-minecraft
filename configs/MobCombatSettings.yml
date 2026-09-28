@@ -1,0 +1,63 @@
+doNaturalEliteMobSpawning: true
+doSpawnersSpawnEliteMobs: false
+eliteMobsSpawnPercentage: 0.05
+naturalEliteMobsLevelCap: 120
+doElitesWearArmor: true
+doElitesWearHelmets: true
+doNaturalEliteMobVisualEffects: true
+doSpawnerEliteMobVisualEffects: false
+doPowerBuildupVisualEffects: true
+doCustomEliteMobsDeathMessages: true
+doDisplayMobDamageOnHit: true
+useDistanceBasedNaturalEliteLevels: false
+distanceBasedNaturalEliteLevelWorlds: []
+blockDistanceBetweenLevelIncrements: 100.0
+hideEliteMobPowersUntilAggro: true
+damageToEliteMobMultiplierV2: 1.0
+damageToPlayerMultiplierV2: 1.0
+showCustomBossLocation: true
+bossLocationMessage: '&7[Gremio] &a[¡Haz clic para rastrear!]'
+commandsOnEliteMobDeath: []
+bossKillParticipationMessage: '&eTu daño infligido al jefe: &a$playerDamage'
+regenerateCustomBossHealthOnCombatEnd: true
+defaultOtherWorldBossLocationMessage: '&c$name: ¡En otra dimensión!'
+weakTextColor: '&9'
+resistTextColor: '&c'
+weakText: '&9&l¡Debilidad!'
+resistText: '&c&l¡Resistencia!'
+doWeakEffect: true
+doResistEffect: true
+normalizedDamageToEliteMultiplier: 1.0
+normalizedDamageToPlayerMultiplier: 1.0
+normalizedBaselineDamageV3: 3.0
+normalizedRegionalBossBaselineHealthV3: 4.0
+normalizeRegionalBosses: true
+useScaledCombatForNaturalElites: true
+scaledDamageToEliteMultiplier: 1.0
+scaledDamageToPlayerMultiplier: 1.0
+useRecommendedHealthScaling: true
+scaledStandardLevelSymbol: 「⚔」
+scaledHighThreatLevelSymbol: ☠
+fullHealMessage: '&2FULL HEAL!'
+resistanceDamageMultiplierV2: 0.2
+strengthDamageMultiplierV2: 0.2
+weaknessDamageMultiplierV2: 0.2
+blockingDamageReduction: 0.8
+displayVisualHealthBars: true
+displayNumericHealth: true
+displayBossBarForHighMultiplier: true
+bossBarHealthMultiplierThreshold: 1.0
+combatDisplayTimeoutSeconds: 30
+useFixedHealthBarSize: false
+healPopupFormat: +$amount HP
+xpPopupFormat: +$amount ✦XP
+healthDisplaySeparator: ' &7/ '
+invulnerablePopupText: '&9&lINVULNERABLE'
+fallbackBossBarName: Elite Boss
+autoclickerThrottleEnabled: true
+autoclickerThrottleMaxHitsPerSecond: 5
+autoclickerThrottlePenaltySeconds: 5
+autoclickerThrottleMessage: '&c[EliteMobs] &7You are attacking too fast. Damage to
+  elites disabled for &e$seconds&7s.'
+damageIndicatorParticleCap: 16
+maximumCriticalStrikeChance: 0.4

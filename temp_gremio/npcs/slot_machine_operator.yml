@@ -1,0 +1,27 @@
+isEnabled: true
+name: <g:#9A7A40:#AA8A50>Spinner Sam</g>
+role: <g:#8A6A30:#9A7A40><Tragaperras Arcana></g>
+profession: cleric
+spawnLocation: em_adventurers_guild,298.5,81,227.5,135,0
+spawnLocations: []
+greetings:
+- ¡Haz girar la rueda mágica! ¡Tres iguales ganan!
+- ¡El GRAN PREMIO aguarda por su nuevo dueño!
+- Los sietes de la suerte pagan la mayor fortuna...
+- ¡Haz girar los rodillos arcanos!
+dialog:
+- ¡Tres figuras idénticas aseguran una ganancia monumental!
+- Incluso coincidir dos símbolos te otorgará un pequeño premio.
+- ¡Los sietes dorados son la llave a una fortuna incalculable!
+- Cerezas, campanas, lingotes de oro o sietes de la suerte...
+farewell:
+- The reels are always spinning!
+- Come back for another spin!
+- Maybe the jackpot is next!
+- Luck be with you!
+canTalk: true
+activationRadius: 3.0
+interactionType: GAMBLING_SLOTS
+syncMovement: true
+scripts: []
+transportRoutes: []

@@ -1,0 +1,17 @@
+isEnabled: true
+entityType: STRAY
+name: '&8[&bTier III&8] <g:#00BFFF:#F0F8FF>Ymir, el Devorador Glacial</g>'
+level: 65
+healthMultiplier: 5.5
+damageMultiplier: 1.7
+announcementPriority: 2
+spawnMessage: '&8[ALERTA]&b ¡Una ventisca gélida anuncia la llegada de Ymir!'
+deathMessage: '&8[GREMIO]&a ¡El frío glacial de Ymir ha sido quebrado por &f$players&a!'
+powers:
+- attack_freeze.yml
+- frost_walker.yml
+- shield_wall.yml
+uniqueLootList:
+- lagrima_invernal.yml:1
+dropsEliteMobsLoot: true
+dropsVanillaLoot: false

@@ -1,0 +1,42 @@
+isEnabled: true
+name: <g:#FFD700:#FF8C00>Kaelen, Maestro de Cacerías</g>
+role: <g:#DAA520:#FFA500><Cacerías de Jefes></g>
+profession: weaponsmith
+spawnLocation: em_adventurers_guild,285.5,91,220.5,0,0
+spawnLocations: []
+greetings:
+- ¡Saludos, honorable cazador del Gremio!
+- ¿Listo para reclamar gloria, oro y renombre?
+- El tablero de contratos está repleto de desafíos.
+dialog:
+- Tengo contratos clasificados desde el Rango F de Novicio\nhasta el mítico Rango
+  S de Maestro Supremo.
+- Cada ascenso de rango desbloquea contratos más prestigiosos\ny recompensas de mayor
+  calibre.
+- Para los mayores titanes del reino, coordina un grupo de héroes\ncon tanque, sanador
+  y atacantes a distancia.
+farewell:
+- Buena caza. Regresa con la victoria.
+- Mantén tu espada afilada y tu mente alerta.
+- ¡Por la gloria del Gremio de Aventureros!
+canTalk: true
+activationRadius: 4.0
+interactionType: CUSTOM_QUEST_GIVER
+questFileName:
+- gremio_rango_f_bautismo_fuego.yml
+- gremio_rango_e_nido_aracnido.yml
+- gremio_rango_d_marea_corrupta.yml
+- gremio_rango_c_asedio_saqueador.yml
+- gremio_rango_b_infierno_cenizas.yml
+- gremio_rango_a_herejia_vacio.yml
+- gremio_rango_s_juicio_absoluto.yml
+- mision_jefe_valerius.yml
+- mision_jefe_morgath.yml
+- mision_jefe_solarius.yml
+- mision_tier1_carnicero.yml
+- mision_tier2_ignis.yml
+- mision_tier3_ymir.yml
+- mision_tier4_astraeus.yml
+syncMovement: true
+scripts: []
+transportRoutes: []

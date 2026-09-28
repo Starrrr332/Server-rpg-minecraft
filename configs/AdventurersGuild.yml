@@ -1,0 +1,5 @@
+userCommandsTeleportToAdventurersGuild: true
+adventurersGuildMenuName: '&6&lGremio de Aventureros'
+skillBasedGearRestriction: true
+gearRestrictionMessage: '&c[Gremio] ¡Necesitas nivel $itemLevel de $skillType para
+  equipar esto! (Tu nivel: $skillLevel)'

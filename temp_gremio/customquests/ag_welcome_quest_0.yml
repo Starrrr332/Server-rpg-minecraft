@@ -1,0 +1,29 @@
+isEnabled: true
+customRewards:
+- currencyAmount=50:amount=1:chance=1
+questAcceptPermission: ''
+questLockoutPermission: elitequest.ag_welcome_quest_0.yml
+name: '&2¡Encontrando el Gremio de Aventureros!'
+questLore:
+- ¡Descubre la sede central del Gremio de Aventureros usando el comando &2/ag &0o
+  &2/adventurersguild&f!
+temporaryPermissions: []
+questAcceptDialog:
+- '&8[Dux]&f ¡Excelente! Utiliza &2/ag &fo &2/adventurersguild&f para viajar a la
+  sede del Gremio de Aventureros.'
+- ¡Asegúrate de hablar con Casus cuando llegues allí!
+questCompleteMessage: []
+questCompleteCommands: []
+turnInNPC: guide_1.yml
+questLevel: 1
+customObjectives:
+  Objective1:
+    npcName: Casus
+    filename: guide_1.yml
+    objectiveType: DIALOG
+    dialog:
+    - '&8[&aCasus&8]&f ¡Bienvenido a la Sede del Gremio de Aventureros, el centro
+      de reunión para todo héroe!'
+    - '&8[&aCasus&8]&f Aquí podrás aceptar contratos, comerciar botines y prepararte
+      para desafiar a los jefes más temibles del mundo.'
+    location: at the Adventurer's Guild

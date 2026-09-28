@@ -1,0 +1,110 @@
+requireQuestTurnIn: true
+questJoinMessage: '&a¡Has aceptado la misión &e$questName&a!'
+questLeaveMessage: '&cHas abandonado la misión &e$questName&c.'
+questCompleteMessage: '&2¡Completaste con éxito la misión &a$questName&2!'
+leaveWhenNoActiveQuestsExist: '&c¡No tienes ninguna misión activa en este momento!'
+useQuestAcceptTitles: true
+questStartTitle: '&a¡Misión Aceptada!'
+questStartSubtitle: $questName
+useQuestCompleteTitles: true
+questCompleteTitle: '&2¡Misión Completada!'
+questCompleteSubtitle: $questName
+useQuestLeaveTitles: true
+questLeaveTitle: '&c¡Misión Abandonada!'
+questLeaveSubtitle: $questName
+doQuestChatProgression: true
+ongoingQuestColorCode: '&c'
+completedQuestColorCode: '&a'
+binaryObjectiveStatusEnabled: true
+binaryObjectiveIncompleteSymbol: '&7➤'
+binaryObjectiveCompleteSymbol: '&a✔'
+killQuestChatProgressionMessage: '&8[Gremio] &7➤ Eliminar &f$name&7: $color$current&7/$color$target'
+fetchQuestChatProgressionMessage: '&8[Gremio] &7➤ Obtener &f$name&7: $color$current&7/$color$target'
+dialogQuestChatProgressionMessage: '&8[Gremio] &7➤ Hablar con &f$name&7: $color$current&7/$color$target'
+maximumActiveQuests: 10
+questCapMessage: '&8[Gremio] &c¡Has alcanzado el límite máximo de misiones activas
+  (10)! &4Abandona o completa al menos una para aceptar más.'
+useQuestScoreboards: true
+killQuestScoreboardProgressionMessage: '&7➤ Eliminar &f$name&7: $color$current&7/$color$target'
+fetchQuestScoreboardProgressionMessage: '&7➤ Conseguir &f$name&7: $color$current&7/$color$target'
+dialogQuestScoreboardProgressionMessage: '&7➤ Hablar con &f$name&7: $color$current&7/$color$target'
+classUnlockQuestChatProgressionMessage: '&8[EliteMobs] &7Unlock &f$name&7: $color$current&7/$color$target'
+classUnlockQuestScoreboardProgressionMessage: '&7Unlock &f$name&7: $color$current&7/$color$target'
+arenaQuestScoreboardProgressionMessage: '&7➤ Superar arena &f$arenaName'
+questEntityTypes:
+- BLAZE
+- CAVE_SPIDER
+- DROWNED
+- ELDER_GUARDIAN
+- ENDERMAN
+- ENDERMITE
+- EVOKER
+- GHAST
+- GUARDIAN
+- HUSK
+- ILLUSIONER
+- IRON_GOLEM
+- PILLAGER
+- RAVAGER
+- SILVERFISH
+- SKELETON
+- SPIDER
+- STRAY
+- VINDICATOR
+- WITCH
+- WITHER_SKELETON
+- WOLF
+- ZOMBIE
+- HOGLIN
+- ZOGLIN
+- PIGLIN_BRUTE
+- PIGLIN
+- ZOMBIFIED_PIGLIN
+chatTrackMessage: '&8[EliteMobs]&2 Click here to track your quest!'
+chatTrackHover: '&2Click to track!'
+chatTrackCommand: /elitemobs quest track $questID
+chatTrackingMessage: '&8[EliteMobs]&9 You are now tracking a quest!'
+chatTrackingHover: '&2Click to untrack/track! /em -> Quests to track a different quest!'
+chatTrackingCommand: /elitemobs quest track $questID
+autoTrackQuestsOnAccept: true
+autoTrackNextQuestOnCompletion: true
+questAutoTrackNextMessage: '&8[EliteMobs]&9 Now tracking: &f$questName'
+questAbandonConfirmationText: '&cAbandoning &f$questName &cstarts its full cooldown!
+  &4&l[Click here to confirm abandoning]'
+questAbandonConfirmationHover: '&cThis cannot be undone!'
+noQuestDestinationFound: '[EM] No quest destination found!'
+questDestinationInOtherWorld: '[EM] Go to world $world!'
+questAlreadyCompletedMessage: '&8[EliteMobs] &cYou already completed this quest!'
+questPrerequisitesMissingMessage: '&8[EliteMobs] &cThis NPC has some quest(s) you
+  can''t accept yet!'
+lowRankDynamicQuestWarning: '&8[EliteMobs] &cYou can''t take these quests with your
+  current guild rank! Increase your guild rank to accept these quests.'
+questTurnInObjective: '&aTalk to $npcName'
+horizontalCharacterLimitBedrockMenu: 30
+itemEntryCharacterLimitBedrockMenu: 300
+questLockoutSubtitle: '&cQuest Lockout!'
+questLockoutChatMessage: '&c[EliteMobs] &7You completed &c$questName &7recently and
+  must wait another &e$remainingTime &7before you can accept it again.'
+invalidQuestIdMessage: '&8[EliteMobs] &cInvalid quest ID for ID $questId'
+invalidQuestNpcMessage: '[EliteMobs] This NPC''s quest is not valid! This might be
+  a configuration error on the NPC or on the quest.'
+invalidQuestMessage: 'Invalid quest: $quest'
+questTrackingInvalidMessage: '[EliteMobs] Failed to get a valid quest with that quest
+  ID!'
+questTurnInStatus: ' §f| §2Turn in!'
+questAcceptedStatus: ' §f| §aAccepted'
+questBackToStatusMenu: ← Back to Status Menu
+questAbandonText: §l§c[Abandon]
+useQuestDialogueBossBars: true
+hideQuestScoreboardDuringQuestDialogue: true
+questDialogueCharactersPerLineV2: 52
+questDialogueCharactersPerTick: 2
+questDialogueNamePrefix: ''
+questDialogueNameSuffix: ''
+questDialogueLinePrefix: ''
+questDialogueLineSuffix: ''
+questDialogueBoxOffetXV2: 0
+questDialogueNameOffsetXV2: -90
+questDialogueLineOffsetX: 0
+questDialoguePromptOffsetXV2: 74
+questDialoguePromptText: '&7&oSneak to continue'

@@ -1,0 +1,39 @@
+isEnabled: true
+name: '&8[&eRango C&8] <g:#FFA000:#FFD54F>El Asedio de los Desoladores</g>'
+questLevel: 60
+questLore:
+- '&7Clanes organizados de Saqueadores e Ilusionistas asaltan aldeas.'
+- '&7Montan bestias devastadoras conocidas como Devastadores (Ravagers)'
+- '&7capaces de derribar murallas de piedra en segundos.'
+- '&7Es momento de actuar como un verdadero Cazador de Élite.'
+questAcceptDialog:
+- '&e[Kaelen]&f Un Devastador enfurecido puede partir en dos a un guerrero desprevenido.'
+- '&e[Kaelen]&f Coordina tus esquives con la tecla F y ataca tras su embestida.'
+questCompleteMessage:
+- '&e[Kaelen]&f ¡Una victoria aplastante! Los saqueadores se dispersan despavoridos.'
+- '&e[Kaelen]&f Te has ganado la admiración del reino y el prestigioso Rango C.'
+customObjectives:
+  EliminarSaqueadores:
+    objectiveType: KILL
+    entityType: PILLAGER
+    amount: 20
+  EliminarVindicadores:
+    objectiveType: KILL
+    entityType: VINDICATOR
+    amount: 12
+  EliminarDevastadores:
+    objectiveType: KILL
+    entityType: RAVAGER
+    amount: 3
+customRewards:
+- currencyAmount=1100:amount=1:chance=1.0
+- filename=elite_scrap_large.yml:amount=2:chance=1.0
+- filename=estandarte_cazador_elite.yml:amount=1:chance=0.8
+questCompleteCommands:
+- skills xp add $player fighting 1400
+- tell $player &a[Gremio] ¡Has sido ascendido a Cazador de Élite Rango C!
+turnInNPC: maestro_cacerias_guild.yml
+questLockoutMinutes: 1440
+questAcceptPermission: ''
+questLockoutPermission: ''
+temporaryPermissions: []

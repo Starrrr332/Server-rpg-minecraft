@@ -1,0 +1,27 @@
+isEnabled: true
+name: <g:#9A7A40:#AA8A50>Lucky Pete</g>
+role: <g:#8A6A30:#9A7A40><Lanzador de Monedas></g>
+profession: cartographer
+spawnLocation: em_adventurers_guild,298.5,81,211.5,45,0
+spawnLocations: []
+greetings:
+- ¿Cara o cruz? ¡Tan simple como el destino!
+- ¡Lanza la moneda y duplica tu oro!
+- ¿Te sientes con suerte, intrépido aventurero?
+- ¡Un simple lanzamiento de moneda puede cambiar tu fortuna!
+dialog:
+- ¡50% de probabilidad! ¡Pura fortuna en juego!
+- Elige tu bando con suma prudencia...
+- El destino final lo decide el giro de la moneda.
+- ¡La fortuna favorece a los audaces!
+farewell:
+- May fortune smile upon you!
+- Better luck next time!
+- The coin awaits your return!
+- Heads... or tails... which will it be?
+canTalk: true
+activationRadius: 3.0
+interactionType: GAMBLING_COINFLIP
+syncMovement: true
+scripts: []
+transportRoutes: []

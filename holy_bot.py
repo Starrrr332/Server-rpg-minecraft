@@ -8,7 +8,9 @@ Configuration is read from `bot_config.json` in the same directory.
 """
 import json
 import sys
+import time
 import requests
+import websocket
 
 CONFIG_PATH = "bot_config.json"
 
@@ -54,6 +56,18 @@ def restart_server():
     except Exception as e:
         print(f"Failed to send restart command: {e}")
 
+def send_console_command(command: str):
+    """Send a console command to the server via Pterodactyl REST API."""
+    cfg = load_config()
+    url = f"{cfg['panel_url'].rstrip('/')}/api/client/servers/{cfg['server_id']}/command"
+    headers = {
+        "Authorization": f"Bearer {cfg['api_key']}",
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+    }
+    resp = requests.post(url, headers=headers, json={"command": command}, timeout=10)
+    resp.raise_for_status()
+    print(f"Console command sent: {command}")
 
 def upload_plugins():
     import os, glob, requests, json
@@ -89,7 +103,7 @@ def upload_plugins():
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python holy_bot.py [status|restart|upload|deploy]")
+        print("Usage: python holy_bot.py [status|restart|upload|deploy|console]")
         sys.exit(1)
     cmd = sys.argv[1].lower()
     if cmd == "status":
@@ -101,6 +115,11 @@ def main():
     elif cmd == "deploy":
         upload_plugins()
         restart_server()
+    elif cmd == "console":
+        if len(sys.argv) < 3:
+            print("Usage: python holy_bot.py console \"<command>\"")
+            sys.exit(1)
+        send_console_command(" ".join(sys.argv[2:]))
     else:
         print(f"Unknown command: {cmd}")
         sys.exit(1)

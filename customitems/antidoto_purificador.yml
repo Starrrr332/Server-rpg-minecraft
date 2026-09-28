@@ -1,0 +1,10 @@
+isEnabled: true
+material: POTION
+name: '&2Antídoto Purificador del Cazador'
+lore:
+- '&7Destilado alquímico para neutralizar el veneno de arácnidos.'
+- '&aInmuniza temporalmente contra toxinas y parálisis.'
+- '&8Consumible de campo'
+potionEffects:
+- HEAL,1,0
+- RESISTANCE,0,60

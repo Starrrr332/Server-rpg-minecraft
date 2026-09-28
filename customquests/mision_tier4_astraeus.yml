@@ -1,0 +1,33 @@
+questAcceptPermission: ''
+questLockoutPermission: ''
+temporaryPermissions: []
+isEnabled: true
+name: '&8[&dMÍTICA&8] <g:#FFD700:#8A2BE2>El Juicio de los Titanes</g>'
+questLevel: 90
+questLore:
+- '&5★ MISIÓN ENDGAME SUPREMA ★'
+- '&7Astraeus, el Heraldo de las Estrellas,'
+- '&7ha abierto una brecha cósmica sobre el reino.'
+- '&7Reúne a tu clan o grupo más poderoso y'
+- '&7desafía al titán antes del colapso total.'
+questAcceptDialog:
+- '&e[Kaelen]&f ¡Que los dioses te acompañen! Esta batalla pondrá a prueba todo lo
+  que has aprendido.'
+questCompleteMessage:
+- '&e[Kaelen]&f ¡¡LO HAS LOGRADO!! ¡Has derrotado a Astraeus! Tu nombre resonará por
+  toda la eternidad. ¡Toma las reliquias supremas!'
+customObjectives:
+  ObjetivoAstraeus:
+    objectiveType: KILL_CUSTOM
+    filename: astraeus_heraldo_estrellas_p4.yml
+    amount: '1'
+customRewards:
+- currencyAmount=3500:amount=1:chance=1.0
+- filename=elite_scrap_huge.yml:amount=5:chance=1.0
+- filename=totem_del_heraldo_celestial.yml:amount=1:chance=0.5
+questCompleteCommands:
+- skills xp add $player fighting 4000
+- broadcast &6[GREMIO] &e¡El jugador &f$player &eha completado el Juicio de los Titanes
+  y derrotado a Astraeus!
+turnInNPC: maestro_cacerias_guild.yml
+questLockoutMinutes: 2880

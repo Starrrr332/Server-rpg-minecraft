@@ -1,0 +1,8 @@
+name: ShopEnhancer
+main: com.example.shopenhancer.ShopEnhancerPlugin
+version: 1.0.0
+api-version: 1.21
+commands:
+  shopinfo:
+    description: Muestra el multiplicador de precios actual
+    usage: /<command>

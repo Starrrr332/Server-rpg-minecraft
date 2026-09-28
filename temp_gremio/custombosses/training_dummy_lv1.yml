@@ -1,0 +1,11 @@
+isEnabled: true
+entityType: ZOMBIE
+name: '&aMuñeco de Entrenamiento Lv1'
+level: 1
+healthMultiplier: 1.0
+damageMultiplier: 0.1
+powers: []
+uniqueLootList:
+  - magmaguys_toothpick.yml:1
+dropsEliteMobsLoot: false
+dropsVanillaLoot: false

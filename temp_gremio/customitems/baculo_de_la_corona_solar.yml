@@ -1,0 +1,16 @@
+isEnabled: true
+material: GOLDEN_HOE
+name: '&6Báculo de la Corona Solar'
+lore:
+- '&8[Reliquia Cósmica Suprema - Rango A/S]'
+- '&eEmpuñado por Solarius durante el solsticio primordial.'
+- '&6Canaliza llamaradas de plasma estelar que calcinan las defensas enemigas.'
+- '&8--------------------------------'
+- '&cEfecto de Impacto: &eFulguración Solar'
+- '&7Desata un estallido ígneo sobre los enemigos circundantes.'
+- '&8Nivel de maestría requerido: 100'
+enchantments:
+- DAMAGE_ALL,7
+- FIRE_ASPECT,3
+- SWEEPING_EDGE,4
+- UNBREAKING,6

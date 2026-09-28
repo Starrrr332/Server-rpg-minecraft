@@ -1,0 +1,17 @@
+isEnabled: true
+entityType: BLAZE
+name: '&8[&6Tier II&8] <g:#FF4500:#FFD700>Ignis, el Coloso de Lava</g>'
+level: 35
+healthMultiplier: 4.0
+damageMultiplier: 1.4
+announcementPriority: 2
+spawnMessage: '&8[ALERTA]&6 ¡Ignis ruge desde el magma incandescente!'
+deathMessage: '&8[GREMIO]&a ¡Ignis se ha enfriado ante el temple de &f$players&a!'
+powers:
+- attack_fireball.yml
+- attack_fire.yml
+- invulnerability_fire.yml
+uniqueLootList:
+- pergamino_lluvia_meteoros.yml:1
+dropsEliteMobsLoot: true
+dropsVanillaLoot: false

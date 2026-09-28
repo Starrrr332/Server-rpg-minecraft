@@ -1,0 +1,29 @@
+questAcceptPermission: ''
+questLockoutPermission: ''
+temporaryPermissions: []
+isEnabled: true
+name: '&8[&bTier III&8] <g:#00BFFF:#F0F8FF>El Frío de la Desolación</g>'
+questLevel: 65
+questLore:
+- '&7Una helada implacable avanza desde el norte.'
+- '&7Ymir, el Devorador Glacial, está congelando'
+- '&7toda forma de vida a su paso.'
+- '&7Derrite su gélido dominio.'
+questAcceptDialog:
+- '&e[Kaelen]&f Prepárate para moverte despacio. La ventisca de Ymir congela tus reflejos.'
+questCompleteMessage:
+- '&e[Kaelen]&f ¡El hielo se rompe! Has salvado a las tierras del invierno eterno.
+  Bien merecido.'
+customObjectives:
+  ObjetivoYmir:
+    objectiveType: KILL_CUSTOM
+    filename: ymir_devorador_glacial.yml
+    amount: '1'
+customRewards:
+- currencyAmount=1200:amount=1:chance=1.0
+- filename=elite_scrap_huge.yml:amount=2:chance=1.0
+- filename=lagrima_invernal.yml:amount=1:chance=0.5
+questCompleteCommands:
+- skills xp add $player fighting 1500
+turnInNPC: maestro_cacerias_guild.yml
+questLockoutMinutes: 1440

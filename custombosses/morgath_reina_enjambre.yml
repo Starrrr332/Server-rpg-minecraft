@@ -1,0 +1,37 @@
+isEnabled: true
+entityType: SPIDER
+name: '&8[&5Jefe Abisal&8] <g:#4A0E4E:#AA00FF>Morgath, Reina del Enjambre</g>'
+level: 75
+healthMultiplier: 6.5
+damageMultiplier: 1.8
+followDistance: 35
+announcementPriority: 2
+spawnMessage: '&8[ALERTA]&5 ¡Chasquidos de quijadas resuenan en las fosas! La Reina
+  Morgath desciende de su nido.'
+deathMessage: '&8[GREMIO]&d ¡La Reina Morgath ha caído destrozada ante el filo de
+  &f$players&d!'
+escapeMessage: '&8[GREMIO]&7 Morgath trepa a las grietas de la roca madre y se oculta
+  en la oscuridad...'
+locationMessage: '&dMorgath acecha en el Nido de las Fosas Profundas.'
+onDamageMessages:
+- '&8[&5Morgath&8] &d¡Tus entrañas alimentarán a mis miles de crías!'
+- '&8[&5Morgath&8] &a¡El ácido disuelve tu armadura y tu carne!'
+onDamagedMessages:
+- '&8[&5Morgath&8] &5&l¡¡VÓRTICE ABSORBENTE!! &d¡Corran hacia afuera o serán devorados
+  vivos!'
+- '&8[&5Morgath&8] &2&l¡¡DESPLIEGUE DE TELARAÑA VENENOSA!! &a¡Destruyan los capullos
+  adhesivos!'
+powers:
+- attack_web.yml
+- attack_vacuum.yml
+- attack_poison.yml
+- taze.yml
+- invulnerability_knockback.yml
+trails:
+- SQUID_INK
+- PORTAL
+uniqueLootList:
+- arco_del_tejedor_abisal.yml:1
+- botas_de_la_seda_sombra.yml:1
+dropsEliteMobsLoot: true
+dropsVanillaLoot: false
