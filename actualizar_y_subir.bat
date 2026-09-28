@@ -1,4 +1,5 @@
 @echo off
+cd /d "%~dp0"
 title Actualizar Estadisticas y Publicar en Cloudflare
 color 0b
 echo ========================================================

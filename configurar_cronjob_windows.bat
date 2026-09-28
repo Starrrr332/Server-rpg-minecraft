@@ -1,4 +1,5 @@
 @echo off
+cd /d "%~dp0"
 title Configurar Cronjob Automatico de Estadisticas y MySQL
 color 0a
 echo ========================================================

@@ -1,4 +1,5 @@
 @echo off
+cd /d "%~dp0"
 title Subir Proyecto a GitHub
 color 0a
 echo ========================================================
