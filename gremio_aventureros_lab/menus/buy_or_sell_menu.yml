@@ -1,5 +1,5 @@
 isEnabled: true
-shopName: '[EM] Buy or Sell'
+shopName: '&6&l[Gremio] &eComprar o Vender'
 informationButton:
   material: PLAYER_HEAD
 informationButtonSlot: 4

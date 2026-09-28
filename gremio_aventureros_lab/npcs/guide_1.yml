@@ -1,17 +1,17 @@
 isEnabled: true
 name: Casus
-role: <Guide>
+role: <Guía de Aventureros>
 spawnLocation: em_adventurers_guild,213.5,87,239.5,126,0
 spawnLocations: []
 greetings:
-- Need guidance?
-- Need a hint
-- Are you lost?
-- Need help?
+- ¿Necesitas orientación en tus primeros pasos?
+- ¿Necesitas una pista para tu misión?
+- ¿Te has extraviado en los pasillos del Gremio?
+- ¿Requieres asistencia o información?
 dialog:
-- I know everything about\nthis place!
-- Want to meet the other members\nof the Adventurer's Guild?
-- Need to learn your way around\nthis place?
+- ¡Conozco cada rincón, secreto y peligro\nde este magnífico santuario!
+- ¿Deseas conocer a los demás veteranos\ndel Gremio de Aventureros?
+- ¿Necesitas aprender a orientarte\nen esta vasta sede de aventureros?
 farewell:
 - Come back anytime
 - I'll be here if you need me!

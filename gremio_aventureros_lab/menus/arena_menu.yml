@@ -12,5 +12,5 @@ spectatorItem:
   lore:
   - §2Spectate players in the arena!
 spectatorItemSlot: 2
-invalidArenaMessage: '&4[EliteMobs] &cInvalid arena name! The arena you are trying
-  to join is not correctly setup.'
+invalidArenaMessage: '&4[Gremio] &c¡La arena seleccionada no está disponible o no
+  existe!'

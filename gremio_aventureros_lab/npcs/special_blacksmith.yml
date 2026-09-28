@@ -1,22 +1,22 @@
 isEnabled: true
 name: <g:#9A7A40:#AA8A50>Grog</g>
-role: <g:#8A6A30:#9A7A40><Special Blacksmith></g>
+role: <g:#8A6A30:#9A7A40><Special Herrero del Gremio></g>
 profession: weaponsmith
 spawnLocation: em_adventurers_guild,299.5,78,276.5,-180,0
 spawnLocations: []
 greetings:
-- Need something?
-- Got anything good?
-- We have nothing but the best
-- Got anything worth selling?
-- We only buy elite mob gear.
+- ¿Buscas algo en particular?
+- ¿Traes botines valiosos de tus cacerías?
+- En mi puesto solo encontrarás mercancía de primera calidad.
+- ¿Tienes reliquias que quieras vender por monedas?
+- Solo compro equipamiento auténtico obtenido de criaturas de élite.
 dialog:
-- We buy low and sell high.
-- No refunds.
-- Absolutely no refunds.
-- There are no refunds.
-- No taksies backsies.
-- Shop purchases are final.
+- Compramos botín a precio justo y ofrecemos equipo superior.
+- Sin devoluciones.
+- Bajo ninguna circunstancia se admiten devoluciones.
+- No se admiten reclamos ni devoluciones.
+- Lo apostado, apostado está. Sin marcha atrás.
+- Todas las compras en las tiendas son definitivas.
 farewell:
 - Come back when you have\nmore to spend
 - Don't get yourself killed,\nwe want you to bring us\nmore gear.

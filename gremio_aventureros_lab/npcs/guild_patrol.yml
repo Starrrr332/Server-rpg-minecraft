@@ -13,7 +13,7 @@ patrol:
   - 14.014,0,0.002
 isEnabled: true
 name: <g:#A3C75B:#5F8A36>Gribble the Lookout</g>
-role: <g:#7A9A45:#4D6B2C><Goblin Kingdom></g>
+role: <g:#7A9A45:#4D6B2C><Reino Goblin></g>
 profession: armorer
 spawnLocation: em_adventurers_guild,286.531,92,284.350,0,0
 spawnLocations: []

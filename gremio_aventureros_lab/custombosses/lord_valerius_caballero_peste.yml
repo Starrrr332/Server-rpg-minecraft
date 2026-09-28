@@ -1,0 +1,36 @@
+isEnabled: true
+entityType: WITHER_SKELETON
+name: '&8[&4Jefe de Cripta&8] <g:#8B0000:#DC143C>Lord Valerius, Caballero de la Peste</g>'
+level: 45
+healthMultiplier: 5.0
+damageMultiplier: 1.5
+followDistance: 32
+announcementPriority: 2
+spawnMessage: '&8[ALERTA]&4 ¡Las criptas tiemblan! Lord Valerius desenvaina su mandoble
+  pestilente.'
+'deathMessage:': '&8[GREMIO]&a ¡Lord Valerius ha sido derrotado en las criptas por
+  &f$players&a!'
+deathMessage: '&8[GREMIO]&a ¡Lord Valerius ha sido derrotado en las criptas por &f$players&a!'
+escapeMessage: '&8[GREMIO]&7 Lord Valerius se funde entre las tinieblas de la cripta...'
+locationMessage: '&cLord Valerius aguarda en la Cripta de los Reyes Olvidados.'
+onDamageMessages:
+- '&8[&4Lord Valerius&8] &c¡Tu carne se corrompe ante mi acero maldito!'
+- '&8[&4Lord Valerius&8] &4¡Siente el frío sepulcral de la peste!'
+onDamagedMessages:
+- '&8[&4Lord Valerius&8] &4&l¡¡IMPACTO SÍSMICO!! &c¡Aléjense del epicentro antes del
+  colapso!'
+- '&8[&4Lord Valerius&8] &2&l¡¡NIEBLA MIASMÁTICA!! &a¡El veneno corrompe sus pulmones!'
+powers:
+- attack_wither.yml
+- attack_poison.yml
+- ground_pound.yml
+- shield_wall.yml
+- invulnerability_knockback.yml
+trails:
+- SMOKE
+- SOUL_FIRE_FLAME
+uniqueLootList:
+- espada_del_paladin_caido.yml:1
+- coraza_de_la_peste_profana.yml:1
+dropsEliteMobsLoot: true
+dropsVanillaLoot: false

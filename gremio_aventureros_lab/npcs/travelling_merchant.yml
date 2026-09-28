@@ -1,16 +1,16 @@
 isEnabled: true
 name: <g:#7A5A3A:#8A6A4A>Jeeves</g>
-role: <g:#6A4A2A:#7A5A3A><Travelling Merchant></g>
+role: <g:#6A4A2A:#7A5A3A><Comerciante Errante></g>
 profession: librarian
 spawnLocations: []
 greetings:
-- Got something to sell?
-- You called?
-- Huh?
+- ¿Tienes tesoros o armas para tasar?
+- ¿Me llamabas? Estoy a tu servicio.
+- ¿Mmh? ¿Qué se te ofrece?
 dialog:
-- I'll buy it on the cheap!
-- Got something for me?
-- Time is money!
+- ¡Te compraré esas chatarras a un precio justo!
+- ¿Traes alguna reliquia especial para mí?
+- ¡El tiempo es oro en las tabernas del Gremio!
 farewell:
 - Call me again anytime!
 - Was that all?

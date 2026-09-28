@@ -1,0 +1,10 @@
+isEnabled: true
+material: GOLDEN_AXE
+name: '&eHacha de Guerra del Cazador de Élite'
+lore:
+- '&8[Arma Oficial de Rango C]'
+- '&7Forjada para quebrar escudos de saqueadores y pieles duras.'
+- '&6Inflige un 15% más de daño crítico al impactar.'
+enchantments:
+- DAMAGE_ALL,4
+- UNBREAKING,3

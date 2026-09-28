@@ -1,10 +1,10 @@
 isEnabled: true
-shopName: '&2&lFletcher''s Arrow Shop'
-insufficientFundsMessage: '&c[EliteMobs] &7You don''t have enough Elite Coins! You
-  need &f%price% &7coins.'
-purchaseSuccessMessage: '&a[EliteMobs] &7Purchased &f%amount%x %item% &7for &f%price%
-  &7Elite Coins!'
-inventoryFullMessage: '&c[EliteMobs] &7Your inventory is full!'
+shopName: '&2&lArmería del Flechero - Flechas Especiales'
+insufficientFundsMessage: '&c[Gremio] &7¡No tienes suficientes Monedas de Élite! Requieres
+  &f%price% &7monedas.'
+purchaseSuccessMessage: '&a[Gremio] &7¡Has comprado &f%amount%x %item% &7por &f%price%
+  &7Monedas de Élite!'
+inventoryFullMessage: '&c[Gremio] &7¡Tu inventario está completamente lleno!'
 arrowSmallStackPrice: 10
 arrowSmallStackAmount: 16
 arrowLargeStackPrice: 35
@@ -21,13 +21,13 @@ tippedArrowHarmingPrice: 75
 tippedArrowHarmingAmount: 8
 tippedArrowHealingPrice: 75
 tippedArrowHealingAmount: 8
-arrowDisplayName: '&fArrows'
-spectralArrowDisplayName: '&eSpectral Arrows'
-arrowOfPoisonDisplayName: '&2Arrow of Poison'
-arrowOfSlownessDisplayName: '&8Arrow of Slowness'
-arrowOfWeaknessDisplayName: '&7Arrow of Weakness'
-arrowOfHarmingDisplayName: '&4Arrow of Harming'
-arrowOfHealingDisplayName: '&dArrow of Healing'
+arrowDisplayName: '&fFlechas Estándar'
+spectralArrowDisplayName: '&eFlechas Espectrales'
+arrowOfPoisonDisplayName: '&2Flecha de Veneno'
+arrowOfSlownessDisplayName: '&8Flecha de Lentitud'
+arrowOfWeaknessDisplayName: '&7Flecha de Debilidad'
+arrowOfHarmingDisplayName: '&4Flecha de Daño Inmediato'
+arrowOfHealingDisplayName: '&dFlecha de Curación'
 shopItemAmountFormat: '&7Amount: &f$amount'
 shopItemPriceFormat: '&7Price: &6$price &7Elite Coins'
 shopItemClickToPurchase: '&eClick to purchase!'

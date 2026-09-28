@@ -4,10 +4,10 @@ customRewards:
 - currencyAmount=750:amount=1:chance=1
 questAcceptPermission: ''
 questLockoutPermission: elitequest.ag_welcome_quest_1.yml
-name: '&2Welcome to the AG!'
+name: '&2¡Bienvenido al Gremio de Aventureros!'
 questLore:
-- '&aMeet the Adventurer''s Guild NPCs!'
-- '&aDefeat the level-1 training dummy.'
+- ¡Conoce a los diferentes maestros del Gremio y descubre todas las instalaciones
+  disponibles!
 temporaryPermissions: []
 questAcceptDialog:
 - '&8[&aCasus&8]&f Meet the guild''s members and learn where to find their services.'

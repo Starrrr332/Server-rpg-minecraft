@@ -1,28 +1,28 @@
 isEnabled: true
 name: <g:#8A6A4A:#9A7A5A>Greg</g>
-role: <g:#7A5A3A:#8A6A4A><Blacksmith></g>
+role: <g:#7A5A3A:#8A6A4A><Herrero del Gremio></g>
 profession: toolsmith
 spawnLocation: em_adventurers_guild,293.5,78,276.5,-180,0
 spawnLocations: []
 greetings:
-- Welcome to our shop!
-- Sell your goods here!
-- Fresh goods, just for you!
-- Got something to sell?
-- Want to buy something good?
-- Fresh goods every time!
+- ¡Bienvenido a mi tienda, noble aventurero!
+- ¡Aquí compro tus botines por las mejores monedas!
+- ¡Mercancía selecta, recién forjada!
+- ¿Tienes tesoros o armas para tasar?
+- ¿Buscas equipamiento de élite para tu aventura?
+- ¡Siempre la mejor calidad garantizada!
 dialog:
-- Higher level mobs drop\nhigher value items!
-- Items with lots of \nenchantments are worth more!
-- Higher level mobs drop\nbetter items!
-- Higher level mobs have\na higher chance of dropping loot!
-- Elite mobs are attracted to\ngood armor, the better the\narmor the higher their
-  level!
-- Some items have special\npotion effects!
-- Some items have unique\neffects!
-- The hunter enchantment\nattracts elite mobs to your\nlocation!
-- Special weapons and armor\ndropped by elite mobs can\nbe sold here!
-- Higher guild ranks will\nincrease the quality of the\nloot from elite mobs!
+- ¡Los monstruos de mayor nivel\nsueltan objetos de mucho más valor!
+- ¡Las armas y armaduras con más\nencantamientos valen muchas más monedas!
+- ¡Cuanto más fuerte sea el jefe,\nmejores serán las armas que obtengas!
+- ¡Las criaturas de mayor nivel tienen\nmayor probabilidad de soltar botín épico!
+- Los monstruos de élite se sienten atraídos\npor armaduras poderosas. ¡Cuanto mejor
+  equipo\nlleves, más alto será el nivel de tus rivales!
+- ¡Ciertas armas y armaduras poseen\nefectos de poción continuos especiales!
+- ¡Los objetos legendarios esconden\nhabilidades pasivas únicas!
+- ¡El encantamiento Cazador atrae\nmonstruos de élite hacia tu posición!
+- ¡Las armas y armaduras de élite que\nconsigas puedes venderlas aquí por oro!
+- ¡Alcanzar rangos más altos en el Gremio\nmejora la calidad del botín que obtienes!
 farewell:
 - Thank you for your business!
 - Come back soon!

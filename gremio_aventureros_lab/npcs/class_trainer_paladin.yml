@@ -1,14 +1,28 @@
 isEnabled: true
 name: '&6Aldric'
-role: '&e<Paladin Instructor>'
+role: '&e<Instructor Paladín>'
 spawnLocation: em_adventurers_guild,297.5,91,217.5,-90,0
 spawnLocations: []
 greetings:
-- Stand firm. Others\nwill stand behind you.
+- Mantente firme como una muralla de piedra.\nOtros sobrevivirán al abrigo de tu escudo.
+- Que la luz sagrada bendiga tus pasos, paladín.
+- La disciplina y el deber son nuestro mayor estandarte.
 dialog:
-- Inspect your training\nand specializations.
+- Inspecciona tu progreso marcial\ny especializaciones con /em class.
+- 'GESTIÓN DE AMENAZA (AGGRO): Como tanque principal,\ntu deber es golpear primero
+  y usar Provocación.\n¡Mantén la furia del jefe centrada en ti!'
+- 'ESCUDO Y POSICIONAMIENTO: Nunca des la espalda\nal jefe de mazmorra. Bloquear en
+  el instante exacto\nreduce el retroceso y absorbe el impacto letal.'
+- 'REGENERACIÓN SAGRADA: La energía de paladín\nse recupera más rápido mientras te
+  mantengas\nen combate cuerpo a cuerpo contra el jefe.'
+- 'PROTECCIÓN DE ALIADOS: Si un mago o cazador\natrae la amenaza por exceso de daño,
+  interponte\ninmediatamente y aplica tu habilidad insignia.'
+- 'AVISO DE BARRERAS: Cuando un jefe invoque una cúpula\no barrera defensiva, no desgastes
+  tu energía;\nespera a que la cúpula caiga para asestar el golpe de gracia.'
 farewell:
-- Keep your oath.
+- Mantén tu juramento inquebrantable.
+- Que tu escudo nunca caiga en batalla.
+- Camina con honor bajo la luz.
 canTalk: true
 activationRadius: 3.0
 interactionType: CLASS_TRAINER

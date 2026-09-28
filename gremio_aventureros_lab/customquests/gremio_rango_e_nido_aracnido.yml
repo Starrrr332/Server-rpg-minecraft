@@ -1,0 +1,40 @@
+isEnabled: true
+name: '&8[&aRango E&8] <g:#4CAF50:#81C784>La Purga del Nido Arácnido</g>'
+questLevel: 20
+questLore:
+- '&7Has demostrado temple básico, pero el peligro aumenta.'
+- '&7Las cuevas mineras y arboledas periféricas han sido invadidas'
+- '&7por arañas venenosas cuyas telarañas asfixian los caminos.'
+- '&7Extermina a los arácnidos y recupera ojos fermentados.'
+questAcceptDialog:
+- '&e[Kaelen]&f Las arañas de cueva no dan tregua; su veneno desgasta rápidamente.'
+- '&e[Kaelen]&f Lleva antídotos o leche. ¡No permitas que te acorralen en sus telas!'
+questCompleteMessage:
+- '&e[Kaelen]&f ¡Magnífico! Las caravanas comerciales vuelven a circular sin peligro.'
+- '&e[Kaelen]&f El Gremio reconoce tu ascenso como Explorador de Rango E.'
+customObjectives:
+  EliminarAranasComunes:
+    objectiveType: KILL
+    entityType: SPIDER
+    amount: 15
+  EliminarAranasCueva:
+    objectiveType: KILL
+    entityType: CAVE_SPIDER
+    amount: 10
+  RecolectarOjosArana:
+    objectiveType: FETCH
+    material: SPIDER_EYE
+    amount: 8
+customRewards:
+- currencyAmount=350:amount=1:chance=1.0
+- filename=antidoto_purificador.yml:amount=2:chance=1.0
+- filename=elite_scrap_tiny.yml:amount=4:chance=1.0
+questCompleteCommands:
+- skills xp add $player fighting 500
+- tell $player &a[Gremio] ¡Insignia de Rango E obtenida! Nuevos contratos de exploración
+  disponibles.
+turnInNPC: maestro_cacerias_guild.yml
+questLockoutMinutes: 720
+questAcceptPermission: ''
+questLockoutPermission: ''
+temporaryPermissions: []

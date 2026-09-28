@@ -1,18 +1,18 @@
 isEnabled: true
 name: <g:#5A7A4A:#6A8A5A>Robin</g>
-role: <g:#4A6A3A:#5A7A4A><Fletcher></g>
+role: <g:#4A6A3A:#5A7A4A><Flechero del Gremio></g>
 profession: fletcher
 spawnLocation: em_adventurers_guild,297.5,78,242.5,90,0
 spawnLocations: []
 greetings:
-- Looking for arrows?
-- I've got the sharpest arrows in town!
-- Need ammunition?
-- An arrow can be worth more than a sword in the right hands.
+- ¿Buscas munición y flechas especializadas?
+- ¡Tengo las flechas más mortíferas de todo el reino!
+- ¿Escaso de flechas para tu arco?
+- En las manos correctas, una flecha certera vale más que cien espadas.
 dialog:
-- My arrows fly true.
-- Tipped arrows for the discerning archer.
-- Spectral arrows to mark your prey.
+- Mis flechas jamás se desvían de su blanco.
+- Flechas imbuidas de pociones para el arquero más exigente.
+- Flechas espectrales para marcar y perseguir a tu presa.
 farewell:
 - May your aim be true!
 - Happy hunting!

@@ -1,13 +1,13 @@
 isEnabled: true
 name: '&7Hermes'
-role: '&8<Transporter>'
+role: '&8<Transportador Místico>'
 profession: fletcher
 spawnLocation: em_adventurers_guild,213.5,88,232,0,0
 spawnLocations: []
 greetings:
-- Welcome to the\nAdventurer's Guild Hub!
+- ¡Bienvenido a la Sede Central\ndel Gremio de Aventureros!
 dialog:
-- Need to go back?
+- ¿Deseas retornar al punto de partida?
 farewell:
 - Safe travels, friend.
 canTalk: true

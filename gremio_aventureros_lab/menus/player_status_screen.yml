@@ -5,23 +5,22 @@ doTeleportsPage: true
 doCommandsPage: true
 doQuestTrackingPage: true
 doBossTrackingPage: true
-# Compact player overview shown on the /em dialog and inventory header.
-# Available placeholders: $money, $combatLevel, $activeQuests and $score.
-# $threat remains available as a legacy alias for $combatLevel.
 landingOverviewLines:
-- '<g:#B8860B:#F0C040>Coins</g>: &f$money &8• <g:#A63D2F:#E97932>Combat Level</g>:
+- '<g:#B8860B:#F0C040>Monedas</g>: &f$money &8• <g:#A63D2F:#E97932>Nivel de Combate</g>:
   &f$combatLevel'
-- '<g:#2E7D4F:#69C56F>Active Quests</g>: &f$activeQuests &8• <g:#355CA8:#5FA9E8>Score</g>:
+- '<g:#2E7D4F:#69C56F>Misiones Activas</g>: &f$activeQuests &8• <g:#355CA8:#5FA9E8>Puntaje</g>:
   &f$score'
 indexTexts0: '&0&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
 indexHovers0: ''
 indexCommands0: ''
-indexTexts1: '&5&l/ag &7- &6EliteMobs Hub'
-indexHovers1: |-
-  CLICK TO USE
-  The place where you can find
-  NPCs that give quests, buy and
-  sell items, give advice and more!
+indexTexts1: '&5&l/ag &7- &6Sede del Gremio'
+indexHovers1: 'HAZ CLIC PARA VIAJAR
+
+  ¡El punto de reunión para aceptar
+
+  misiones, comerciar con NPCs,
+
+  mejorar tu equipo y progresar!'
 indexCommands1: /ag
 indexTexts2: '&0&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
 indexHovers2: ''
@@ -29,35 +28,35 @@ indexCommands2: ''
 indexTexts3: ''
 indexHovers3: ''
 indexCommands3: ''
-indexTexts4: '&6&lIndex'
+indexTexts4: '&6&lÍndice General'
 indexHovers4: ''
 indexCommands4: ''
 indexTexts5: ''
 indexHovers5: ''
 indexCommands5: ''
-indexTexts6: '&bp. $statsPage &8- <g:#B8860B:#F0C040>★ Adventure Record</g>'
-indexHovers6: Click to go!
+indexTexts6: '&bp. $statsPage &8- <g:#B8860B:#F0C040>★ Registro de Aventura</g>'
+indexHovers6: ¡Haz clic para ver tus hazañas!
 indexCommands6: $statsPage
-indexTexts7: '&bp. $gearPage &8- <g:#A63D2F:#E97932>⚔ Combat Gear</g>'
-indexHovers7: Click to go!
+indexTexts7: '&bp. $gearPage &8- <g:#A63D2F:#E97932>⚔ Equipo de Combate</g>'
+indexHovers7: ¡Haz clic para ver tu armadura y armas!
 indexCommands7: $gearPage
-indexTexts8: '&bp. $teleportsPage &8- <g:#355CA8:#5FA9E8>↔ Teleports</g>'
-indexHovers8: Click to go!
+indexTexts8: '&bp. $teleportsPage &8- <g:#355CA8:#5FA9E8>↔ Teletransportes</g>'
+indexHovers8: ¡Haz clic para viajar a mazmorras!
 indexCommands8: $teleportsPage
-indexTexts9: '&bp. $commandsPage &8- <g:#267A78:#58B8A9>⚡ Quick Actions</g>'
-indexHovers9: Open useful EliteMobs actions
+indexTexts9: '&bp. $commandsPage &8- <g:#267A78:#58B8A9>⚡ Acciones Rápidas</g>'
+indexHovers9: Comandos y utilidades del Gremio
 indexCommands9: $commandsPage
-indexTexts10: '&bp. $questsPage &8- <g:#2E7D4F:#69C56F>✉ Quests</g>'
-indexHovers10: Click to go!
+indexTexts10: '&bp. $questsPage &8- <g:#2E7D4F:#69C56F>✉ Misiones</g>'
+indexHovers10: ¡Haz clic para ver tus misiones activas!
 indexCommands10: $questsPage
-indexTexts11: '&bp. $bossTrackingPage &8- <g:#7A1F2B:#C2414A>☠ Boss Tracker</g>'
-indexHovers11: Click to go!
+indexTexts11: '&bp. $bossTrackingPage &8- <g:#7A1F2B:#C2414A>☠ Rastreador de Jefes</g>'
+indexHovers11: ¡Haz clic para rastrear jefes vivos!
 indexCommands11: $bossTrackingPage
-indexTexts12: '&bp. $skillsPage &8- <g:#6D3AA8:#A855F7>⚗ Skills</g>'
-indexHovers12: Click to go!
+indexTexts12: '&bp. $skillsPage &8- <g:#6D3AA8:#A855F7>⚗ Habilidades</g>'
+indexHovers12: ¡Haz clic para ver tus habilidades!
 indexCommands12: $skillsPage
-indexTexts13: <g:#A04468:#E07A9A>♥ Party</g>
-indexHovers13: Create, invite, or leave a party
+indexTexts13: <g:#A04468:#E07A9A>♥ Grupo / Party</g>
+indexHovers13: Crea, invita o abandona un grupo de mazmorra
 indexCommands13: /em party menu
 statsText0: '&6&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
 statsHover0: ''
@@ -119,18 +118,19 @@ gearHover8: '{$mainhand}{$offhand}'
 gearText9: ''
 gearHover9: ''
 gearText10: Combat Lv. $combatLevel | Crit $critChance%
-gearHover10: |-
-  Weapon: $weaponSkill Lv. $weaponSkillLevel
-  Gear Lv. $weaponLevel vs Elite Lv. $referenceLevel
+gearHover10: 'Weapon: $weaponSkill Lv. $weaponSkillLevel
+
+  Gear Lv. $weaponLevel vs Elite Lv. $referenceLevel'
 gearText11: Weapon ×$weaponFactor | Melee armor $defenseMatch%
-gearHover11: |-
-  Melee armor rating: $armorLevel
+gearHover11: 'Melee armor rating: $armorLevel
+
   Armor skill: Lv. $armorSkillLevel
-  Equipment damage bonus: +$enchantmentBonus%
+
+  Equipment damage bonus: +$enchantmentBonus%'
 gearText12: Threat ×$threatMultiplier | HP $health/$maxHealth
-gearHover12: |-
-  Selected weapon perks: $weaponPerks
-  Selected armor perks: $armorPerks
+gearHover12: 'Selected weapon perks: $weaponPerks
+
+  Selected armor perks: $armorPerks'
 teleportTextV20: '&m⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯'
 teleportHoverV20: ''
 teleportCommandV20: ''
@@ -160,22 +160,25 @@ commandsText3: ''
 commandsHover3: ''
 commandsCommand3: ''
 commandsText4: '&5/ag &7- EliteMobs Hub'
-commandsHover4: |-
-  CLICK TO USE
+commandsHover4: 'CLICK TO USE
+
   The place where you can find
+
   NPCs that give quests, buy and
-  sell items, give advice and more!
+
+  sell items, give advice and more!'
 commandsCommand4: /ag
 commandsText5: '&5/em spawntp &7- Spawn'
-commandsHover5: |-
-  CLICK TO USE
-  Teleport to the server spawn!
+commandsHover5: 'CLICK TO USE
+
+  Teleport to the server spawn!'
 commandsCommand5: /em spawntp
 commandsText6: '&5/em shareitem &7- Share Item'
-commandsHover6: |-
-  CLICK TO USE
-  Shares the item you're holding
-  on chat!
+commandsHover6: 'CLICK TO USE
+
+  Shares the item you''re holding
+
+  on chat!'
 commandsCommand6: /em shareitem
 commandsText7: ''
 commandsHover7: ''
@@ -338,9 +341,7 @@ gearThreatItem:
   - §8nearby players, party size and randomness.
 gearThreatSlot: 25
 statsChestMenuName: <g:#B8860B:#F0C040>★ Adventure Record</g>
-# Text used for $rank while the persisted score ranking cache is still loading.
 statsRankUnavailableText: Calculating...
-# Text used for $ranktotal while the persisted score ranking cache is still loading.
 statsRankTotalUnavailableText: '?'
 statsRankItem:
   material: NETHER_STAR
@@ -439,11 +440,6 @@ skillItemDisplayNameFormat: '&6&lLevel $level $skillName'
 skillItemSelectLore1: '&eClick to select passive skills'
 skillItemSelectLore2: '&eand see more details!'
 dialog:
-  # Modern combat summary shown in the Gear dialog.
-  # Placeholders: $combatLevel, $referenceLevel, $weaponLevel, $weaponSkill,
-  # $weaponSkillLevel, $weaponFactor, $critChance, $enchantmentBonus, $weaponPerks,
-  # $armorLevel, $armorSkillLevel, $defenseMatch, $health, $maxHealth, $armorPerks
-  # and $threatMultiplier.
   gearSummaryLines:
   - <g:#A63D2F:#E97932>⚔ Equipment Matchup</g>
   - '<g:#B8860B:#F0C040>Combat Level</g>: &f$combatLevel'
@@ -459,9 +455,7 @@ dialog:
   - '&7Selected armor perks: &f$armorPerks'
   - '<g:#B8860B:#F0C040>Threat generated</g>: &f×$threatMultiplier'
   - '&8Equipment matchup only; skills and temporary effects apply in combat.'
-  # Weapon skill label shown when no recognized weapon is held.
   gearUnarmedLabel: Unarmed
-  # Text shown in the Combat Gear profile when no applicable perks are selected.
   gearNoSelectedPerksLabel: None selected
   gearHelmetLabel: Helmet
   gearChestplateLabel: Chestplate
@@ -469,49 +463,26 @@ dialog:
   gearBootsLabel: Boots
   gearMainHandLabel: Main Hand
   gearOffHandLabel: Off Hand
-  # Fallback quest label used when a quest has no configured display name.
-  # Available placeholder: $id.
   questFallbackFormat: Quest $id
-  # Title for the main player status dialog menu.
   titlePlayerStatus: <g:#8B0000:#CC4400:#DAA520>EliteMobs</g> &7Menu
-  # Title for the Stats dialog section.
   titleStats: <g:#B8860B:#F0C040>★ Adventure Record</g>
-  # Title for the Gear dialog section.
   titleGear: <g:#A63D2F:#E97932>⚔ Combat Gear</g>
-  # Title for the Teleports dialog section.
   titleTeleports: <g:#355CA8:#5FA9E8>↔ Teleports</g>
-  # Title for the Quick Actions dialog section.
   titleCommands: <g:#267A78:#58B8A9>⚡ Quick Actions</g>
-  # Title for the Quests dialog section.
   titleQuests: <g:#2E7D4F:#69C56F>✉ Quests</g>
-  # Title for the Boss Tracking dialog section.
   titleBossTracking: <g:#7A1F2B:#C2414A>☠ Boss Tracker</g>
-  # Title for the Skills dialog section.
   titleSkills: <g:#6D3AA8:#A855F7>⚗ Skills</g>
-  # Title for the Party dialog section.
   titleParty: <g:#A04468:#E07A9A>♥ Party</g>
-  # Description shown on the Party dialog section.
   partyDescription: '&7Team up with as many as four other players. Parties share nearby
     quest progress, vote on loot, and enter dungeons together.'
-  # Button used to create a party.
   partyCreateButton: <g:#2E7D4F:#69C56F>+ Create a Party</g>
-  # Button used to prepare the party invite command.
   partyInviteButton: <g:#267A78:#58B8A9>✉ Invite a Player</g>
-  # Button used to leave a party.
   partyLeaveButton: <g:#7A1F2B:#C2414A>✘ Leave Party</g>
-  # Title for the dialog that lists players available for a party invitation.
   partyInviteTitle: <g:#A04468:#E07A9A>✉ Invite a Player</g>
-  # Button for an available party invite target. Use $player for their name.
   partyInvitePlayerButton: <g:#267A78:#58B8A9>✉ Invite</g> &f$player
-  # Tooltip for a party invite target. Use $player for their name.
   partyInvitePlayerTooltip: '&7Invite $player to your party.'
-  # Message shown when nobody online can currently be invited.
   partyInviteNoPlayers: '&7No available players are online right now.'
-  # Message shown when the player has no active quests.
   noActiveQuests: No active quests
-  # Message shown when there are no bosses available to track.
   noTrackableBosses: '&7No trackable bosses are currently active.'
-  # Message showing the number of active quests. Use $amount for the quest count.
   activeQuestsFormat: You have $amount active quest(s).
-  # Text for the back button in dialog sections.
   backButton: ← Back to Menu

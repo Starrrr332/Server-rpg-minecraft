@@ -1,0 +1,38 @@
+isEnabled: true
+entityType: EVOKER
+name: '&8[&6World Boss Solar&8] <g:#FF6F00:#FFD54F>Solarius, Archidruida de la Llama</g>'
+level: 110
+healthMultiplier: 8.5
+damageMultiplier: 2.2
+followDistance: 40
+announcementPriority: 3
+spawnMessage: '&8[CATACLISMO CÓSMICO]&6 ¡Un destello enceguecedor ilumina el cielo!
+  Solarius despierta con la ira del solsticio.'
+deathMessage: '&8[GREMIO]&6 ¡El fuego solar se apaga! Solarius ha sido derrotado por
+  la alianza de &f$players&6.'
+escapeMessage: '&8[GREMIO]&e Solarius se disuelve en un haz de luz solar pura y asciende
+  a los cielos...'
+locationMessage: '&eSolarius aguarda en el Altar de la Cumbre Solar.'
+onDamageMessages:
+- '&8[&6Solarius&8] &e¡Que el fuego de mil soles consuma tu alma mortal!'
+- '&8[&6Solarius&8] &6¡Cenizas a las cenizas, imprudente invasor!'
+onDamagedMessages:
+- '&8[&6Solarius&8] &6&l¡¡BOMBARDEO DE METEOROS SOLARES!! &e¡Busquen cobertura tras
+  las columnas inmediatamente!'
+- '&8[&6Solarius&8] &c&l¡¡TRANCE DE REGENERACIÓN CÓSMICA!! &4¡Ataquen con todo para
+  quebrar su canalización!'
+powers:
+- attack_fireball.yml
+- fireworks_barrage.yml
+- lightning_bolts.yml
+- channel_healing.yml
+- invulnerability_fire.yml
+- invulnerability_knockback.yml
+trails:
+- FLAME
+- END_ROD
+uniqueLootList:
+- baculo_de_la_corona_solar.yml:1
+- corona_del_sol_naciente.yml:1
+dropsEliteMobsLoot: true
+dropsVanillaLoot: false

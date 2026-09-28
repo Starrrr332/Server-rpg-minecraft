@@ -1,18 +1,18 @@
 isEnabled: true
 name: <g:#7A5A40:#8A6A50>Bartley</g>
-role: <g:#6A4A30:#7A5A40><Barkeep></g>
+role: <g:#6A4A30:#7A5A40><Tabernero del Gremio></g>
 profession: butcher
 spawnLocation: em_adventurers_guild,290.5,91,208.5,0,0
 spawnLocations: []
 greetings:
-- Need a drink?
-- Want a drink
-- Thirsty?
-- Howdy, partner.
+- ¿Sediento de gloria y una buena bebida fría?
+- ¿Te apetece una copa para calentar el espíritu?
+- ¿Sediento tras una larga batalla en las mazmorras?
+- ¡Saludos, forastero! Pasa adelante.
 dialog:
-- Have one of our house specialties.
-- Special drinks won't find them\nanywhere else.
-- One taste and will keep you\ncoming back from more.
+- Prueba una de nuestras especialidades de la casa.
+- Bebidas exclusivas que no hallarás\nen ninguna otra taberna del reino.
+- Un solo sorbo y querrás volver\npor otra copa en cada regreso.
 farewell:
 - Come back anytime
 - Bottoms up!

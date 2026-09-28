@@ -1,0 +1,12 @@
+{
+  "displayTime": 80,
+  "fadeInTime": 20,
+  "fadeOutTime": 20,
+  "titleColor": "#E6C280",
+  "subtitleColor": "#B0A898",
+  "playSound": true,
+  "soundVolume": 0.8,
+  "showSubtitles": true,
+  "minDistanceBetweenTitles": 64,
+  "renderStyle": "ELDEN_DARK"
+}

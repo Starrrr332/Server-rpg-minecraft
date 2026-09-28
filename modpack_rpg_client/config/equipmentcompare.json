@@ -1,0 +1,13 @@
+{
+  "showComparison": true,
+  "requireShift": true,
+  "showDifferenceInTooltip": true,
+  "highlightBetterAttributes": true,
+  "highlightWorseAttributes": true,
+  "betterAttributeColor": "GREEN",
+  "worseAttributeColor": "RED",
+  "equalAttributeColor": "YELLOW",
+  "compareBaubles": true,
+  "compareMainhand": true,
+  "compareOffhand": true
+}

@@ -1,19 +1,19 @@
 isEnabled: true
 name: <g:#9A7A40:#AA8A50>Lucky Pete</g>
-role: <g:#8A6A30:#9A7A40><Coin Flipper></g>
+role: <g:#8A6A30:#9A7A40><Lanzador de Monedas></g>
 profession: cartographer
 spawnLocation: em_adventurers_guild,298.5,81,211.5,45,0
 spawnLocations: []
 greetings:
-- Heads or tails? Simple as that!
-- Flip a coin, double your money!
-- Feeling lucky, adventurer?
-- A simple coin flip can change your fortune!
+- ¿Cara o cruz? ¡Tan simple como el destino!
+- ¡Lanza la moneda y duplica tu oro!
+- ¿Te sientes con suerte, intrépido aventurero?
+- ¡Un simple lanzamiento de moneda puede cambiar tu fortuna!
 dialog:
-- 50/50 chance, pure luck!
-- Pick your side wisely...
-- The coin decides all.
-- Fortune favors the bold!
+- ¡50% de probabilidad! ¡Pura fortuna en juego!
+- Elige tu bando con suma prudencia...
+- El destino final lo decide el giro de la moneda.
+- ¡La fortuna favorece a los audaces!
 farewell:
 - May fortune smile upon you!
 - Better luck next time!

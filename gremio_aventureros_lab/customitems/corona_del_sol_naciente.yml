@@ -1,0 +1,16 @@
+isEnabled: true
+material: NETHERITE_HELMET
+name: '&6Corona del Sol Naciente'
+lore:
+- '&8[Reliquia Cósmica Suprema - Rango A/S]'
+- '&eDiadema forjada en las llamas de un cometa solar.'
+- '&fOtorga visión clara en la noche más oscura y bendición solar.'
+- '&8--------------------------------'
+- '&6Pasiva Rúnica: &6Bendición Solar'
+- '&7Aumenta la regeneración pasiva y previene quemaduras.'
+- '&8Nivel de maestría requerido: 100'
+enchantments:
+- PROTECTION_ENVIRONMENTAL,6
+- PROTECTION_FIRE,6
+- WATER_WORKER,1
+- UNBREAKING,6

@@ -1,0 +1,9 @@
+{
+  "style": "DYNAMIC_RPG",
+  "hideOnCinematic": true,
+  "highlightHostiles": true,
+  "hostileColor": "#E74C3C",
+  "chestColor": "#F39C12",
+  "friendlyColor": "#2ECC71",
+  "showCooldown": true
+}

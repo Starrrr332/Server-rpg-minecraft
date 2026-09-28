@@ -1,0 +1,9 @@
+isEnabled: true
+material: HEART_OF_THE_SEA
+name: '&bAmuleto de la Marea Abisal'
+lore:
+- '&8[Reliquia de Rango D]'
+- '&7Un fragmento marino bendecido por los sacerdotes del puerto.'
+- '&3Permite respirar bajo el agua y otorga nado veloz.'
+enchantments:
+- UNBREAKING,3

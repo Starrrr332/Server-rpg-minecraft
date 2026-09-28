@@ -1,19 +1,19 @@
 isEnabled: true
 name: <g:#4A6A8A:#5A7A9A>Qel'Thuzad</g>
-role: <g:#3A5A7A:#4A6A8A><Quest Giver></g>
+role: <g:#3A5A7A:#4A6A8A><Emisor de Misiones></g>
 profession: fletcher
 spawnLocation: em_adventurers_guild,283.5,91,215.5,0,0
 spawnLocations: []
 greetings:
-- Greetings, adventurer!\nFancy a quest?
-- You! I've got a quest!
-- Feeling... adventurous?
+- ¡Saludos, aventurero!\n¿Te interesa un contrato de misión?
+- ¡Eh, tú! ¡Tengo un contrato urgente para ti!
+- ¿Te sientes... con sed de aventura?
 dialog:
-- Complete guild quests\nfor cool rewards!
-- Higher tier quests have\nbetter rewards!
-- Higher tier quests make\nyou hunt higher level mobs!
-- Want a harder challenge?\nIncrease your guild rank!
-- Make sure you're well equipped\nfor these quests!
+- ¡Cumple misiones para el Gremio\ny cosecha recompensas exclusivas!
+- ¡Las misiones de rango superior ofrecen\nmonedas y tesoros mucho más valiosos!
+- ¡Los contratos avanzados te enviarán a cazar\ncriaturas de nivel sumamente superior!
+- ¿Buscas adversarios aún más colosales?\n¡Sube de rango en el Gremio de Aventureros!
+- ¡Asegúrate de ir bien pertrechado\nantes de emprender estas misiones!
 farewell:
 - Safe travels, friend.
 - Happy hunting!

@@ -1,14 +1,28 @@
 isEnabled: true
 name: '&6Rowan'
-role: '&e<Ranger Instructor>'
+role: '&e<Instructor Montaraz>'
 spawnLocation: em_adventurers_guild,297.5,91,221.5,-90,0
 spawnLocations: []
 greetings:
-- Watch. Breathe.\nChoose your moment.
+- Observa en silencio. Respira con calma.\nEl cazador certero jamás se precipita.
+- Saludos, explorador. ¿El viento te susurra secretos?
+- El arco es solo una extensión de tu propia respiración.
 dialog:
-- Inspect your training\nand specializations.
+- Inspecciona tu progreso marcial\ny especializaciones con /em class.
+- 'FLUJO DE CONCENTRACIÓN: La Concentración del montaraz\nse regenera al máximo tras
+  5 segundos\nsin recibir daño. ¡Aprende a esquivar constantemente!'
+- 'TÁCTICA DE FLECHAS ESPECIALES: Usa flechas de veneno\npara detener la regeneración
+  natural del jefe.\nUsa flechas de lentitud para facilitar el kiting.'
+- 'EL ARTE DEL KITING: Corre trazando círculos amplios\nalrededor del jefe de mazmorra.
+  Mantenerte en movimiento\nhace que sus proyectiles fallen por completo.'
+- 'DISPARO A PUNTOS DÉBILES: Los impactos a la cabeza\nprovocan daño crítico y aumentan
+  la probabilidad\nde quebrar la postura de los esbirros.'
+- 'FLECHAS ESPECTRALES: En mazmorras oscuras o laberínticas,\nmarca al jefe con flechas
+  espectrales. Tu equipo entero\npodrá rastrear su contorno a través de la niebla.'
 farewell:
-- Leave no trail.
+- No dejes rastro al marcharte.
+- Que el viento incline tus flechas hacia el blanco.
+- Buena caza en la espesura.
 canTalk: true
 activationRadius: 3.0
 interactionType: CLASS_TRAINER

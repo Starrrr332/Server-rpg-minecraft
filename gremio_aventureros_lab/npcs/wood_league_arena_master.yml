@@ -1,13 +1,13 @@
 isEnabled: true
 name: <g:#A89040:#B8A050>Gladius</g>
-role: <g:#988030:#A89040><Arena Master></g>
+role: <g:#988030:#A89040><Maestro del Coliseo></g>
 profession: armorer
 spawnLocation: em_adventurers_guild,219.5,93,257.5,0,0
 spawnLocations: []
 greetings:
-- Welcome to the\nArena!
+- ¡Bienvenido a la sangrienta\nArena de Gladiadores!
 dialog:
-- Prepared to face the arena?
+- ¿Estás listo para ingresar a la arena de combate?
 farewell:
 - Return with your shield, or on it!
 canTalk: true

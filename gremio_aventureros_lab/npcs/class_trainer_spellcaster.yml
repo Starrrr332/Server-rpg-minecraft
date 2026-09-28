@@ -1,14 +1,30 @@
 isEnabled: true
 name: '&6Orin'
-role: '&e<Spellcaster Instructor>'
+role: '&e<Instructor Hechicero>'
 spawnLocation: em_adventurers_guild,301.5,91,219.5,90,0
 spawnLocations: []
 greetings:
-- Power is easy.\nControl takes practice.
+- El poder mágico abunda en el aire.\nEl verdadero desafío reside en controlarlo.
+- Saludos, iniciado en las artes místicas.\n¿Vienes a afilar tu mente?
+- La magia sin disciplina es una invitación al desastre.
 dialog:
-- Inspect your training\nand specializations.
+- Inspecciona tu progreso marcial\ny especializaciones con /em class.
+- 'ROTACIÓN DE MANÁ: El maná se recupera de forma pasiva,\npero lanzar conjuros seguidos
+  agota tus reservas.\nAlterna ataques básicos entre cada invocación.'
+- 'VARITAS VS BASTONES: Las varitas disparan proyectiles\ndirigidos hacia el jefe
+  (mono-objetivo).\nLos bastones lanzan esferas de fuego que estallan en área.'
+- 'APUNTADO EN GRUPO: Con bastones de fuego,\napunta siempre al suelo entre la multitud
+  enemiga;\nel daño por salpicadura multiplica el impacto.'
+- 'LÍNEA DE VISIÓN: Recuerda que pilares y muros\ninterceptan los disparos arcanos.
+  Mantén siempre\nun ángulo limpio hacia tu objetivo.'
+- 'INTERRUPCIÓN DE CANALIZACIONES: Cuando un jefe oscuro\ncomience a flotar o brillar
+  en trance curativo,\n¡descarga todos tus hechizos para romper su concentración!'
+- 'AMENAZA MÁGICA: El daño masivo atrae la ira del jefe.\nDeja que el tanque establezca
+  la amenaza antes de\ndesatar tu artillería mágica pesada.'
 farewell:
-- Keep asking why.
+- Sigue cuestionando el tejido de la realidad.
+- Que la llama arcana ilumine tu senda.
+- El conocimiento es la armadura más impenetrable.
 canTalk: true
 activationRadius: 3.0
 interactionType: CLASS_TRAINER

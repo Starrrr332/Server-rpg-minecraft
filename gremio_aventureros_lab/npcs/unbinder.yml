@@ -1,19 +1,19 @@
 isEnabled: true
 name: <g:#5A4A6A:#6A5A7A>Ulfric</g>
-role: <g:#4A3A5A:#5A4A6A><Unbinder></g>
+role: <g:#4A3A5A:#5A4A6A><Desvinculador de Almas></g>
 profession: weaponsmith
 spawnLocation: em_adventurers_guild,307.5,78,266.5,90,0
 spawnLocations: []
 greetings:
-- Greetings.
-- Well met.
-- Hail, friend.
-- Yes?
-- May I help you?
+- Saludos cordiales.
+- ¡Un placer encontrarte aquí, guerrero!
+- ¡Salud, noble camarada!
+- ¿Sí? ¿Qué deseas consultar?
+- ¿En qué puedo servirte, noble viajero?
 dialog:
-- I will unbind your items\nfor an extremely rare unbind scroll.
-- I am the only one qualified\nto unbind your goods.
-- Have an unbind scroll?
+- Puedo liberar tus artefactos de su vínculo\na cambio de un pergamino de desvinculación.
+- Soy el único hechicero capacitado\npara desvincular almas de tu equipamiento.
+- ¿Tienes un pergamino de desvinculación en tu inventario?
 farewell:
 - 'Remember: Use unbind\nscrolls wisely.'
 - Safe travels, friend.

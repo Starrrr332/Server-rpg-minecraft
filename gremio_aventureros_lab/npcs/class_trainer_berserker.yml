@@ -1,14 +1,28 @@
 isEnabled: true
 name: '&6Ragna'
-role: '&e<Berserker Instructor>'
+role: '&e<Instructor Berserker>'
 spawnLocation: em_adventurers_guild,297.5,91,219.5,-90,0
 spawnLocations: []
 greetings:
-- Got fire in your blood?\nPut it to work.
+- ¿Sientes hervir la sangre en tus venas?\n¡El combate no es para los indecisos!
+- ¡Saludos, guerrero!\n¿Listo para desatar la furia de la batalla?
+- El dolor es combustible.\n¡Conviértelo en fuerza destructiva!
 dialog:
-- Inspect your training\nand specializations.
+- Inspecciona tu progreso marcial\ny especializaciones con /em class.
+- 'TÁCTICA BERSERKER: La Furia se acumula asestando\ny recibiendo daño. ¡No te detengas;\nla
+  pasividad drena tu poder!'
+- 'TÉCNICA DE SALTO: Pulsa la tecla F dos veces\npara realizar una carga de evasión
+  rápida.\nÚsala para esquivar estallidos de jefes.'
+- 'CONTRA JEFES SÍSMICOS: Cuando un jefe prepare\nun golpe contra el suelo, no bloquees
+  con escudo;\n¡salta hacia atrás para evitar la onda expansiva!'
+- 'SINERGIA MARCIAL: Las hachas de combate desgarran\narmaduras y provocan sangrado
+  continuo.\n¡Ideal para derribar esbirros resistentes!'
+- 'GESTIÓN DE VITALIDAD: Los berserkers luchan al borde\nde la muerte. Lleva siempre
+  pociones de regeneración\npara cuando tu furia entre en enfriamiento.'
 farewell:
-- Come back stronger.
+- Vuelve más fuerte... ¡o con más cicatrices!
+- ¡Que tu hacha nunca pierda su filo!
+- ¡Demuestra de qué madera estás hecho!
 canTalk: true
 activationRadius: 3.0
 interactionType: CLASS_TRAINER

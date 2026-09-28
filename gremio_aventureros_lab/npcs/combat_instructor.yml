@@ -1,32 +1,46 @@
 isEnabled: true
 name: <g:#8A4A4A:#9A5A5A>Charles</g>
-role: <g:#7A3A3A:#8A4A4A><Combat Instructor></g>
+role: <g:#7A3A3A:#8A4A4A><Instructor de Combate></g>
 spawnLocation: em_adventurers_guild,299,91,215,0,0
 spawnLocations: []
 greetings:
-- Want to learn about combat?
-- Need a combat lesson?
-- Want to know more about combat?
-- Ready to fight Elite Mobs?
+- ¿Quieres dominar las tácticas avanzadas de combate?
+- ¿Listo para entender cómo vencer a los jefes más brutales?
+- Un buen guerrero entrena su cuerpo; un maestro entrena su mente.
+- Bienvenido al patio de armas. Escucha atentamente mis consejos.
 dialog:
-- Damage builds threat.\nBosses pursue whoever\nhas the most.
-- Taunts force a boss\nto face the tank\nfor a short time.
-- Give your tank a moment\nto gather the enemies\nbefore opening fire.
-- Red ground is a warning.\nMove before the attack\nlands!
-- Your combat level and\nweapon skill both matter.\nTrain the weapons you use.
-- Class weapons deal\n10% more damage.\nCheck your class menu.
-- 'Press F twice to move.\nF + left-click: Signature.\nF + right-click: Utility.'
-- Health and class energy\nappear above your hotbar.\nWatch both in a fight.
-- Mana refills over time.\nBerserkers build Fury\nby dealing and taking hits.
-- Paladins recover faster\nnear elites; Clerics recover\nfaster near players.
-- Rangers regain Focus\nfaster after five seconds\nwithout taking damage.
-- Wands seek elites first.\nWalls and other creatures\ncan block their shots.
-- Staff fireballs burst\non impact. Aim at\nclustered enemies.
-- Bring food into dungeons.\nEating takes time;\nfind a safe opening.
-- Use /em class to inspect\nyour abilities and\nnext specialization.
-- Boss loot has a level.\nTrain your skills to\nuse stronger equipment.
-- The enchanter improves\nyour equipment with\nelite enchanted books.
-- Repair damaged equipment\nbefore your next dungeon.\nVisit the repairman.
+- El daño infligido genera amenaza.\nLos jefes perseguirán con furia a quien\nacumule
+  mayor nivel de amenaza.
+- Las provocaciones obligan al jefe\na centrar sus ataques en el tanque\ndurante unos
+  instantes cruciales.
+- Dale a tu tanque unos segundos\npara provocar y reunir a los monstruos\nantes de
+  abrir fuego a discreción.
+- El suelo teñido de rojo es una advertencia.\n¡Aléjate de inmediato antes\nde que
+  caiga el ataque devastador!
+- Tu nivel marcial y tu maestría de arma son vitales.\nEntrena con las armas que más\nutilices
+  en batalla.
+- Las armas propias de tu clase infligen\nun 10% más de daño adicional.\nConsulta
+  tu menú de clase con /em class.
+- 'Pulsa F dos veces para esquivar con destreza.\nF + clic izquierdo: Habilidad Insignia.\nF
+  + clic derecho: Habilidad de Utilidad.'
+- Tu vida y energía de clase aparecen\njusto sobre tu barra de objetos.\nVigila ambas
+  atentamente en combate.
+- El Maná se regenera con el tiempo.\nLos Berserkers acumulan Furia de batalla\nasestando
+  y recibiendo ataques.
+- Los Paladines se recuperan más rápido\ncerca de los jefes; los Clérigos\ncerca de
+  sus aliados heridos.
+- Los Montaraces recuperan Concentración\nmás rápido tras 5 segundos\nsin recibir
+  daño alguno.
+- Los proyectiles de varita buscan prioritariamente\na los jefes, pero muros y obstáculos\npueden
+  interceptar sus disparos.
+- Las bolas de fuego de bastón estallan al impactar.\nApúntalas al centro de grupos\nde
+  enemigos agrupados.
+- Lleva abundantes provisiones a las mazmorras.\nComer toma tiempo; busca siempre\nun
+  respiro seguro en la batalla.
+- Repara todo tu equipo dañado antes\nde adentrarte en una mazmorra.\nVisita siempre
+  al maestro armero.
+- Los jefes de élite poseen mecánicas telegrafiadas.\nCuando veas avisos en el chat
+  o partículas concentradas,\n¡reacciona de inmediato según el aviso!
 canTalk: true
 activationRadius: 3.0
 interactionType: CHAT

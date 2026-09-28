@@ -1,12 +1,12 @@
 isEnabled: true
 name: '&6Seren'
-role: '&e<Cleric Instructor>'
+role: '&e<Instructor Clérigo>'
 spawnLocation: em_adventurers_guild,301.5,91,221.5,90,0
 spawnLocations: []
 greetings:
-- Take heart. There is\nstrength in kindness.
+- Ten coraje. Incluso en la compasión\nhay una fuerza inquebrantable.
 dialog:
-- Inspect your training\nand specializations.
+- Inspecciona tu progreso marcial\ny especializaciones con /em class.
 farewell:
 - May your light endure.
 canTalk: true

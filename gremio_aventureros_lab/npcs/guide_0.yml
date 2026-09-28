@@ -1,18 +1,18 @@
 isEnabled: true
 name: Dux
-role: <Guide>
+role: <Guía de Aventureros>
 spawnLocation: 'null'
 spawnLocations: []
 greetings:
-- Heard about the AG?
-- Been to the AG?
-- Heard of the Adventurer's Guild?
-- Know about the Adventurer's Guild?
+- ¿Conoces los beneficios del Gremio de Aventureros?
+- ¿Has visitado la sede principal del Gremio?
+- ¿Has oído hablar del legendario Gremio de Aventureros?
+- ¿Conoces la sede del Gremio de Aventureros?
 dialog:
-- Heard about the AG?
-- Been to the AG?
-- Heard of the Adventurer's Guild?
-- Know about the Adventurer's Guild?
+- ¿Conoces los beneficios del Gremio de Aventureros?
+- ¿Has visitado la sede principal del Gremio?
+- ¿Has oído hablar del legendario Gremio de Aventureros?
+- ¿Conoces la sede del Gremio de Aventureros?
 farewell:
 - Come back anytime
 - I'll be here if you need me!

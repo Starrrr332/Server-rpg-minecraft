@@ -1,0 +1,19 @@
+isEnabled: true
+entityType: WITHER
+name: '&8[&dMÍTICA&8] <g:#FFD700:#8A2BE2>Astraeus, Heraldo de las Estrellas</g>'
+level: 90
+healthMultiplier: 7.5
+damageMultiplier: 2.0
+announcementPriority: 3
+spawnMessage: '&8[JUICIO DE TITANES]&d ¡Astraeus rasga el cosmos sobre el reino!'
+deathMessage: '&8[GREMIO]&6 ¡¡Astraeus ha sido derrotado por la legendaria alianza
+  de &f$players&6!!'
+powers:
+- attack_gravity.yml
+- lightning_bolts.yml
+- fireworks_barrage.yml
+- invulnerability_knockback.yml
+uniqueLootList:
+- totem_del_heraldo_celestial.yml:1
+dropsEliteMobsLoot: true
+dropsVanillaLoot: false

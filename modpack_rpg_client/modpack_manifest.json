@@ -1,0 +1,194 @@
+{
+  "name": "Holy RPG - Ultimate Client-Side Interface & Immersion",
+  "version": "1.0.0",
+  "game_version": "1.21.x (26.2)",
+  "loader": "Fabric",
+  "author": "Holy Server Team",
+  "description": "Modpack 100% Client-Side para Minecraft Fabric. Transforma la interfaz, animaciones, combate, mapas y rendimiento en una experiencia de acción RPG moderna, compatible con cualquier servidor multijugador.",
+  "categories": [
+    "RPG HUD & Interfaz",
+    "Mapas & Navegacion",
+    "Combate & Indicadores",
+    "Animaciones & Inmersion",
+    "Rendimiento & Shaders",
+    "Sonido & Atmosfera"
+  ],
+  "mods": [
+    {
+      "name": "Fabric API",
+      "category": "Core / Dependencia",
+      "slug": "fabric-api",
+      "url": "https://modrinth.com/mod/fabric-api",
+      "required": true,
+      "description": "Capa base esencial de bibliotecas para ejecutar mods en el cargador Fabric."
+    },
+    {
+      "name": "Mod Menu",
+      "category": "Core / Utilidad",
+      "slug": "modmenu",
+      "url": "https://modrinth.com/mod/modmenu",
+      "required": true,
+      "description": "Añade un menú de configuración dentro del juego para ajustar cada mod individualmente."
+    },
+    {
+      "name": "RPG-HUD",
+      "category": "RPG HUD & Interfaz",
+      "slug": "rpg-hud",
+      "url": "https://modrinth.com/mod/rpg-hud",
+      "required": true,
+      "description": "Reemplaza el HUD vanilla por barras de salud y maná curvas de estilo MMORPG, indicador de estado de armadura, brújula superior y temporizadores de pociones."
+    },
+    {
+      "name": "Provi's Health Bars",
+      "category": "Combate & Indicadores",
+      "slug": "provis-health-bars",
+      "url": "https://modrinth.com/mod/provis-health-bars",
+      "required": true,
+      "description": "Barras de salud flotantes sobre monstruos y jugadores, con colores dinámicos para Jefes de Élite y daño numérico al golpear."
+    },
+    {
+      "name": "Equipment Compare",
+      "category": "RPG HUD & Interfaz",
+      "slug": "equipment-compare",
+      "url": "https://modrinth.com/mod/equipment-compare",
+      "required": true,
+      "description": "Muestra una ventana comparativa al pasar el cursor sobre armas/armaduras presionando Shift (+3 Daño, -1 Armadura), idéntico a Diablo o WoW."
+    },
+    {
+      "name": "Xaero's Minimap (Fair-Play Edition)",
+      "category": "Mapas & Navegacion",
+      "slug": "xaeros-minimap",
+      "url": "https://modrinth.com/mod/xaeros-minimap",
+      "required": true,
+      "description": "Minimapa circular/cuadrado RPG de alto rendimiento con waypoints para tu casa, tumba y puntos de interés sin dar ventajas injustas."
+    },
+    {
+      "name": "Xaero's World Map",
+      "category": "Mapas & Navegacion",
+      "slug": "xaeros-world-map",
+      "url": "https://modrinth.com/mod/xaeros-world-map",
+      "required": true,
+      "description": "Mapa mundial interactivo en pantalla completa presionando la tecla M, con cuadrículas y nombres de biomas."
+    },
+    {
+      "name": "Traveler's Titles",
+      "category": "Animaciones & Inmersion",
+      "slug": "travelers-titles",
+      "url": "https://modrinth.com/mod/travelers-titles",
+      "required": false,
+      "description": "Muestra un cartel cinemático en pantalla con el nombre de cada nuevo bioma o región que descubres (estilo Dark Souls / Elden Ring)."
+    },
+    {
+      "name": "Dynamic Crosshair",
+      "category": "RPG HUD & Interfaz",
+      "slug": "dynamic-crosshair",
+      "url": "https://modrinth.com/mod/dynamic-crosshair",
+      "required": false,
+      "description": "Mira contextual dinámica: cambia a espada al apuntar a un enemigo, a mano con cofres, o se oculta al explorar."
+    },
+    {
+      "name": "AppleSkin",
+      "category": "RPG HUD & Interfaz",
+      "slug": "appleskin",
+      "url": "https://modrinth.com/mod/appleskin",
+      "required": true,
+      "description": "Muestra la saturación oculta de los alimentos, el agotamiento y la vida que recuperará cada comida."
+    },
+    {
+      "name": "Not Enough Animations",
+      "category": "Animaciones & Inmersion",
+      "slug": "not-enough-animations",
+      "url": "https://modrinth.com/mod/not-enough-animations",
+      "required": true,
+      "description": "Animaciones realistas en 1ra y 3ra persona: comer, beber pociones, remar, escalar escaleras, arrastrarse y bloquear con escudo."
+    },
+    {
+      "name": "3D Skin Layers",
+      "category": "Animaciones & Inmersion",
+      "slug": "3dskinlayers",
+      "url": "https://modrinth.com/mod/3dskinlayers",
+      "required": true,
+      "description": "Convierte la capa exterior plana de las skins en modelos tridimensionales con volumen y profundidad."
+    },
+    {
+      "name": "Wavey Capes",
+      "category": "Animaciones & Inmersion",
+      "slug": "wavey-capes",
+      "url": "https://modrinth.com/mod/wavey-capes",
+      "required": false,
+      "description": "Física de viento y oleaje suave para las capas de los personajes."
+    },
+    {
+      "name": "Inventory Profiles Next",
+      "category": "Calidad de Vida",
+      "slug": "inventory-profiles-next",
+      "url": "https://modrinth.com/mod/inventory-profiles-next",
+      "required": true,
+      "description": "Organización automática de inventario y cofres con un solo clic, bloqueo de ranuras y ordenamiento inteligente."
+    },
+    {
+      "name": "ShulkerBoxTooltip",
+      "category": "Calidad de Vida",
+      "slug": "shulkerboxtooltip",
+      "url": "https://modrinth.com/mod/shulkerboxtooltip",
+      "required": true,
+      "description": "Vista previa gráfica del contenido de mochilas y cajas de shulker al pasar el cursor por encima."
+    },
+    {
+      "name": "Sodium",
+      "category": "Rendimiento & Shaders",
+      "slug": "sodium",
+      "url": "https://modrinth.com/mod/sodium",
+      "required": true,
+      "description": "Motor de renderizado de última generación. Triplica los FPS y elimina tirones gráficos."
+    },
+    {
+      "name": "Iris Shaders",
+      "category": "Rendimiento & Shaders",
+      "slug": "iris",
+      "url": "https://modrinth.com/mod/iris",
+      "required": true,
+      "description": "Soporte completo y ultra optimizado de Shaders compatibles con Sodium (BSL, Complementary)."
+    },
+    {
+      "name": "ImmediatelyFast",
+      "category": "Rendimiento & Shaders",
+      "slug": "immediatelyfast",
+      "url": "https://modrinth.com/mod/immediatelyfast",
+      "required": true,
+      "description": "Acelera el renderizado de la interfaz, textos, HUD y entidades para una respuesta táctil instantánea a 144Hz/240Hz."
+    },
+    {
+      "name": "FerriteCore",
+      "category": "Rendimiento & Shaders",
+      "slug": "ferrite-core",
+      "url": "https://modrinth.com/mod/ferrite-core",
+      "required": true,
+      "description": "Reduce el consumo de memoria RAM de Minecraft en un 40-50% sin pérdida de calidad."
+    },
+    {
+      "name": "LambDynamicLights",
+      "category": "Iluminacion & Inmersion",
+      "slug": "lambdynamiclights",
+      "url": "https://modrinth.com/mod/lambdynamiclights",
+      "required": false,
+      "description": "Iluminación dinámica en tiempo real: antorchas, linternas y armas encantadas iluminan a tu alrededor al llevarlas en mano."
+    },
+    {
+      "name": "Sound Physics Remastered",
+      "category": "Sonido & Atmosfera",
+      "slug": "sound-physics-remastered",
+      "url": "https://modrinth.com/mod/sound-physics-remastered",
+      "required": true,
+      "description": "Acústica y reverberación realista: ecos en cavernas, atenuación a través de muros y sonido 3D envolvente."
+    },
+    {
+      "name": "Presence Footsteps",
+      "category": "Sonido & Atmosfera",
+      "slug": "presence-footsteps",
+      "url": "https://modrinth.com/mod/presence-footsteps",
+      "required": true,
+      "description": "Sistema sonoro acústico de pasos: madera que cruje, piedra que resuena, nieve crujiente y hierba realista."
+    }
+  ]
+}

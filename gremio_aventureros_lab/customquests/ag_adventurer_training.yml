@@ -16,11 +16,10 @@ customRewards:
 - filename=ag_adventurer_wand.yml:amount=1:chance=1
 questAcceptPermission: elitequest.ag_welcome_quest_1.yml
 questLockoutPermission: elitequest.ag_adventurer_training.yml
-name: '&2Your First Class'
+name: '&2Tu Primera Clase de Combate'
 questLore:
-- '&aTalk to Rowan, the Adventurer Instructor, and complete his trial.'
-- '&aReturn to Casus after unlocking Adventurer.'
-- '&aEarn level-1 armor and one of every weapon type.'
+- Habla con los instructores del Gremio y elige tu primera clase RPG para desbloquear
+  habilidades marciales.
 temporaryPermissions: []
 questAcceptDialog:
 - '&8[&aCasus&8]&f Now that you know the guild, it is time to earn your first class.'

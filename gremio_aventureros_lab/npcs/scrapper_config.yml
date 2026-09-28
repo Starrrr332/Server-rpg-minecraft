@@ -1,21 +1,21 @@
 isEnabled: true
 name: <g:#5A6A4A:#6A7A5A>Kelly</g>
-role: <g:#4A5A3A:#5A6A4A><Scrapper></g>
+role: <g:#4A5A3A:#5A6A4A><Desguazador de Reliquias></g>
 profession: weaponsmith
 spawnLocation: em_adventurers_guild,297.5,78,254.5,90,0
 spawnLocations: []
 greetings:
-- Want to get rid of items?
-- Need to recycle items?
-- Looking to scrap?
-- It's scrap 'o clock!
-- Scrap time!
+- ¿Quieres vaciar tu inventario de objetos pesados?
+- ¿Tienes objetos repetidos para reciclar?
+- ¿Deseas reciclar tu equipo inservible?
+- ¡Hora de desguazar objetos viejos en materiales valiosos!
+- ¡Convierte tus sobras en recursos útiles!
 dialog:
-- Scrappy deals!
-- Get your scrap here!
-- 75% chance to work!
-- There are no refunds.
-- Recycle, reuse, reduce!
+- ¡Ofertas de chatarra que no puedes dejar pasar!
+- ¡Consigue materiales de reciclaje aquí mismo!
+- ¡75% de éxito garantizado en el proceso!
+- No se admiten reclamos ni devoluciones.
+- ¡Reciclar y forjar de nuevo, esa es la clave!
 farewell:
 - Come back when you have\nmore to scrap
 - Don't forget to make that\nscrap useful!

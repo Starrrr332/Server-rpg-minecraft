@@ -1,19 +1,19 @@
 isEnabled: true
 name: <g:#6A4A7A:#7A5A8A>Eden</g>
-role: <g:#5A3A6A:#6A4A7A><Enchanter></g>
+role: <g:#5A3A6A:#6A4A7A><Encantador Arcano></g>
 profession: toolsmith
 spawnLocation: em_adventurers_guild,284.5,74,246.5,0,0
 spawnLocations: []
 greetings:
-- Need something enchanted?
-- Feeling lucky?
-- Got an item to improve?
-- Got enchanted books?
+- ¿Deseas encantar tus artefactos con magia de élite?
+- ¿Te acompaña la fortuna hoy?
+- ¿Tienes un equipamiento que quieras mejorar?
+- ¿Traes libros arcanos de encantamiento?
 dialog:
-- Enchantment results are\nnot guaranteed!
-- Don't complain if it fails!
-- Got an enchanted book?
-- Higher quality items are\nriskier to enchant!
+- ¡Los resultados de encantamientos arcanos\nno están asegurados al cien por cien!
+- ¡No reclames si la forja falla, la magia conlleva riesgos!
+- ¿Posees un libro de encantamiento de élite para imbuir?
+- ¡Los artefactos de mayor calidad conllevan\nmucho más riesgo al intentar encantarlos!
 farewell:
 - Got what you wanted!
 - How's your karma?

@@ -1,0 +1,8 @@
+isEnabled: true
+material: WOODEN_SWORD
+name: '&ePalillo de Dientes de MagmaGuy'
+lore:
+  - '&7Una espada de madera básica para entrenar.'
+  - '&8Objeto de bienvenida del Gremio'
+enchantments:
+  - DAMAGE_ALL,1

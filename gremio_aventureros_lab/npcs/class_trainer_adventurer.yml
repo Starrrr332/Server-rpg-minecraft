@@ -1,12 +1,12 @@
 isEnabled: true
 name: '&6Rowan'
-role: '&e<Adventurer Instructor>'
+role: '&e<Instructor de Aventureros>'
 spawnLocation: em_adventurers_guild,301.5,91,217.5,90,0
 spawnLocations: []
 greetings:
-- Every journey starts here.\nYour first trial costs one coin.
+- Todo viaje comienza aquí.\nTu primera prueba cuesta una moneda.
 dialog:
-- Inspect your training\nand specializations.
+- Inspecciona tu progreso marcial\ny especializaciones con /em class.
 farewell:
 - Keep your feet moving.
 canTalk: true

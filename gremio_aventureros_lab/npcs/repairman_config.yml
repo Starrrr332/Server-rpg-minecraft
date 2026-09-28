@@ -1,21 +1,21 @@
 isEnabled: true
 name: <g:#6A6A6A:#7A7A7A>Reggie</g>
-role: <g:#5A5A5A:#6A6A6A><Repairman></g>
+role: <g:#5A5A5A:#6A6A6A><Maestro Armero></g>
 profession: weaponsmith
 spawnLocation: em_adventurers_guild,283.5,78,266.5,-90,0
 spawnLocations: []
 greetings:
-- Get your items repaired!
-- Repairing items for scrap!
-- Turn that scrap into durability!
-- Need a repair?
-- Got damaged items?
+- ¡Repara tus armas y armaduras dañadas aquí!
+- ¡Reparo tus piezas usando chatarra de reliquias!
+- ¡Convierte restos de equipo en durabilidad para tus armas!
+- ¿Necesitas forjar y reparar tus herramientas?
+- ¿Tu armadura o armas están al borde de romperse?
 dialog:
-- Best repairs in town!
-- I got your fix!
-- Need a fix?
-- I'll repair your items!
-- Need elite items repaired?
+- ¡Las mejores reparaciones de armaduras de todo el continente!
+- ¡Tengo justo lo que necesitas para tu equipo!
+- ¿Necesitas una solución rápida para tus herramientas?
+- ¡Restauraré la durabilidad de tus armas y armaduras!
+- ¿Tus reliquias de élite han sufrido desgaste?
 farewell:
 - Don't forget to do maintenance!
 - I'll be here if you need me!

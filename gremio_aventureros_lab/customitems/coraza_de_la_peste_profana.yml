@@ -1,0 +1,15 @@
+isEnabled: true
+material: NETHERITE_CHESTPLATE
+name: '&4Coraza de la Peste Profana'
+lore:
+- '&8[Armadura Pesada de Élite - Rango D/C]'
+- '&7Pechera maciza impregnada de miasma espectral.'
+- '&7Su portador siente el latido inquebrantable de la cripta.'
+- '&8--------------------------------'
+- '&6Pasiva Rúnica: &2Resistencia Miasmática'
+- '&7Reduce el daño recibido por veneno y wither en un 50%.'
+- '&8Nivel de maestría requerido: 45'
+enchantments:
+- PROTECTION_ENVIRONMENTAL,5
+- PROTECTION_PROJECTILE,4
+- UNBREAKING,4

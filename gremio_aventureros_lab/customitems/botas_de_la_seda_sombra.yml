@@ -1,0 +1,16 @@
+isEnabled: true
+material: NETHERITE_BOOTS
+name: '&5Escarpes de Seda Sombra'
+lore:
+- '&8[Armadura Mítica de Élite - Rango C/B]'
+- '&7Confeccionadas con las hebras más densas de la telaraña abisal.'
+- '&7Permiten deslizarse en la penumbra con agilidad sobrehumana.'
+- '&8--------------------------------'
+- '&6Pasiva Rúnica: &bPaso Etéreo'
+- '&7Inmunidad completa al daño de caída y movimiento sin fricción.'
+- '&8Nivel de maestría requerido: 70'
+enchantments:
+- PROTECTION_ENVIRONMENTAL,5
+- PROTECTION_FALL,5
+- DEPTH_STRIDER,3
+- UNBREAKING,5

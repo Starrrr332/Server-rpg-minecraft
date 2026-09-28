@@ -3,7 +3,7 @@ name: Test NPC
 role: Testing!
 spawnLocations: []
 greetings:
-- Test Greeting!
+- ¡Saludos desde el Gremio!
 dialog:
 - Test Dialog!
 farewell:
