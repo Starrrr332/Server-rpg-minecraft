@@ -517,7 +517,7 @@ def generate_website():
             Abrir fuera ↗
           </a>
         </div>
-        <iframe id="map-iframe" src="http://ut09.holy.gg:25898/" class="w-full h-full border-0" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+        <iframe id="map-iframe" class="w-full h-full border-0" allow="accelerometer; autoplay; camera; encrypted-media; fullscreen; geolocation; gyroscope; microphone; midi; payment; picture-in-picture; xr-spatial-tracking" allowfullscreen></iframe>
       </div>
 
     </section>
@@ -661,6 +661,16 @@ def generate_website():
       const defaultPlayer = APP_DATA.players.find(p => p.name.toLowerCase() === 'stargolden') || APP_DATA.players[0];
       if (defaultPlayer) {{
         renderPlayerProfile(defaultPlayer.uuid);
+      }}
+
+      // Dynamic Map Source
+      const mapIframe = document.getElementById('map-iframe');
+      if (mapIframe) {{
+        if (window.location.protocol === 'https:') {{
+          mapIframe.src = '/map/';
+        }} else {{
+          mapIframe.src = 'http://ut09.holy.gg:25898/';
+        }}
       }}
     }}
 
