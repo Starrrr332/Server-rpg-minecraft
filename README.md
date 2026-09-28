@@ -63,3 +63,4 @@ python update_stats.py
 
 ---
 *Holy Server RPG © 2026. Creado para la comunidad.*
+"# Server-rpg-minecraft" 
