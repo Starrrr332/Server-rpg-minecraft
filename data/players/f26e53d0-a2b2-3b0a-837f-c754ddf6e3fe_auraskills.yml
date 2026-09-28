@@ -14,7 +14,7 @@ skills:
     xp: 412.2000000000002
   auraskills/defense:
     level: 5
-    xp: 2218.026736843586
+    xp: 2221.3267368435863
   auraskills/excavation:
     level: 4
     xp: 1435.5599999999654
@@ -23,7 +23,7 @@ skills:
     xp: 65.0
   auraskills/agility:
     level: 7
-    xp: 502.1286199999913
+    xp: 527.3286199999912
   auraskills/fishing:
     level: 0
     xp: 0.0
@@ -37,7 +37,7 @@ mana: 46.0
 action_bar:
   idle: true
 ability_data:
+  auraskills/xp_convert:
+    xp: 20.66115788534423
   auraskills/first_strike:
     counter: 72
-  auraskills/xp_convert:
-    xp: 22.161157885344235

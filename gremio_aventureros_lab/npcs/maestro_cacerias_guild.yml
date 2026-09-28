@@ -1,0 +1,26 @@
+isEnabled: true
+name: <g:#FFD700:#FF8C00>Kaelen, Maestro de Cacerías</g>
+role: <g:#DAA520:#FFA500><Cacerías de Jefes></g>
+profession: weaponsmith
+spawnLocation: em_adventurers_guild,285.5,91,220.5,0,0
+spawnLocations: []
+greetings:
+- ¡Saludos, cazador de élite!
+- ¿Listo para reclamar recompensas legendarias?
+dialog:
+- Tengo contratos para los jefes más temibles del reino.
+- Desde las catacumbas hasta el abismo cósmico, elige tu presa.
+farewell:
+- Buena caza. Vuelve con sus cabezas.
+- Mantén tu espada afilada.
+canTalk: true
+activationRadius: 4.0
+interactionType: CUSTOM_QUEST_GIVER
+questFileName:
+- mision_tier1_carnicero.yml
+- mision_tier2_ignis.yml
+- mision_tier3_ymir.yml
+- mision_tier4_astraeus.yml
+syncMovement: true
+scripts: []
+transportRoutes: []

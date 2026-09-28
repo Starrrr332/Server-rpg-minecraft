@@ -1,0 +1,142 @@
+isEnabled: true
+customRewards:
+- filename=magmaguys_toothpick.yml:amount=1:chance=1
+- currencyAmount=750:amount=1:chance=1
+questAcceptPermission: ''
+questLockoutPermission: elitequest.ag_welcome_quest_1.yml
+name: '&2Welcome to the AG!'
+questLore:
+- '&aMeet the Adventurer''s Guild NPCs!'
+- '&aDefeat the level-1 training dummy.'
+temporaryPermissions: []
+questAcceptDialog:
+- '&8[&aCasus&8]&f Meet the guild''s members and learn where to find their services.'
+- Practice on the level-1 training dummy by the training grounds, then return to me.
+questCompleteMessage:
+- '&8[&aCasus&8]&f You know your way around now, and you have had your first practice
+  fight.'
+- Talk to me again. Your next task is to visit Rowan and unlock the Adventurer class.
+questCompleteCommands: []
+questLevel: 1
+customObjectives:
+  Objective3:
+    npcName: Greg
+    filename: blacksmith.yml
+    objectiveType: DIALOG
+    dialog:
+    - '&8[&aGreg&8]&f Want to buy or sell something? I''ve got a little of everything!'
+    location: in the main building
+  Objective16:
+    objectiveType: KILL_CUSTOM
+    amount: 1
+    filename: training_dummy_lv1.yml
+  Objective4:
+    npcName: Charles
+    filename: combat_instructor.yml
+    objectiveType: DIALOG
+    dialog:
+    - '&8[&aCharles&8]&f Want to learn about fighting elites? Just talk to me!'
+    location: next to the main building
+  Objective1:
+    npcName: Hermes
+    filename: back_teleporter.yml
+    objectiveType: DIALOG
+    dialog:
+    - '&8[&aHermes&8]&f I take you back to where you were before! Just talk to me
+      again!'
+    location: by the gate
+  Objective14:
+    npcName: Gladius
+    filename: wood_league_arena_master.yml
+    objectiveType: DIALOG
+    dialog:
+    - '&8[&aGladius&8]&f The Wood League arena is a place to test yourself against
+      waves of enemies. Talk to me again when you are ready for a match.'
+    location: at the Wood League entrance
+  Objective2:
+    npcName: Bartley
+    filename: barkeep.yml
+    objectiveType: DIALOG
+    dialog:
+    - '&8[&aBartley&8]&f Need a stiff drink? My drinks pack an extra punch!'
+    location: in the main building
+  Objective15:
+    npcName: Manager Wallitz
+    filename: story_dungeons_quest_giver.yml
+    objectiveType: DIALOG
+    dialog:
+    - '&8[&aManager Wallitz&8]&f I offer the Story Mode dungeon quest chain. Start
+      with the first chapter and work your way through the story.'
+    - Talk to me again when you are ready to see your next story quest.
+    location: on the lower floor of the guild
+  Objective7:
+    npcName: Eden
+    filename: enchanted.yml
+    objectiveType: DIALOG
+    dialog:
+    - '&8[&aEden&8]&f Need to enchant your Elite items? Just bring me an elite enchanted
+      book!'
+    location: under the main building
+  Objective12:
+    npcName: Robin
+    filename: fletcher.yml
+    objectiveType: DIALOG
+    dialog:
+    - '&8[&aRobin&8]&f Need arrows for your bow or crossbow? I sell ammunition, including
+      tipped and spectral arrows.'
+    location: on the lower floor of the main building
+  Objective8:
+    npcName: Reggie
+    filename: repairman_config.yml
+    objectiveType: DIALOG
+    dialog:
+    - '&8[&aReggie&8]&f Need your Elite items repaired? Just bring me some scrap,
+      and I''ll make them as good as new!'
+    - Remember, the higher the level of your scrap, the better I can repair you Elite
+      item!
+    location: under the main building
+  Objective5:
+    npcName: Gillian
+    filename: guild_attendant.yml
+    objectiveType: DIALOG
+    dialog:
+    - '&8[&aGillian&8]&f Do you seek power? Do you desire to reach new heights? Talk
+      to me to unlock new guild ranks, and reach levels of power you never thought
+      to be possible!'
+    location: in the main building
+  Objective10:
+    npcName: Grog
+    filename: special_blacksmith.yml
+    objectiveType: DIALOG
+    dialog:
+    - '&8[&aGrog&8]&f Want to buy special items? I''ve got just the thing!'
+    location: in the main building
+  Objective6:
+    npcName: Qel'Thuzad
+    filename: quest_giver.yml
+    objectiveType: DIALOG
+    dialog:
+    - '&8[&aQel''Thuzad&8]&f These Elite monsters, where do they keep coming from?'
+    - Ah, never mind that for now, we are always in need of more people to assist
+      us in slaying quests!
+    - Just talk to me to get one!
+    location: in the main building
+  Objective11:
+    npcName: Ulfric
+    filename: unbinder.yml
+    objectiveType: DIALOG
+    dialog:
+    - '&8[&aUlfric&8]&f If you bring me a very special and rare item, I can unbind
+      your Elite items.'
+    - You don't yet look prepared to take this challenge on, but you can make killing
+      the Binder of Worlds your ultimate goal, if you dare.
+    location: under the main building
+  Objective9:
+    npcName: Kelly
+    filename: scrapper_config.yml
+    objectiveType: DIALOG
+    dialog:
+    - '&8[&aKelly&8]&f Got extra Elite items? Don''t know what to do with them? Give
+      them to me, and I''ll turn them into scrap!'
+    - You can use scrap to repair Elite items!
+    location: under the main building

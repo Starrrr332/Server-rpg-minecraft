@@ -1,0 +1,32 @@
+isEnabled: true
+customRewards: []
+questAcceptPermission: elitequest.ag_adventurer_training.yml
+questLockoutPermission: elitequest.ag_story_mode_introduction.yml
+name: '&2Your Story Begins'
+questLore:
+- '&aVisit Manager Wallitz at the Adventurer''s Guild.'
+- '&aBegin your journey through the Story Mode dungeon quests.'
+temporaryPermissions: []
+questAcceptDialog:
+- '&8[&aCasus&8]&f With your Adventurer training complete, you are ready for the Story
+  Mode dungeons.'
+- Speak to Manager Wallitz on the lower floor of the guild. He will guide you into
+  the story.
+- You can also take my Primis introduction. The two journeys are yours to choose between.
+questCompleteMessage:
+- '&8[&aManager Wallitz&8]&f Let us get you started. Speak to me again and choose
+  your next Story Mode quest.'
+questCompleteCommands: []
+turnInNPC: story_dungeons_quest_giver.yml
+questLevel: 1
+customObjectives:
+  Objective1:
+    npcName: Manager Wallitz
+    filename: story_dungeons_quest_giver.yml
+    objectiveType: DIALOG
+    dialog:
+    - '&8[&aManager Wallitz&8]&f Casus says you have completed your class training.
+      Good! You are ready for Story Mode.'
+    - Talk to me again to finish this introduction and see the story quests I have
+      for you.
+    location: on the lower floor of the Adventurer's Guild

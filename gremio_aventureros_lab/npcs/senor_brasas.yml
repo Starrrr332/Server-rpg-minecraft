@@ -1,0 +1,13 @@
+isEnabled: true
+name: ''
+role: ''
+spawnLocations: []
+greetings: []
+dialog: []
+farewell: []
+canTalk: true
+activationRadius: 3.0
+interactionType: NONE
+syncMovement: true
+scripts: []
+transportRoutes: []

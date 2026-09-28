@@ -1,0 +1,33 @@
+isEnabled: true
+customRewards: []
+questAcceptPermission: elitequest.ag_adventurer_training.yml
+questLockoutPermission: elitequest.ag_primis_introduction.yml
+name: '&2An Expedition to Primis'
+questLore:
+- '&aTravel to Primis and speak to Captain Squalus near the starting area.'
+- '&aHe gives the first quest in the Primis main story, Shipwrecked!'
+temporaryPermissions: []
+questAcceptDialog:
+- '&8[&aCasus&8]&f You are ready to explore Primis. Travel there using the dungeon
+  menu.'
+- Look for Captain Squalus beside the beached ship near the starting area. He begins
+  the main story with Shipwrecked!
+- This journey is available alongside my Story Mode introduction. You can pursue either
+  one first.
+questCompleteMessage:
+- '&8[&aCaptain Squalus&8]&f Welcome to the expedition! Speak to me again to begin
+  Shipwrecked! if you have not already taken it.'
+questCompleteCommands: []
+turnInNPC: primis_captain.yml
+questLevel: 1
+customObjectives:
+  Objective1:
+    npcName: Captain Squalus
+    filename: primis_captain.yml
+    objectiveType: DIALOG
+    dialog:
+    - '&8[&aCaptain Squalus&8]&f Casus sent you? We could use an Adventurer around
+      here!'
+    - Talk to me again to finish this introduction. If you are new to our expedition,
+      take my Shipwrecked! quest to begin.
+    location: by the beached ship at the starting area in Primis

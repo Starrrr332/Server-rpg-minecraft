@@ -1,0 +1,22 @@
+isEnabled: true
+name: <g:#DAA520:#FF8C00>Thorin, Maestro del Coliseo</g>
+role: <g:#FF4500:#FFD700><Arena de Jefes RPG></g>
+profession: armorer
+spawnLocation: em_adventurers_guild,223.5,93,257.5,0,0
+spawnLocations: []
+greetings:
+- ¡Bienvenido a la Arena de los Jefes!
+- ¿Tienes el coraje de enfrentar a las leyendas?
+dialog:
+- Aquí lucharás contra el Carnicero, Ignis, Ymir y el Titán Astraeus.
+- Sobrevive a las 4 oleadas para demostrar tu verdadera valía.
+farewell:
+- ¡Vuelve con tu escudo, o sobre él!
+- ¡Que los dioses guíen tu espada!
+canTalk: true
+activationRadius: 3.0
+interactionType: ARENA_MASTER
+arena: arena_campeones_rpg.yml
+syncMovement: true
+scripts: []
+transportRoutes: []
