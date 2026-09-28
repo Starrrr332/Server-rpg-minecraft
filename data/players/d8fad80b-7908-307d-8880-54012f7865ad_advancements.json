@@ -2984,6 +2984,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/pale_oak_trapdoor": {
+    "criteria": {
+      "has_planks": "2026-09-28 04:02:53 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/netherite_chestplate_smithing": {
     "criteria": {
       "has_netherite_ingot": "2026-09-28 03:48:39 +0000"
@@ -2999,6 +3005,12 @@
   "minecraft:recipes/building_blocks/glass": {
     "criteria": {
       "has_smelts_to_glass": "2026-09-28 03:19:20 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/pale_oak_fence": {
+    "criteria": {
+      "has_planks": "2026-09-28 04:02:53 +0000"
     },
     "done": true
   },
@@ -3062,6 +3074,12 @@
     },
     "done": true
   },
+  "minecraft:adventure/trim_with_any_armor_pattern": {
+    "criteria": {
+      "armor_trimmed_minecraft:coast_armor_trim_smithing_template_smithing_trim": "2026-09-28 03:55:32 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/mossy_cobblestone_slab": {
     "criteria": {
       "has_mossy_cobblestone": "2026-09-28 03:16:48 +0000"
@@ -3086,9 +3104,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/pale_oak_slab": {
+    "criteria": {
+      "has_planks": "2026-09-28 04:02:53 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/sandstone_stairs": {
     "criteria": {
       "has_sandstone": "2026-09-28 03:21:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/pale_oak_door": {
+    "criteria": {
+      "has_planks": "2026-09-28 04:02:53 +0000"
     },
     "done": true
   },
@@ -3128,6 +3158,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/pale_oak_button": {
+    "criteria": {
+      "has_planks": "2026-09-28 04:02:53 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/combat/netherite_spear_smithing": {
     "criteria": {
       "has_netherite_ingot": "2026-09-28 03:48:39 +0000"
@@ -3143,6 +3179,12 @@
   "minecraft:recipes/building_blocks/chiseled_sandstone_from_sandstone_stonecutting": {
     "criteria": {
       "has_sandstone": "2026-09-28 03:21:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/pale_oak_fence_gate": {
+    "criteria": {
+      "has_planks": "2026-09-28 04:02:53 +0000"
     },
     "done": true
   },
@@ -3176,6 +3218,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/pale_oak_stairs": {
+    "criteria": {
+      "has_planks": "2026-09-28 04:02:53 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/mossy_cobblestone_slab_from_mossy_cobblestone_stonecutting": {
     "criteria": {
       "has_mossy_cobblestone": "2026-09-28 03:16:48 +0000"
@@ -3206,9 +3254,21 @@
     },
     "done": true
   },
+  "minecraft:recipes/redstone/pale_oak_pressure_plate": {
+    "criteria": {
+      "has_planks": "2026-09-28 04:02:53 +0000"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/mossy_cobblestone_wall_from_mossy_cobblestone_stonecutting": {
     "criteria": {
       "has_mossy_cobblestone": "2026-09-28 03:16:48 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/pale_oak_sign": {
+    "criteria": {
+      "has_planks": "2026-09-28 04:02:53 +0000"
     },
     "done": true
   },

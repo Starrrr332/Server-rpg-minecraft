@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-09-28 01:21:53",
+  "state": "running",
+  "cpu_percent": 37.97,
+  "ram_mb": 8579.8,
+  "ram_percent": 104.7,
+  "ram_limit_mb": 8192.0,
+  "disk_mb": 2546.5,
+  "uptime_seconds": 4317
+}
