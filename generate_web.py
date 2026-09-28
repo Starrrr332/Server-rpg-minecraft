@@ -448,34 +448,78 @@ def generate_website():
     <!-- ========================================== -->
     <!-- TAB 3: MAPA EN VIVO                       -->
     <!-- ========================================== -->
-    <section id="view-map" class="space-y-4 hidden">
-      <div class="glass-card rounded-2xl p-4 sm:p-6 border border-white/5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-        <div>
-          <h3 class="font-display font-extrabold text-2xl text-white flex items-center gap-2">
-            <span>🗺️</span> Mapa en Tiempo Real (BlueMap)
-          </h3>
-          <p class="text-slate-400 text-xs sm:text-sm mt-1">
-            Visualizador 3D isométrico del mundo de Minecraft con jugadores conectados.
-          </p>
+    <section id="view-map" class="space-y-6 hidden">
+      
+      <!-- Map Hub Hero Banner -->
+      <div class="glass-card rounded-3xl p-6 sm:p-8 border border-cyan-500/20 relative overflow-hidden">
+        <div class="absolute -right-16 -bottom-16 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div class="space-y-2 max-w-2xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-cyan-400/10 text-cyan-300 border border-cyan-400/20">
+              <span class="w-2 h-2 rounded-full bg-cyan-400 pulse-dot"></span> Visor 3D BlueMap en Tiempo Real
+            </div>
+            <h3 class="font-display font-black text-3xl sm:text-4xl text-white tracking-wide">
+              Mapa del Mundo en Vivo
+            </h3>
+            <p class="text-slate-400 text-sm">
+              Explora construcciones, biomas, mazmorras y la ubicación en vivo de todos los jugadores conectados en perspectiva 3D isométrica y primera persona.
+            </p>
+          </div>
+
+          <!-- Big Action Button -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+            <a href="http://ut09.holy.gg:25898/" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-2xl bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-400 hover:to-emerald-400 text-slate-950 font-display font-black text-sm transition transform hover:scale-105 shadow-xl shadow-cyan-500/25 flex items-center justify-center gap-2 text-center">
+              <span>🚀</span> Abrir Visor 3D en Pantalla Completa <span>↗</span>
+            </a>
+          </div>
         </div>
-        <div class="flex items-center gap-3">
-          <a href="http://ut09.holy.gg:25898/" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-semibold text-xs sm:text-sm transition flex items-center gap-2 shadow-lg shadow-cyan-600/30">
-            <span>↗️</span> Abrir Mapa en Pantalla Completa
-          </a>
+
+        <!-- Browser HTTPS Note -->
+        <div class="mt-6 pt-4 border-t border-white/5 flex items-start gap-3 text-xs text-slate-400 bg-slate-900/60 p-3.5 rounded-xl border border-white/5">
+          <span class="text-amber-400 text-base">ℹ️</span>
+          <div>
+            <strong class="text-slate-200">¿Por qué abrirlo en nueva pestaña?</strong> Los navegadores modernos bloquean visores embebidos por seguridad cuando la web está en HTTPS y el servidor del mapa en HTTP. Al abrirlo directamente en nueva pestaña, carga a máxima velocidad y con aceleración 3D por hardware.
+          </div>
         </div>
       </div>
 
-      <div class="glass-card rounded-3xl overflow-hidden border border-white/10 relative shadow-2xl" style="height: 720px;">
-        <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center z-0 bg-slate-950">
-          <span class="text-4xl mb-3">🌍</span>
-          <p class="text-slate-300 font-semibold mb-2">Cargando visor interactivo...</p>
-          <p class="text-xs text-slate-500 max-w-md">Si el visor no carga debido al bloqueo de contenido HTTP/HTTPS de tu navegador, puedes abrirlo directamente haciendo clic abajo.</p>
-          <a href="http://ut09.holy.gg:25898/" target="_blank" class="mt-4 px-4 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-cyan-400 text-xs font-semibold border border-cyan-500/30">
-            Abrir http://ut09.holy.gg:25898/
+      <!-- Feature Highlights Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="glass-card rounded-2xl p-5 border border-white/5 space-y-1.5">
+          <div class="text-2xl mb-1">🎮</div>
+          <h4 class="font-bold text-white text-sm">3 Modos de Cámara</h4>
+          <p class="text-xs text-slate-400">Perspectiva libre, vista ortográfica cenital y modo primera persona como si estuvieras en el juego.</p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-5 border border-white/5 space-y-1.5">
+          <div class="text-2xl mb-1">👥</div>
+          <h4 class="font-bold text-white text-sm">Rastreo de Jugadores</h4>
+          <p class="text-xs text-slate-400">Mira dónde están tus amigos en el mapa con su skin real y coordenadas actualizadas al segundo.</p>
+        </div>
+
+        <div class="glass-card rounded-2xl p-5 border border-white/5 space-y-1.5">
+          <div class="text-2xl mb-1">🏰</div>
+          <h4 class="font-bold text-white text-sm">Marcadores y Zonas</h4>
+          <p class="text-xs text-slate-400">Spawn principal, tiendas, portales y zonas protegidas señalizadas con iconos personalizados.</p>
+        </div>
+      </div>
+
+      <!-- Interactive Embedded Viewer Box -->
+      <div class="glass-card rounded-3xl overflow-hidden border border-white/10 relative shadow-2xl" style="height: 680px;">
+        <div class="p-3 bg-slate-900/80 border-b border-white/5 flex items-center justify-between text-xs text-slate-400">
+          <div class="flex items-center gap-2">
+            <span class="w-3 h-3 rounded-full bg-rose-500/80 inline-block"></span>
+            <span class="w-3 h-3 rounded-full bg-amber-500/80 inline-block"></span>
+            <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
+            <span class="font-mono text-[11px] text-slate-300 ml-2">http://ut09.holy.gg:25898/</span>
+          </div>
+          <a href="http://ut09.holy.gg:25898/" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-semibold">
+            Abrir fuera ↗
           </a>
         </div>
-        <iframe src="http://ut09.holy.gg:25898/" class="w-full h-full relative z-10 border-0" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+        <iframe id="map-iframe" src="http://ut09.holy.gg:25898/" class="w-full h-full border-0" allowfullscreen sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
       </div>
+
     </section>
 
     <!-- ========================================== -->
