@@ -5,7 +5,7 @@ skills:
     xp: 481.0799999999936
   auraskills/defense:
     level: 3
-    xp: 357.1725723743433
+    xp: 771.1294469356528
   auraskills/fishing:
     level: 0
     xp: 0.0
@@ -14,31 +14,25 @@ skills:
     xp: 336.2400000000006
   auraskills/alchemy:
     level: 4
-    xp: 515.0
+    xp: 680.0
   auraskills/archery:
     level: 0
-    xp: 7.0
+    xp: 14.0
   auraskills/agility:
     level: 5
-    xp: 964.9176600000012
+    xp: 2065.3972600000006
   auraskills/enchanting:
     level: 0
     xp: 0.0
   auraskills/fighting:
-    level: 2
-    xp: 330.6999999999998
+    level: 3
+    xp: 281.6999999999994
   auraskills/farming:
     level: 1
     xp: 90.0
   auraskills/mining:
-    level: 4
-    xp: 1585.480000000037
+    level: 6
+    xp: 2492.1100000000365
 mana: 34.0
 action_bar:
   idle: true
-stat_modifiers:
-  '0':
-    name: mining-stamina
-    stat: auraskills/toughness
-    operation: ADD
-    value: 1.0

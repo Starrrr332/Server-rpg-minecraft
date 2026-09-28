@@ -1,0 +1,13 @@
+{
+  "enableVsync": false,
+  "maxFps": 240,
+  "chunkUpdates": 3,
+  "entityCullDistance": 256,
+  "cloudCulling": true,
+  "useChunkOcclusion": true,
+  "useLazyChunkUpdates": true,
+  "threads": {
+    "chunkThreadCount": 3,
+    "entityThreadCount": 2
+  }
+}

@@ -76,18 +76,26 @@ class ServerSentinel:
             requests.post(f"{self.base_url}/command", headers=self.headers, json={'command': 'save-all'}, timeout=5)
             # 2. Limpieza de items huérfanos con ClearLag (comando real: /clearlag)
             requests.post(f"{self.base_url}/command", headers=self.headers, json={'command': 'clearlag clear items'}, timeout=5)
-            print("[Sentinel Optimización] Comandos /save-all y /clearlag clear items enviados con éxito.", flush=True)
+            requests.post(f"{self.base_url}/command", headers=self.headers, json={'command': 'clearlag killmobs evil'}, timeout=5)
+            requests.post(f"{self.base_url}/command", headers=self.headers, json={'command': 'clearlag unloadchunks'}, timeout=5)
+            # 4. Eliminar entidades sueltas (comando real: /killentities)
+            requests.post(f"{self.base_url}/command", headers=self.headers, json={'command': 'killentities'}, timeout=5)
+            print("[Sentinel Optimización] Comando /killentities enviado con éxito.", flush=True)
             return True
         except Exception as e:
             print(f"[Sentinel Optimización Error] {e}")
             return False
 
-    def run_monitor_loop(self, interval_seconds=60):
-        """Ciclo continuo de monitoreo del servidor."""
+    def run_monitor_loop(self, interval_seconds=60, max_iterations=None):
+        """Ciclo de monitoreo del servidor. Si max_iterations se define, se ejecuta ese número de ciclos y luego se detiene."""
         print(f"=== CENTINELA INICIADO (Intervalo: {interval_seconds}s) ===")
         print(f"Límite de RAM vigilado: {self.ram_limit_mb} MB")
 
+        iteration = 0
         while True:
+            if max_iterations is not None and iteration >= max_iterations:
+                print("=== MONITOREO FINALIZADO (límite de iteraciones alcanzado) ===")
+                break
             status = self.get_resources()
             if status:
                 now_str = status['timestamp']
@@ -106,7 +114,7 @@ class ServerSentinel:
                     alert = "[OPTIMO]"
 
                 print(f"[{now_str}] {alert} RAM: {ram:.1f}MB ({pct:.1f}%) | CPU: {cpu:.1f}% | Estado: {status['state']}", flush=True)
-
+            iteration += 1
             time.sleep(interval_seconds)
 
     # ==========================================
@@ -220,7 +228,14 @@ if __name__ == '__main__':
         elif cmd in ['--backup', '-b']:
             sentinel.perform_backup_and_upload()
         elif cmd in ['--monitor', '-m']:
-            sentinel.run_monitor_loop(interval_seconds=60)
+            # Optional second argument for max iterations
+            max_iter = None
+            if len(sys.argv) > 2:
+                try:
+                    max_iter = int(sys.argv[2])
+                except ValueError:
+                    print(f"[Sentinel Error] Invalid max iterations value: {sys.argv[2]}")
+            sentinel.run_monitor_loop(interval_seconds=60, max_iterations=max_iter)
         else:
             print("Comandos disponibles: --status, --clean, --backup, --monitor")
     else:

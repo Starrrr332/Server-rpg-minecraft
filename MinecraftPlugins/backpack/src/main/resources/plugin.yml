@@ -1,0 +1,13 @@
+name: BackpackCommand
+main: com.example.backpack.BackpackPlugin
+version: 1.0.0
+api-version: 1.21
+commands:
+  backpack:
+    description: Abre tu mochila personal
+    usage: /<command>
+    permission: backpack.use
+    permission-message: No tienes permiso para usar la mochila
+permissions:
+  backpack.use:
+    default: true

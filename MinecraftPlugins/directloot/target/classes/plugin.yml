@@ -1,0 +1,13 @@
+name: DirectLoot
+main: com.example.directloot.DirectLootPlugin
+version: 1.0.0
+api-version: 1.21
+commands:
+  claimloot:
+    description: Reclama el loot pendiente
+    usage: /<command>
+    permission: directloot.claim
+    permission-message: No tienes permiso para reclamar loot
+permissions:
+  directloot.claim:
+    default: true

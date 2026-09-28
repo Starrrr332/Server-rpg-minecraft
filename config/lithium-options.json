@@ -1,0 +1,11 @@
+{
+  "generic": {
+    "blockCacheSize": 512,
+    "chunkCacheSize": 256,
+    "optimizeTerrainOnLoad": true
+  },
+  "entity": {
+    "maxEntityProcessingPerTick": 500,
+    "parallelEntityCollision": true
+  }
+}
