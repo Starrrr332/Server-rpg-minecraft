@@ -1,0 +1,12 @@
+{
+  "backpack": {
+    "display_name": "&6Mochila Personalizada",
+    "model": "backpack",
+    "custom_model_data": 1001,
+    "texture": "backpack_main.png",
+    "lore": [
+      "&7Una mochila 3D personalizada",
+      "&7para almacenar tus items"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "stats": {
+    "minecraft:used": {
+      "minecraft:stone_sword": 14
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 3176,
+      "minecraft:walk_one_cm": 9688,
+      "minecraft:leave_game": 5,
+      "minecraft:mob_kills": 1,
+      "minecraft:damage_taken": 541,
+      "minecraft:play_time": 20032,
+      "minecraft:damage_dealt": 200,
+      "minecraft:jump": 35,
+      "minecraft:time_since_death": 2210,
+      "minecraft:sprint_one_cm": 1687,
+      "minecraft:fall_one_cm": 1421,
+      "minecraft:total_world_time": 20032,
+      "minecraft:fly_one_cm": 730,
+      "minecraft:deaths": 2
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 1
+    },
+    "minecraft:killed_by": {
+      "minecraft:player": 1,
+      "minecraft:zombie": 1
+    },
+    "minecraft:mined": {
+      "minecraft:birch_log": 1,
+      "minecraft:birch_leaves": 1
+    },
+    "minecraft:picked_up": {
+      "minecraft:birch_log": 1
+    }
+  },
+  "DataVersion": 4903
+}

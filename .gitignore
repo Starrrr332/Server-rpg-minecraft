@@ -1,0 +1,10 @@
+.env
+bot_config.json
+*.exe
+*.jar
+*.log
+*.zip
+__pycache__/
+*.pyc
+.venv/
+.abacusai/

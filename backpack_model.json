@@ -1,0 +1,128 @@
+{
+  "meta": {
+    "format_version": "4.5",
+    "model_format": "free_minecraft_models",
+    "name": "Backpack",
+    "author": "HolyBot"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [75, 45, 0],
+      "translation": [0, 2.5, 0],
+      "scale": [0.375, 0.375, 0.375]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [75, 225, 0],
+      "translation": [0, 2.5, 0],
+      "scale": [0.375, 0.375, 0.375]
+    },
+    "firstperson_righthand": {
+      "rotation": [0, -90, 25],
+      "translation": [1.13, 3.2, 1.13],
+      "scale": [0.68, 0.68, 0.68]
+    },
+    "firstperson_lefthand": {
+      "rotation": [0, 90, -25],
+      "translation": [1.13, 3.2, 1.13],
+      "scale": [0.68, 0.68, 0.68]
+    },
+    "ground": {
+      "rotation": [0, 0, 0],
+      "translation": [0, 3, 0],
+      "scale": [0.5, 0.5, 0.5]
+    },
+    "gui": {
+      "rotation": [30, 225, 0],
+      "translation": [0, 0, 0],
+      "scale": [0.625, 0.625, 0.625]
+    },
+    "head": {
+      "rotation": [0, 0, 0],
+      "translation": [0, 0, 0],
+      "scale": [1, 1, 1]
+    },
+    "fixed": {
+      "rotation": [0, 0, 0],
+      "translation": [0, 0, 0],
+      "scale": [1, 1, 1]
+    }
+  },
+  "elements": [
+    {
+      "name": "Main Body",
+      "from": [3, 0, 2],
+      "to": [13, 10, 12],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8, 5, 7]},
+      "faces": {
+        "north": {"uv": [0, 0, 10, 10], "texture": "#backpack_main"},
+        "east": {"uv": [10, 0, 20, 10], "texture": "#backpack_main"},
+        "south": {"uv": [20, 0, 30, 10], "texture": "#backpack_main"},
+        "west": {"uv": [30, 0, 40, 10], "texture": "#backpack_main"},
+        "up": {"uv": [0, 10, 10, 20], "texture": "#backpack_main"},
+        "down": {"uv": [10, 10, 20, 20], "texture": "#backpack_main"}
+      }
+    },
+    {
+      "name": "Left Strap",
+      "from": [2, 8, 5],
+      "to": [4, 14, 9],
+      "rotation": {"angle": -22.5, "axis": "z", "origin": [3, 10, 7]},
+      "faces": {
+        "north": {"uv": [0, 20, 2, 26], "texture": "#backpack_strap"},
+        "east": {"uv": [2, 20, 6, 26], "texture": "#backpack_strap"},
+        "south": {"uv": [6, 20, 8, 26], "texture": "#backpack_strap"},
+        "west": {"uv": [8, 20, 12, 26], "texture": "#backpack_strap"},
+        "up": {"uv": [0, 26, 2, 30], "texture": "#backpack_strap"},
+        "down": {"uv": [2, 26, 4, 30], "texture": "#backpack_strap"}
+      }
+    },
+    {
+      "name": "Right Strap",
+      "from": [12, 8, 5],
+      "to": [14, 14, 9],
+      "rotation": {"angle": 22.5, "axis": "z", "origin": [13, 10, 7]},
+      "faces": {
+        "north": {"uv": [0, 20, 2, 26], "texture": "#backpack_strap"},
+        "east": {"uv": [2, 20, 6, 26], "texture": "#backpack_strap"},
+        "south": {"uv": [6, 20, 8, 26], "texture": "#backpack_strap"},
+        "west": {"uv": [8, 20, 12, 26], "texture": "#backpack_strap"},
+        "up": {"uv": [0, 26, 2, 30], "texture": "#backpack_strap"},
+        "down": {"uv": [2, 26, 4, 30], "texture": "#backpack_strap"}
+      }
+    },
+    {
+      "name": "Front Pocket",
+      "from": [4, 2, 1.5],
+      "to": [12, 8, 2],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8, 5, 7]},
+      "faces": {
+        "north": {"uv": [0, 30, 8, 36], "texture": "#backpack_pocket"},
+        "east": {"uv": [8, 30, 8.5, 36], "texture": "#backpack_pocket"},
+        "south": {"uv": [8.5, 30, 16.5, 36], "texture": "#backpack_pocket"},
+        "west": {"uv": [16.5, 30, 17, 36], "texture": "#backpack_pocket"},
+        "up": {"uv": [0, 36, 8, 36.5], "texture": "#backpack_pocket"},
+        "down": {"uv": [8, 36, 16, 36.5], "texture": "#backpack_pocket"}
+      }
+    },
+    {
+      "name": "Top Flap",
+      "from": [3.5, 9.5, 2.5],
+      "to": [12.5, 11, 11.5],
+      "rotation": {"angle": -45, "axis": "x", "origin": [8, 9.5, 7]},
+      "faces": {
+        "north": {"uv": [0, 40, 9, 41.5], "texture": "#backpack_flap"},
+        "east": {"uv": [9, 40, 18, 41.5], "texture": "#backpack_flap"},
+        "south": {"uv": [18, 40, 27, 41.5], "texture": "#backpack_flap"},
+        "west": {"uv": [27, 40, 36, 41.5], "texture": "#backpack_flap"},
+        "up": {"uv": [0, 41.5, 9, 50.5], "texture": "#backpack_flap"},
+        "down": {"uv": [9, 41.5, 18, 50.5], "texture": "#backpack_flap"}
+      }
+    }
+  ],
+  "textures": {
+    "backpack_main": "backpack_main",
+    "backpack_strap": "backpack_strap",
+    "backpack_pocket": "backpack_pocket",
+    "backpack_flap": "backpack_flap"
+  }
+}

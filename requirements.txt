@@ -1,0 +1,8 @@
+requests
+python-dotenv
+huggingface_hub
+# Opcional: SDK de LLMs (descomenta lo que necesites)
+# openai
+# anthropic
+# google-generativeai
+# ollama

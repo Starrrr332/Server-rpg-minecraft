@@ -1,0 +1,34 @@
+{
+  "models": {
+    "backpack": {
+      "display_name": "Mochila Personalizada",
+      "model": "backpack_model.json",
+      "textures": {
+        "backpack_main": "backpack_main.png",
+        "backpack_strap": "backpack_strap.png",
+        "backpack_pocket": "backpack_pocket.png",
+        "backpack_flap": "backpack_flap.png"
+      },
+      "item": {
+        "type": "player_head",
+        "custom_model_data": 1001
+      },
+      "scale": 1.0,
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "settings": {
+    "auto_update": true,
+    "cache_models": true,
+    "render_distance": 64
+  }
+}
