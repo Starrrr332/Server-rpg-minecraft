@@ -4,13 +4,13 @@ const host = '38.97.61.71';
 const port = 19618;
 const username = 'TestBot_AI';
 
-console.log(`🤖 [TestBot] Conectándose al servidor de Minecraft ${host}:${port} como '${username}' (v1.20.6)...`);
+console.log(`🤖 [TestBot] Conectándose al servidor de Minecraft ${host}:${port} como '${username}' (v1.21.1)...`);
 
 const bot = mineflayer.createBot({
     host: host,
     port: port,
     username: username,
-    version: '1.20.6'
+    version: '1.21.1'
 });
 
 bot.on('login', () => {

@@ -1,9 +1,14 @@
 package com.guild.aieconomy.economy;
 
+import org.bukkit.ChatColor;
+import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -75,7 +80,52 @@ public class CustomItemManager {
                 }
             }
         }
+
+        if (customItems.isEmpty()) {
+            loadDefaultRPGItems();
+        }
+
         plugin.getLogger().info("[GuildAIEconomy] Cargados " + customItems.size() + " ítems personalizados para la economía.");
+    }
+
+    private void loadDefaultRPGItems() {
+        addCustomItemInternal("espada_elite_dragon", createSampleItem(Material.DIAMOND_SWORD, "§6⚔️ Espada del Dragón Élite", Arrays.asList("§7Forjada con escamas de dragón", "§eEfecto: Fuego II & Filo V"), Enchantment.DAMAGE_ALL, 5, Enchantment.FIRE_ASPECT, 2), 450.0, 300.0);
+        addCustomItemInternal("arco_elven_legendario", createSampleItem(Material.BOW, "§a🏹 Arco Élfico Legendario", Arrays.asList("§7Bendecido por los ancianos", "§eEfecto: Poder V & Inmortalidad"), Enchantment.ARROW_DAMAGE, 5, Enchantment.ARROW_INFINITE, 1), 380.0, 250.0);
+        addCustomItemInternal("coraza_titan_netherita", createSampleItem(Material.NETHERITE_CHESTPLATE, "§c🛡️ Coraza del Titán", Arrays.asList("§7Forjada en las profundidades del Nether", "§eEfecto: Protección IV"), Enchantment.PROTECTION_ENVIRONMENTAL, 4, Enchantment.DURABILITY, 3), 850.0, 600.0);
+        addCustomItemInternal("pocion_vida_ancestral", createSampleItem(Material.HONEY_BOTTLE, "§b🧪 Poción de Salud Ancestral", Arrays.asList("§7Restaura la vitalidad por completo"), null, 0, null, 0), 120.0, 80.0);
+    }
+
+    private ItemStack createSampleItem(Material mat, String name, List<String> lore, Enchantment enc1, int lvl1, Enchantment enc2, int lvl2) {
+        ItemStack item = new ItemStack(mat, 1);
+        ItemMeta meta = item.getItemMeta();
+        if (meta != null) {
+            meta.setDisplayName(name);
+            meta.setLore(lore);
+            if (enc1 != null) meta.addEnchant(enc1, lvl1, true);
+            if (enc2 != null) meta.addEnchant(enc2, lvl2, true);
+            item.setItemMeta(meta);
+        }
+        return item;
+    }
+
+    private void addCustomItemInternal(String id, ItemStack item, double buyPrice, double sellPrice) {
+        if (item == null) return;
+        ItemStack singleItem = item.clone();
+        singleItem.setAmount(1);
+
+        ItemMeta meta = singleItem.getItemMeta();
+        if (meta != null) {
+            NamespacedKey key = new NamespacedKey(plugin, "custom_item_id");
+            meta.getPersistentDataContainer().set(key, PersistentDataType.STRING, id);
+            singleItem.setItemMeta(meta);
+        }
+
+        config.set("items." + id + ".item", singleItem);
+        config.set("items." + id + ".buy_price", buyPrice);
+        config.set("items." + id + ".sell_price", sellPrice);
+        save();
+
+        customItems.put(id, new CustomEconomyItem(id, singleItem, buyPrice, sellPrice));
     }
 
     public void save() {
@@ -88,15 +138,7 @@ public class CustomItemManager {
 
     public boolean addCustomItem(String id, ItemStack item, double buyPrice, double sellPrice) {
         if (item == null) return false;
-        ItemStack singleItem = item.clone();
-        singleItem.setAmount(1);
-
-        config.set("items." + id + ".item", singleItem);
-        config.set("items." + id + ".buy_price", buyPrice);
-        config.set("items." + id + ".sell_price", sellPrice);
-        save();
-
-        customItems.put(id, new CustomEconomyItem(id, singleItem, buyPrice, sellPrice));
+        addCustomItemInternal(id, item, buyPrice, sellPrice);
         return true;
     }
 
@@ -118,19 +160,46 @@ public class CustomItemManager {
         return customItems.get(id);
     }
 
+    public CustomEconomyItem findCustomItem(String query) {
+        if (query == null || query.isBlank()) return null;
+        String clean = query.toLowerCase().replace("_", " ").trim();
+        for (CustomEconomyItem item : customItems.values()) {
+            if (item.getId().toLowerCase().equalsIgnoreCase(query) || item.getId().toLowerCase().contains(clean)) {
+                return item;
+            }
+            ItemMeta meta = item.getItemStack().getItemMeta();
+            if (meta != null && meta.hasDisplayName()) {
+                String nameClean = ChatColor.stripColor(meta.getDisplayName()).toLowerCase();
+                if (nameClean.contains(clean) || clean.contains(nameClean)) {
+                    return item;
+                }
+            }
+        }
+        return null;
+    }
+
     public boolean isSimilarCustomItem(ItemStack stack1, ItemStack stack2) {
         if (stack1 == null || stack2 == null) return false;
         if (stack1.getType() != stack2.getType()) return false;
-        
+
         ItemMeta meta1 = stack1.getItemMeta();
         ItemMeta meta2 = stack2.getItemMeta();
 
         if (meta1 == null && meta2 == null) return true;
         if (meta1 == null || meta2 == null) return false;
 
-        boolean nameMatch = Objects.equals(meta1.getDisplayName(), meta2.getDisplayName());
-        boolean loreMatch = Objects.equals(meta1.getLore(), meta2.getLore());
+        NamespacedKey key = new NamespacedKey(plugin, "custom_item_id");
+        if (meta1.getPersistentDataContainer().has(key, PersistentDataType.STRING) &&
+            meta2.getPersistentDataContainer().has(key, PersistentDataType.STRING)) {
+            String id1 = meta1.getPersistentDataContainer().get(key, PersistentDataType.STRING);
+            String id2 = meta2.getPersistentDataContainer().get(key, PersistentDataType.STRING);
+            if (Objects.equals(id1, id2)) return true;
+        }
 
-        return nameMatch && loreMatch;
+        if (meta1.hasDisplayName() && meta2.hasDisplayName()) {
+            return Objects.equals(meta1.getDisplayName(), meta2.getDisplayName());
+        }
+
+        return false;
     }
 }

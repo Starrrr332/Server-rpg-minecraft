@@ -17,12 +17,39 @@ import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class MerchantListener implements Listener {
 
     private final GuildAIEconomy plugin;
+    private final Map<String, Material> spanishMaterialMap = new HashMap<>();
 
     public MerchantListener(GuildAIEconomy plugin) {
         this.plugin = plugin;
+        initSpanishMaterials();
+    }
+
+    private void initSpanishMaterials() {
+        spanishMaterialMap.put("diamante", Material.DIAMOND);
+        spanishMaterialMap.put("oro", Material.GOLD_INGOT);
+        spanishMaterialMap.put("hierro", Material.IRON_INGOT);
+        spanishMaterialMap.put("esmeralda", Material.EMERALD);
+        spanishMaterialMap.put("netherita", Material.NETHERITE_INGOT);
+        spanishMaterialMap.put("cobre", Material.COPPER_INGOT);
+        spanishMaterialMap.put("lapislazuli", Material.LAPIS_LAZULI);
+        spanishMaterialMap.put("roble", Material.OAK_LOG);
+        spanishMaterialMap.put("madera", Material.OAK_LOG);
+        spanishMaterialMap.put("piedra", Material.STONE);
+        spanishMaterialMap.put("obsidiana", Material.OBSIDIAN);
+        spanishMaterialMap.put("estrella", Material.NETHER_STAR);
+        spanishMaterialMap.put("elitros", Material.ELYTRA);
+        spanishMaterialMap.put("elytra", Material.ELYTRA);
+        spanishMaterialMap.put("manzana", Material.GOLDEN_APPLE);
+        spanishMaterialMap.put("manzana dorada", Material.GOLDEN_APPLE);
+        spanishMaterialMap.put("filete", Material.COOKED_BEEF);
+        spanishMaterialMap.put("zanahoria", Material.GOLDEN_CARROT);
+        spanishMaterialMap.put("totem", Material.TOTEM_OF_UNDYING);
     }
 
     @EventHandler(priority = EventPriority.HIGH)
@@ -33,7 +60,6 @@ public class MerchantListener implements Listener {
             event.setCancelled(true);
             Player player = event.getPlayer();
             
-            // Abre la GUI de Tienda en página 1
             ShopGUI gui = new ShopGUI(plugin, 1);
             gui.open(player);
         }
@@ -50,7 +76,6 @@ public class MerchantListener implements Listener {
 
             int slot = event.getRawSlot();
 
-            // Paginación
             if (slot == 48 && clickedItem.getType() == Material.ARROW) {
                 ShopGUI prevGui = new ShopGUI(plugin, gui.getPage() - 1);
                 prevGui.open(player);
@@ -64,8 +89,6 @@ public class MerchantListener implements Listener {
             Material mat = clickedItem.getType();
             ClickType click = event.getClick();
 
-            // Verificar si es ítem Vanilla o Custom Item
-            boolean isVanilla = plugin.getMarketEngine().getBasePrices().containsKey(mat);
             CustomEconomyItem customMatch = null;
             for (CustomEconomyItem item : plugin.getCustomItemManager().getCustomItems()) {
                 if (plugin.getCustomItemManager().isSimilarCustomItem(clickedItem, item.getItemStack())) {
@@ -73,6 +96,8 @@ public class MerchantListener implements Listener {
                     break;
                 }
             }
+
+            boolean isVanilla = (customMatch == null) && plugin.getMarketEngine().getBasePrices().containsKey(mat);
 
             if (!isVanilla && customMatch == null) return;
 
@@ -115,11 +140,9 @@ public class MerchantListener implements Listener {
                     }
                 }
             } else {
-                // Custom Item (EliteMobs / RPG)
                 ItemStack targetStack = customMatch.getItemStack();
                 double buyPrice = customMatch.getBuyPrice();
                 double sellPrice = customMatch.getSellPrice();
-                int stock = plugin.getChestManager().getItemStock(targetStack.getType());
 
                 if (click.isLeftClick()) {
                     if (!plugin.getVaultHook().withdraw(player, buyPrice)) {
@@ -129,7 +152,6 @@ public class MerchantListener implements Listener {
                     player.getInventory().addItem(targetStack.clone());
                     player.sendMessage("§a🤖 Mercader: ¡Has comprado 1x " + customMatch.getId() + " por " + plugin.getVaultHook().format(buyPrice) + "!");
                 } else if (click.isRightClick()) {
-                    // Buscar e ingresar el custom item del inventario del jugador
                     boolean found = false;
                     for (ItemStack invItem : player.getInventory().getContents()) {
                         if (invItem != null && plugin.getCustomItemManager().isSimilarCustomItem(invItem, targetStack)) {
@@ -146,7 +168,6 @@ public class MerchantListener implements Listener {
                 }
             }
 
-            // Actualizar vista GUI
             gui.setupItems();
         }
     }
@@ -156,16 +177,103 @@ public class MerchantListener implements Listener {
         String msg = event.getMessage().trim();
         String lowerMsg = msg.toLowerCase();
         
-        if (lowerMsg.startsWith("!bot") || lowerMsg.startsWith("vendedor") || lowerMsg.startsWith("mercader")) {
-            String promptText = msg.replaceFirst("(?i)^(!bot|vendedor|mercader)\\s*", "").trim();
+        if (lowerMsg.startsWith("!bot") || lowerMsg.startsWith("@bot") || lowerMsg.startsWith("bot") || lowerMsg.startsWith("vendedor") || lowerMsg.startsWith("mercader")) {
+            String promptText = msg.replaceFirst("(?i)^(!bot|@bot|bot|vendedor|mercader)\\s*", "").trim();
             if (promptText.isEmpty()) {
-                promptText = "Hola, ¿cuáles son tus ofertas?";
+                promptText = "Hola";
             }
             Player player = event.getPlayer();
 
+            boolean isBuyIntent = lowerMsg.contains("compr") || lowerMsg.contains("quiero") || lowerMsg.contains("dame");
+            boolean isSellIntent = lowerMsg.contains("vend") || lowerMsg.contains("te doy");
+
+            CustomEconomyItem matchedCustom = plugin.getCustomItemManager().findCustomItem(promptText);
+
+            Material targetMat = null;
+            for (Map.Entry<String, Material> entry : spanishMaterialMap.entrySet()) {
+                if (lowerMsg.contains(entry.getKey())) {
+                    targetMat = entry.getValue();
+                    break;
+                }
+            }
+
+            if ((matchedCustom != null || targetMat != null) && (isBuyIntent || isSellIntent)) {
+                final CustomEconomyItem customItem = matchedCustom;
+                final Material mat = targetMat;
+                final boolean buy = isBuyIntent;
+
+                Bukkit.getScheduler().runTask(plugin, () -> {
+                    if (customItem != null) {
+                        double buyPrice = customItem.getBuyPrice();
+                        double sellPrice = customItem.getSellPrice();
+
+                        if (buy) {
+                            if (!plugin.getVaultHook().withdraw(player, buyPrice)) {
+                                Bukkit.broadcastMessage("§b🤖 Mercader: §f¡Uy " + player.getName() + "! El ítem " + customItem.getId() + " cuesta " + plugin.getVaultHook().format(buyPrice) + ", pero no tienes suficiente dinero.");
+                                return;
+                            }
+                            player.getInventory().addItem(customItem.getItemStack());
+                            Bukkit.broadcastMessage("§b🤖 Mercader: §f¡Trato hecho, " + player.getName() + "! Te he entregado 1x " + customItem.getId() + " por " + plugin.getVaultHook().format(buyPrice) + ".");
+                        } else {
+                            boolean found = false;
+                            for (ItemStack invItem : player.getInventory().getContents()) {
+                                if (invItem != null && plugin.getCustomItemManager().isSimilarCustomItem(invItem, customItem.getItemStack())) {
+                                    invItem.setAmount(invItem.getAmount() - 1);
+                                    plugin.getVaultHook().deposit(player, sellPrice);
+                                    Bukkit.broadcastMessage("§b🤖 Mercader: §f¡Excelente negocio, " + player.getName() + "! Te he comprado 1x " + customItem.getId() + " por " + plugin.getVaultHook().format(sellPrice) + ".");
+                                    found = true;
+                                    break;
+                                }
+                            }
+                            if (!found) {
+                                Bukkit.broadcastMessage("§b🤖 Mercader: §f¡" + player.getName() + ", parece que no tienes ese ítem personalizado en tu inventario!");
+                            }
+                        }
+                    } else {
+                        int stock = plugin.getChestManager().getItemStock(mat);
+                        if (buy) {
+                            double price = plugin.getMarketEngine().calculateBuyPrice(mat, stock);
+                            if (stock <= 0) {
+                                Bukkit.broadcastMessage("§b🤖 Mercader: §f¡Hola " + player.getName() + "! Por el momento no tengo stock de " + mat.name() + " en mi cofre.");
+                                return;
+                            }
+                            if (!plugin.getVaultHook().withdraw(player, price)) {
+                                Bukkit.broadcastMessage("§b🤖 Mercader: §f¡Uy " + player.getName() + "! 1x " + mat.name() + " cuesta " + plugin.getVaultHook().format(price) + ", pero no tienes suficiente oro.");
+                                return;
+                            }
+
+                            if (plugin.getChestManager().removeItemFromStock(mat, 1)) {
+                                player.getInventory().addItem(new ItemStack(mat, 1));
+                                plugin.getMarketEngine().registerDemand(mat, 1);
+                                Bukkit.broadcastMessage("§b🤖 Mercader: §f¡Trato hecho, " + player.getName() + "! Te he vendido 1x " + mat.name() + " por " + plugin.getVaultHook().format(price) + ". ¡Gracias por tu compra!");
+                            } else {
+                                plugin.getVaultHook().deposit(player, price);
+                                Bukkit.broadcastMessage("§b🤖 Mercader: §fHubo un problema con mi cofre de stock.");
+                            }
+                        } else {
+                            double price = plugin.getMarketEngine().calculateSellPrice(mat, stock);
+                            if (!player.getInventory().containsAtLeast(new ItemStack(mat), 1)) {
+                                Bukkit.broadcastMessage("§b🤖 Mercader: §f¡" + player.getName() + ", parece que no tienes 1x " + mat.name() + " en tu inventario para vendérmelo!");
+                                return;
+                            }
+
+                            if (plugin.getChestManager().addItemToStock(mat, 1)) {
+                                player.getInventory().removeItem(new ItemStack(mat, 1));
+                                plugin.getVaultHook().deposit(player, price);
+                                plugin.getMarketEngine().registerDemand(mat, -1);
+                                Bukkit.broadcastMessage("§b🤖 Mercader: §f¡Excelente trato, " + player.getName() + "! Me he quedado con tu 1x " + mat.name() + " y te he entregado " + plugin.getVaultHook().format(price) + ".");
+                            } else {
+                                Bukkit.broadcastMessage("§b🤖 Mercader: §f¡Mi cofre de economía está lleno por ahora!");
+                            }
+                        }
+                    }
+                });
+                return;
+            }
+
             player.sendMessage("§b🤖 Mercader (" + player.getName() + "): §7Pensando...");
 
-            String systemPrompt = plugin.getConfig().getString("gemini.system_prompt", "Eres Gilderbot, el mercader del gremio.");
+            String systemPrompt = plugin.getConfig().getString("gemini.system_prompt", "Eres Gilderbot, el amigable y libre conversador mercader del gremio.");
             
             plugin.getGeminiClient().askMerchant(systemPrompt, promptText).thenAccept(reply -> {
                 Bukkit.getScheduler().runTask(plugin, () -> {

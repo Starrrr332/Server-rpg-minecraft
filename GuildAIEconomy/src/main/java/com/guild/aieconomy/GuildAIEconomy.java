@@ -55,12 +55,15 @@ public class GuildAIEconomy extends JavaPlugin {
         this.customItemManager = new CustomItemManager(this);
         this.chestManager = new BotChestManager(this);
 
+        // Escanear e Integrar ítems de EliteMobs automáticamente
+        this.eliteMobsHook.scanAndRegisterEliteMobsItems(this.customItemManager);
+
         // Inicializar Aldeano NPC
         this.merchantVillager = new MerchantVillager(this);
 
         // Inicializar Cliente Gemini IA
         String apiKey = getConfig().getString("gemini.api_key", "");
-        String model = getConfig().getString("gemini.model", "gemini-1.5-flash");
+        String model = getConfig().getString("gemini.model", "gemini-2.5-flash");
         this.geminiClient = new GeminiClient(apiKey, model);
 
         // Registrar Eventos y Comandos
@@ -70,7 +73,7 @@ public class GuildAIEconomy extends JavaPlugin {
         }
 
         getLogger().info("============================================");
-        getLogger().info(" GuildAIEconomy v1.1.0 activado correctamente!");
+        getLogger().info(" GuildAIEconomy v1.2.0 activado correctamente!");
         getLogger().info(" Mercader IA, EliteMobs y BD SQL listos.");
         getLogger().info("============================================");
     }
@@ -88,8 +91,9 @@ public class GuildAIEconomy extends JavaPlugin {
         this.marketEngine.loadFromConfig(getConfig());
         this.chestManager.loadChestLocation();
         this.customItemManager.load();
+        this.eliteMobsHook.scanAndRegisterEliteMobsItems(this.customItemManager);
         String apiKey = getConfig().getString("gemini.api_key", "");
-        String model = getConfig().getString("gemini.model", "gemini-1.5-flash");
+        String model = getConfig().getString("gemini.model", "gemini-2.5-flash");
         this.geminiClient = new GeminiClient(apiKey, model);
     }
 
