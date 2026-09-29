@@ -14,13 +14,13 @@ skills:
     xp: 0.0
   auraskills/fighting:
     level: 3
-    xp: 785.3999999999996
+    xp: 861.3
   auraskills/foraging:
     level: 4
     xp: 861.2199999999999
   auraskills/defense:
     level: 5
-    xp: 555.2898585319557
+    xp: 582.7898585319557
   auraskills/farming:
     level: 0
     xp: 0.0
@@ -33,9 +33,15 @@ skills:
   auraskills/agility:
     level: 5
     xp: 417.3677800000006
-mana: 40.0
+mana: 42.0
 action_bar:
   idle: true
+stat_modifiers:
+  '0':
+    name: AbilityModifier-WiseEffect
+    stat: auraskills/wisdom
+    operation: ADD
+    value: 1.0
 ability_data:
   auraskills/xp_convert:
-    xp: 13.2
+    xp: 26.600000000000005

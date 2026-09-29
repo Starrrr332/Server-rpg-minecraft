@@ -14,7 +14,7 @@ skills:
     xp: 412.2000000000002
   auraskills/defense:
     level: 6
-    xp: 1359.431563389296
+    xp: 1361.631563389296
   auraskills/excavation:
     level: 4
     xp: 1599.019999999974
@@ -23,7 +23,7 @@ skills:
     xp: 329.0
   auraskills/agility:
     level: 7
-    xp: 3752.485819999993
+    xp: 3760.885819999993
   auraskills/fishing:
     level: 0
     xp: 0.0
@@ -33,17 +33,17 @@ skills:
   auraskills/archery:
     level: 4
     xp: 467.7999999999997
-mana: 46.0
+mana: 52.0
 action_bar:
   idle: true
 stat_modifiers:
   '0':
-    name: AbilityModifier-EnchantedStrength
-    stat: auraskills/strength
+    name: AbilityModifier-WiseEffect
+    stat: auraskills/wisdom
     operation: ADD
-    value: 1.5
+    value: 3.0
 ability_data:
   auraskills/xp_convert:
-    xp: 6.4231844310599016
+    xp: 17.023184431059903
   auraskills/first_strike:
     counter: 92
