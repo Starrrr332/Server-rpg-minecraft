@@ -1,10 +1,10 @@
 {
   "summary": {
     "total_players": 14,
-    "total_play_time_hours": 77.2,
+    "total_play_time_hours": 77.5,
     "total_blocks_mined": 55340,
-    "total_mobs_slain": 2897,
-    "total_distance_km": 381.9,
+    "total_mobs_slain": 2899,
+    "total_distance_km": 383.3,
     "server_ip": "ut09.holy.gg:25898",
     "map_url": "http://ut09.holy.gg:25898/"
   },
@@ -20,7 +20,7 @@
         "name": "Stargolden",
         "uuid": "f0d03f69-7585-3e09-aaaa-cba59086d8db",
         "avatar": "https://mc-heads.net/avatar/f0d03f69-7585-3e09-aaaa-cba59086d8db/100",
-        "score": "15h 44m"
+        "score": "15h 57m"
       },
       {
         "name": "mocosupremo777",
@@ -150,7 +150,7 @@
         "name": "Stargolden",
         "uuid": "f0d03f69-7585-3e09-aaaa-cba59086d8db",
         "avatar": "https://mc-heads.net/avatar/f0d03f69-7585-3e09-aaaa-cba59086d8db/100",
-        "score": "380"
+        "score": "382"
       },
       {
         "name": "divk2",
@@ -389,16 +389,16 @@
         "score": "112.31 km"
       },
       {
+        "name": "Stargolden",
+        "uuid": "f0d03f69-7585-3e09-aaaa-cba59086d8db",
+        "avatar": "https://mc-heads.net/avatar/f0d03f69-7585-3e09-aaaa-cba59086d8db/100",
+        "score": "78.79 km"
+      },
+      {
         "name": "mocosupremo777",
         "uuid": "d8fad80b-7908-307d-8880-54012f7865ad",
         "avatar": "https://mc-heads.net/avatar/d8fad80b-7908-307d-8880-54012f7865ad/100",
         "score": "77.65 km"
-      },
-      {
-        "name": "Stargolden",
-        "uuid": "f0d03f69-7585-3e09-aaaa-cba59086d8db",
-        "avatar": "https://mc-heads.net/avatar/f0d03f69-7585-3e09-aaaa-cba59086d8db/100",
-        "score": "77.41 km"
       },
       {
         "name": "divk2",
@@ -472,7 +472,7 @@
         "name": "Stargolden",
         "uuid": "f0d03f69-7585-3e09-aaaa-cba59086d8db",
         "avatar": "https://mc-heads.net/avatar/f0d03f69-7585-3e09-aaaa-cba59086d8db/100",
-        "score": "42.22 K/D"
+        "score": "42.44 K/D"
       },
       {
         "name": ".ElExiliao19",
@@ -818,26 +818,26 @@
       "is_bedrock": false,
       "avatar": "https://mc-heads.net/avatar/f0d03f69-7585-3e09-aaaa-cba59086d8db/100",
       "bust": "https://mc-heads.net/bust/f0d03f69-7585-3e09-aaaa-cba59086d8db/160",
-      "play_time_seconds": 56651,
-      "play_time_str": "15h 44m",
+      "play_time_seconds": 57426,
+      "play_time_str": "15h 57m",
       "deaths": 9,
-      "mob_kills": 380,
+      "mob_kills": 382,
       "player_kills": 2,
-      "kdr": 42.22,
-      "damage_dealt": 3044,
-      "damage_taken": 620,
-      "jumps": 12367,
+      "kdr": 42.44,
+      "damage_dealt": 3066,
+      "damage_taken": 627,
+      "jumps": 12531,
       "distances": {
-        "walk_km": 19.26,
-        "sprint_km": 22.33,
-        "fly_km": 26.35,
+        "walk_km": 19.41,
+        "sprint_km": 22.71,
+        "fly_km": 27.2,
         "boat_km": 0.95,
         "horse_km": 8.52,
-        "total_km": 77.41
+        "total_km": 78.79
       },
       "total_mined": 5885,
       "total_crafted": 2172,
-      "total_picked_up": 10996,
+      "total_picked_up": 10999,
       "skills": [
         {
           "id": "auraskills/fishing",
@@ -851,7 +851,7 @@
           "name": "Combate",
           "icon": "⚔️",
           "level": 4,
-          "xp": 597.2
+          "xp": 619.2
         },
         {
           "id": "auraskills/alchemy",
@@ -872,7 +872,7 @@
           "name": "Agilidad",
           "icon": "⚡",
           "level": 5,
-          "xp": 2495.3
+          "xp": 2506.1
         },
         {
           "id": "auraskills/excavation",
@@ -907,7 +907,7 @@
           "name": "Defensa",
           "icon": "🛡️",
           "level": 4,
-          "xp": 1244.0
+          "xp": 1288.0
         },
         {
           "id": "auraskills/enchanting",
@@ -1074,13 +1074,13 @@
           "count": 19
         },
         {
-          "id": "minecraft:pillager",
-          "name": "Saqueador",
-          "count": 15
-        },
-        {
           "id": "minecraft:creeper",
           "name": "Creeper",
+          "count": 16
+        },
+        {
+          "id": "minecraft:pillager",
+          "name": "Saqueador",
           "count": 15
         },
         {
@@ -1096,7 +1096,7 @@
         {
           "id": "minecraft:phantom",
           "name": "Fantasma",
-          "count": 8
+          "count": 9
         }
       ],
       "deaths_by": [

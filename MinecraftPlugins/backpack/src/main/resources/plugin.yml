@@ -1,8 +1,9 @@
 name: BackpackCommand
 main: com.example.backpack.BackpackPlugin
-version: 1.0.1
+version: 2.0.0
 api-version: 1.21
 commands:
   backpack:
-    description: Abre tu mochila personal
+    description: Abre tu mochila personal (sin necesidad de permisos ni OP)
+    aliases: [mochila, bp]
     usage: /<command>
