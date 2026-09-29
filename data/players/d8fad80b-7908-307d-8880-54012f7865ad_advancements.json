@@ -130,27 +130,28 @@
       "minecraft:pillager": "2026-09-25 23:24:29 +0000",
       "minecraft:blaze": "2026-09-29 03:48:56 +0000",
       "minecraft:skeleton": "2026-09-25 21:53:27 +0000",
-      "minecraft:phantom": "2026-09-27 00:35:43 +0000",
       "minecraft:parched": "2026-09-27 02:43:08 +0000",
+      "minecraft:ravager": "2026-09-29 05:19:37 +0000",
+      "minecraft:ghast": "2026-09-29 03:47:55 +0000",
+      "minecraft:breeze": "2026-09-26 06:02:06 +0000",
+      "minecraft:vindicator": "2026-09-27 02:18:38 +0000",
+      "minecraft:magma_cube": "2026-09-28 04:45:12 +0000",
+      "minecraft:spider": "2026-09-25 21:52:22 +0000",
+      "minecraft:creeper": "2026-09-25 21:52:29 +0000",
+      "minecraft:slime": "2026-09-26 04:23:32 +0000",
+      "minecraft:evoker": "2026-09-28 04:52:30 +0000",
+      "minecraft:phantom": "2026-09-27 00:35:43 +0000",
       "minecraft:zombified_piglin": "2026-09-28 04:28:51 +0000",
       "minecraft:witch": "2026-09-27 03:39:44 +0000",
       "minecraft:husk": "2026-09-25 21:58:55 +0000",
-      "minecraft:ghast": "2026-09-29 03:47:55 +0000",
       "minecraft:cave_spider": "2026-09-27 03:42:20 +0000",
-      "minecraft:breeze": "2026-09-26 06:02:06 +0000",
-      "minecraft:vindicator": "2026-09-27 02:18:38 +0000",
       "minecraft:enderman": "2026-09-26 04:30:32 +0000",
       "minecraft:silverfish": "2026-09-28 04:25:29 +0000",
       "minecraft:stray": "2026-09-28 04:23:26 +0000",
-      "minecraft:magma_cube": "2026-09-28 04:45:12 +0000",
-      "minecraft:spider": "2026-09-25 21:52:22 +0000",
       "minecraft:vex": "2026-09-27 02:23:04 +0000",
       "minecraft:zombie": "2026-09-25 21:51:06 +0000",
-      "minecraft:creeper": "2026-09-25 21:52:29 +0000",
       "minecraft:drowned": "2026-09-28 04:21:48 +0000",
-      "minecraft:zombie_villager": "2026-09-26 00:18:30 +0000",
-      "minecraft:slime": "2026-09-26 04:23:32 +0000",
-      "minecraft:evoker": "2026-09-28 04:52:30 +0000"
+      "minecraft:zombie_villager": "2026-09-26 00:18:30 +0000"
     },
     "done": false
   },
@@ -3939,6 +3940,54 @@
   "minecraft:recipes/decorations/brown_shulker_box": {
     "criteria": {
       "has_shulker_box": "2026-09-29 03:33:57 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/cyan_dye": {
+    "criteria": {
+      "has_green_dye": "2026-09-29 05:26:41 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/green_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_green_dye": "2026-09-29 05:26:41 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/green_candle": {
+    "criteria": {
+      "has_green_dye": "2026-09-29 05:26:41 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/green_bundle": {
+    "criteria": {
+      "has_green_dye": "2026-09-29 05:26:41 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/dye_green_harness": {
+    "criteria": {
+      "has_needed_dye": "2026-09-29 05:26:41 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/dye_green_carpet": {
+    "criteria": {
+      "has_needed_dye": "2026-09-29 05:26:41 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/dye_green_bed": {
+    "criteria": {
+      "has_needed_dye": "2026-09-29 05:26:41 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_green_wool": {
+    "criteria": {
+      "has_needed_dye": "2026-09-29 05:26:41 +0000"
     },
     "done": true
   },

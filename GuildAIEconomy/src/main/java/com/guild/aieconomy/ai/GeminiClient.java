@@ -28,17 +28,16 @@ public class GeminiClient {
     }
 
     public boolean isConfigured() {
-        return apiKey != null && !apiKey.isBlank() && !apiKey.equals("TU_GEMINI_API_KEY_AQUI");
+        return apiKey != null && !apiKey.isBlank() && apiKey.startsWith("AIzaSy");
     }
 
     public CompletableFuture<String> askMerchant(String systemPrompt, String playerMessage) {
         if (!isConfigured()) {
-            return CompletableFuture.completedFuture("¡Hola! Soy el Mercader del Gremio. (Configura mi API Key de Gemini en config.yml para hablar con IA)");
+            return CompletableFuture.completedFuture(getSmartFallbackResponse(playerMessage));
         }
 
         JsonObject root = new JsonObject();
         
-        // System instruction
         JsonObject systemInstruction = new JsonObject();
         JsonArray sysParts = new JsonArray();
         JsonObject sysPart = new JsonObject();
@@ -47,7 +46,6 @@ public class GeminiClient {
         systemInstruction.add("parts", sysParts);
         root.add("systemInstruction", systemInstruction);
 
-        // Contents
         JsonArray contents = new JsonArray();
         JsonObject contentObj = new JsonObject();
         JsonArray parts = new JsonArray();
@@ -58,7 +56,6 @@ public class GeminiClient {
         contents.add(contentObj);
         root.add("contents", contents);
 
-        // Generation config
         JsonObject genConfig = new JsonObject();
         genConfig.addProperty("temperature", 0.7);
         genConfig.addProperty("maxOutputTokens", 150);
@@ -75,7 +72,7 @@ public class GeminiClient {
         return httpClient.sendAsync(request, HttpResponse.BodyHandlers.ofString())
                 .thenApply(response -> {
                     if (response.statusCode() != 200) {
-                        return "El mercado está agitado hoy... (Error IA: " + response.statusCode() + ")";
+                        return getSmartFallbackResponse(playerMessage);
                     }
                     try {
                         JsonObject resObj = gson.fromJson(response.body(), JsonObject.class);
@@ -91,8 +88,20 @@ public class GeminiClient {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                    return "¡Salud, aventurero! ¿Deseas comerciar con el Gremio?";
+                    return getSmartFallbackResponse(playerMessage);
                 })
-                .exceptionally(ex -> "No pude comunicarme con los dioses del mercado en este momento.");
+                .exceptionally(ex -> getSmartFallbackResponse(playerMessage));
+    }
+
+    private String getSmartFallbackResponse(String input) {
+        String lower = input.toLowerCase();
+        if (lower.contains("precio") || lower.contains("costo") || lower.contains("cuanto") || lower.contains("oferta")) {
+            return "¡Revisa la tienda con clic derecho sobre mí o usa /guildai shop para ver los precios actualizados del mercado!";
+        } else if (lower.contains("hola") || lower.contains("buenas") || lower.contains("saludos")) {
+            return "¡Salud, aventurero! Bienvenido a las arcas del Gremio. ¿Vienes a comerciar o a vender tus tesoros?";
+        } else if (lower.contains("diamante") || lower.contains("oro") || lower.contains("hierro")) {
+            return "¡Los minerales valiosos siempre están en alta demanda en nuestro Gremio! Revisa el stock en el cofre.";
+        }
+        return "¡Bienvenido a la tienda del Gremio! Usa clic derecho sobre mí o escribe /guildai shop para hacer negocios.";
     }
 }

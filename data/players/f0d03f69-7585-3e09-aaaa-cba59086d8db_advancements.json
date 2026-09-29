@@ -110,6 +110,7 @@
       "minecraft:pillager": "2026-09-27 17:59:44 +0000",
       "minecraft:blaze": "2026-09-29 03:42:34 +0000",
       "minecraft:skeleton": "2026-09-25 21:05:26 +0000",
+      "minecraft:zoglin": "2026-09-29 05:26:41 +0000",
       "minecraft:phantom": "2026-09-26 05:39:04 +0000",
       "minecraft:witch": "2026-09-25 22:17:28 +0000",
       "minecraft:husk": "2026-09-25 21:15:39 +0000",
@@ -3089,6 +3090,12 @@
   "minecraft:recipes/building_blocks/tuff_brick_slab": {
     "criteria": {
       "has_tuff_bricks": "2026-09-28 05:21:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/composter": {
+    "criteria": {
+      "has_wood_slab": "2026-09-29 05:45:50 +0000"
     },
     "done": true
   },

@@ -133,6 +133,30 @@ def decide_action_via_llm(user_prompt):
             model=model_id, messages=messages, max_tokens=300, temperature=0,
         )
         raw = response.choices[0].message.content
+    elif provider == "gemini":
+        if not api_key:
+            raise RuntimeError("Gemini API key not found in bot_config.json")
+        model_name = model or "gemini-2.5-flash"
+        try:
+            from google import genai
+            client = genai.Client(api_key=api_key)
+            response = client.models.generate_content(
+                model=model_name,
+                contents=user_prompt,
+                config={"system_instruction": SYSTEM_PROMPT}
+            )
+            raw = response.text
+        except ImportError:
+            # Fallback utilizando la API REST mediante requests
+            url = f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent?key={api_key}"
+            payload = {
+                "contents": [{"parts": [{"text": user_prompt}]}],
+                "systemInstruction": {"parts": [{"text": SYSTEM_PROMPT}]}
+            }
+            res = requests.post(url, json=payload, timeout=15)
+            res.raise_for_status()
+            data = res.json()
+            raw = data["candidates"][0]["content"]["parts"][0]["text"]
     else:
         raise NotImplementedError(f"LLM provider '{provider}' not supported in this demo.")
 

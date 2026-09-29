@@ -1,15 +1,18 @@
 name: GuildAIEconomy
-version: 1.0.0
+version: 1.1.0
 main: com.guild.aieconomy.GuildAIEconomy
 api-version: '1.20'
 author: Starrrr332 / Antigravity AI
-description: Plugin de Economia Inteligente con Aldeano Chatbot e IA Gemini para Guilds
-softdepend: [Vault]
+description: Plugin de Economia Inteligente con Aldeano Chatbot, EliteMobs e IA Gemini
+softdepend: [Vault, EliteMobs]
 commands:
   guildai:
-    description: Comando principal del plugin GuildAIEconomy
-    usage: /guildai <spawn|setchest|reload|talk|prices>
-    permission: guildai.admin
+    description: Comando principal de la economía de gremio e IA
+    aliases: [tienda, guildshop, aishop]
 permissions:
+  guildai.use:
+    description: Permite abrir la tienda y hablar con el mercader
+    default: true
   guildai.admin:
+    description: Permite administrar el plugin, aldeano, cofre e ítems custom
     default: op

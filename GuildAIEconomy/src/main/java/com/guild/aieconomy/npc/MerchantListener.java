@@ -1,6 +1,7 @@
 package com.guild.aieconomy.npc;
 
 import com.guild.aieconomy.GuildAIEconomy;
+import com.guild.aieconomy.economy.CustomItemManager.CustomEconomyItem;
 import com.guild.aieconomy.gui.ShopGUI;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -32,8 +33,8 @@ public class MerchantListener implements Listener {
             event.setCancelled(true);
             Player player = event.getPlayer();
             
-            // Abre la GUI de Tienda
-            ShopGUI gui = new ShopGUI(plugin);
+            // Abre la GUI de Tienda en página 1
+            ShopGUI gui = new ShopGUI(plugin, 1);
             gui.open(player);
         }
     }
@@ -47,53 +48,105 @@ public class MerchantListener implements Listener {
             ItemStack clickedItem = event.getCurrentItem();
             if (clickedItem == null || clickedItem.getType() == Material.AIR) return;
 
+            int slot = event.getRawSlot();
+
+            // Paginación
+            if (slot == 48 && clickedItem.getType() == Material.ARROW) {
+                ShopGUI prevGui = new ShopGUI(plugin, gui.getPage() - 1);
+                prevGui.open(player);
+                return;
+            } else if (slot == 50 && clickedItem.getType() == Material.ARROW) {
+                ShopGUI nextGui = new ShopGUI(plugin, gui.getPage() + 1);
+                nextGui.open(player);
+                return;
+            }
+
             Material mat = clickedItem.getType();
-            if (!plugin.getMarketEngine().getBasePrices().containsKey(mat)) return;
-
-            int stock = plugin.getChestManager().getItemStock(mat);
-            double buyPrice = plugin.getMarketEngine().calculateBuyPrice(mat, stock);
-            double sellPrice = plugin.getMarketEngine().calculateSellPrice(mat, stock);
-
             ClickType click = event.getClick();
 
-            if (click.isLeftClick()) {
-                // COMPRAR 1 ÍTEM
-                if (stock <= 0) {
-                    player.sendMessage("§c🤖 Mercader: ¡No me queda stock de ese material en mi cofre!");
-                    return;
-                }
-                if (!plugin.getVaultHook().withdraw(player, buyPrice)) {
-                    player.sendMessage("§c🤖 Mercader: ¡No tienes suficiente dinero! Cuesta " + plugin.getVaultHook().format(buyPrice));
-                    return;
-                }
-
-                if (plugin.getChestManager().removeItemFromStock(mat, 1)) {
-                    player.getInventory().addItem(new ItemStack(mat, 1));
-                    plugin.getMarketEngine().registerDemand(mat, 1);
-                    player.sendMessage("§a🤖 Mercader: ¡Has comprado 1x " + mat.name() + " por " + plugin.getVaultHook().format(buyPrice) + "!");
-                } else {
-                    plugin.getVaultHook().deposit(player, buyPrice); // Reembolso de seguridad
-                    player.sendMessage("§c🤖 Mercader: Hubo un problema al retirar el ítem del cofre.");
-                }
-            } else if (click.isRightClick()) {
-                // VENDER 1 ÍTEM
-                if (!player.getInventory().containsAtLeast(new ItemStack(mat), 1)) {
-                    player.sendMessage("§c🤖 Mercader: ¡No tienes este ítem en tu inventario para vender!");
-                    return;
-                }
-
-                // Intentar añadir al cofre primero
-                if (plugin.getChestManager().addItemToStock(mat, 1)) {
-                    player.getInventory().removeItem(new ItemStack(mat, 1));
-                    plugin.getVaultHook().deposit(player, sellPrice);
-                    plugin.getMarketEngine().registerDemand(mat, -1);
-                    player.sendMessage("§a🤖 Mercader: ¡Has vendido 1x " + mat.name() + " por " + plugin.getVaultHook().format(sellPrice) + "!");
-                } else {
-                    player.sendMessage("§c🤖 Mercader: ¡Mi cofre de economía está lleno y no puedo almacenar más ítems!");
+            // Verificar si es ítem Vanilla o Custom Item
+            boolean isVanilla = plugin.getMarketEngine().getBasePrices().containsKey(mat);
+            CustomEconomyItem customMatch = null;
+            for (CustomEconomyItem item : plugin.getCustomItemManager().getCustomItems()) {
+                if (plugin.getCustomItemManager().isSimilarCustomItem(clickedItem, item.getItemStack())) {
+                    customMatch = item;
+                    break;
                 }
             }
 
-            // Actualizar vista de GUI
+            if (!isVanilla && customMatch == null) return;
+
+            if (isVanilla) {
+                int stock = plugin.getChestManager().getItemStock(mat);
+                double buyPrice = plugin.getMarketEngine().calculateBuyPrice(mat, stock);
+                double sellPrice = plugin.getMarketEngine().calculateSellPrice(mat, stock);
+
+                if (click.isLeftClick()) {
+                    if (stock <= 0) {
+                        player.sendMessage("§c🤖 Mercader: ¡No me queda stock de ese material en mi cofre!");
+                        return;
+                    }
+                    if (!plugin.getVaultHook().withdraw(player, buyPrice)) {
+                        player.sendMessage("§c🤖 Mercader: ¡No tienes suficiente dinero! Cuesta " + plugin.getVaultHook().format(buyPrice));
+                        return;
+                    }
+
+                    if (plugin.getChestManager().removeItemFromStock(mat, 1)) {
+                        player.getInventory().addItem(new ItemStack(mat, 1));
+                        plugin.getMarketEngine().registerDemand(mat, 1);
+                        player.sendMessage("§a🤖 Mercader: ¡Has comprado 1x " + mat.name() + " por " + plugin.getVaultHook().format(buyPrice) + "!");
+                    } else {
+                        plugin.getVaultHook().deposit(player, buyPrice);
+                        player.sendMessage("§c🤖 Mercader: Hubo un problema al retirar el ítem del cofre.");
+                    }
+                } else if (click.isRightClick()) {
+                    if (!player.getInventory().containsAtLeast(new ItemStack(mat), 1)) {
+                        player.sendMessage("§c🤖 Mercader: ¡No tienes este ítem en tu inventario para vender!");
+                        return;
+                    }
+
+                    if (plugin.getChestManager().addItemToStock(mat, 1)) {
+                        player.getInventory().removeItem(new ItemStack(mat, 1));
+                        plugin.getVaultHook().deposit(player, sellPrice);
+                        plugin.getMarketEngine().registerDemand(mat, -1);
+                        player.sendMessage("§a🤖 Mercader: ¡Has vendido 1x " + mat.name() + " por " + plugin.getVaultHook().format(sellPrice) + "!");
+                    } else {
+                        player.sendMessage("§c🤖 Mercader: ¡Mi cofre de economía está lleno!");
+                    }
+                }
+            } else {
+                // Custom Item (EliteMobs / RPG)
+                ItemStack targetStack = customMatch.getItemStack();
+                double buyPrice = customMatch.getBuyPrice();
+                double sellPrice = customMatch.getSellPrice();
+                int stock = plugin.getChestManager().getItemStock(targetStack.getType());
+
+                if (click.isLeftClick()) {
+                    if (!plugin.getVaultHook().withdraw(player, buyPrice)) {
+                        player.sendMessage("§c🤖 Mercader: ¡No tienes suficiente dinero! Cuesta " + plugin.getVaultHook().format(buyPrice));
+                        return;
+                    }
+                    player.getInventory().addItem(targetStack.clone());
+                    player.sendMessage("§a🤖 Mercader: ¡Has comprado 1x " + customMatch.getId() + " por " + plugin.getVaultHook().format(buyPrice) + "!");
+                } else if (click.isRightClick()) {
+                    // Buscar e ingresar el custom item del inventario del jugador
+                    boolean found = false;
+                    for (ItemStack invItem : player.getInventory().getContents()) {
+                        if (invItem != null && plugin.getCustomItemManager().isSimilarCustomItem(invItem, targetStack)) {
+                            invItem.setAmount(invItem.getAmount() - 1);
+                            plugin.getVaultHook().deposit(player, sellPrice);
+                            player.sendMessage("§a🤖 Mercader: ¡Has vendido 1x " + customMatch.getId() + " por " + plugin.getVaultHook().format(sellPrice) + "!");
+                            found = true;
+                            break;
+                        }
+                    }
+                    if (!found) {
+                        player.sendMessage("§c🤖 Mercader: ¡No tienes este ítem personalizado en tu inventario para vender!");
+                    }
+                }
+            }
+
+            // Actualizar vista GUI
             gui.setupItems();
         }
     }
