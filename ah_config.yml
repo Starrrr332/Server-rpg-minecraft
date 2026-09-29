@@ -1,0 +1,116 @@
+# AuctionHouse Configuration
+
+# Prefix for all plugin messages
+prefix: "&8[&6AuctionHouse&8] &r"
+
+# Economy settings
+currency-symbol: "$"
+enable-tax: true
+tax-rate: 0.05
+
+# Default listing settings
+listing-duration-hours: 48
+max-listings-per-player: 10
+price-format: COMMAS # Options: COMMAS (1,000,000,000), SHORT (1B), RAW (1000000000)
+# Rank-based auction limits (requires LuckPerms)
+rank-limits:
+  default: 3      # Default group
+  member: 3       # Member group
+  vip: 5          # VIP group
+  premium: 8      # Premium group  
+  legend: 12      # Legend group
+  hero: 15        # Hero group
+  titan: 20       # Titan group
+  admin: 50       # Admin group
+
+# IMPORTANT: Server identification for Velocity networks
+# Each server must have a unique name when using Velocity
+server-name: "survival"  # Change this for each server: survival, creative, skyblock, etc.
+
+# Database table prefix (used for all database tables)
+# Change this if you need multiple auction house instances in the same database
+# or to avoid conflicts with other plugins
+table-prefix: "ah"
+
+# Velocity integration settings
+velocity:
+  # Enable Velocity proxy integration (requires MySQL database)
+  enabled: false
+  
+  # Database settings for cross-server data sharing (REQUIRED for Velocity mode)
+  database:
+    host: "localhost"
+    port: 3306
+    name: "auctionhouse"
+    username: "auctionhouse_user"
+    password: "secure_password"
+
+# Session-based web access (recommended for security)
+sessions:
+  # Enable session-based web access (no permanent accounts needed)
+  enabled: false
+  
+  # Session duration in minutes
+  duration: 20
+  
+  # Base URL for web access (update with your domain/IP)
+  base-url: "http://localhost:8080"
+  
+  # Message sent when generating session link
+  session-message: "&aClick here to access the web interface: "
+
+# Web expansion settings (alternative to sessions)
+web-expansion:
+  # Enable traditional web interface with user accounts
+  enabled: false
+  
+  # Message shown when web expansion is disabled
+  disabled-message: "&cWeb expansion is currently disabled on this server."
+
+# GUI layout settings
+   # GUI layout settings
+gui:
+  pages:
+    main:
+      size: 45
+      item-slots: "0-8,9-17,18-26,27-37"
+      buttons:
+        my-listings: "38"
+        refresh: "39"
+        sort: "40"
+        help: "41"
+        claim: "42"
+        page-indicator: "36"
+        previous-page: "44"
+        next-page: "43"
+    my-listings:
+      size: 45
+      item-slots: "0-8,9-17,18-26,27-37"
+      buttons:
+        back: "40"
+        page-indicator: "36"
+        previous-page: "44"
+        next-page: "43"    
+
+# Discord integration (Bukkit servers only)
+discord:
+  # Enable Discord integration
+  enabled: false
+  
+  # Bot token for interactive features
+  bot-token: ""
+  
+  # Channel ID for account linking commands
+  linking-channel-id: ""
+  
+  # Channel ID for the live auction listing embed (auto-updates in place)
+  auction-channel-id: ""
+  
+  # Channel ID for transaction log messages (leave blank to use auction-channel-id)
+  transaction-log-channel-id: ""
+  
+  # Update interval for auction listings in minutes
+  auction-update-interval: 1
+  
+  # Maximum items to show per auction embed
+  max-items-per-embed: 10

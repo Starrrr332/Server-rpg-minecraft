@@ -72,7 +72,8 @@
       "minecraft:piglin_brute": "2026-09-27 17:43:11 +0000",
       "minecraft:zombie": "2026-09-26 06:17:22 +0000",
       "minecraft:creeper": "2026-09-27 00:27:58 +0000",
-      "minecraft:drowned": "2026-09-27 17:08:05 +0000"
+      "minecraft:drowned": "2026-09-27 17:08:05 +0000",
+      "minecraft:evoker": "2026-09-29 03:44:06 +0000"
     },
     "done": false
   },
@@ -2748,6 +2749,12 @@
   "minecraft:story/enchant_item": {
     "criteria": {
       "enchanted_item": "2026-09-28 17:15:30 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_lamp": {
+    "criteria": {
+      "has_glowstone": "2026-09-29 03:52:03 +0000"
     },
     "done": true
   },

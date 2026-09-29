@@ -1,49 +1,79 @@
 {
   "stats": {
-    "minecraft:mined": {
-      "minecraft:wall_torch": 1,
-      "minecraft:deepslate": 139
-    },
-    "minecraft:used": {
-      "minecraft:netherite_helmet": 1,
-      "minecraft:cobbled_deepslate": 1,
-      "minecraft:diamond_pickaxe": 140,
-      "minecraft:netherite_chestplate": 1,
-      "minecraft:diamond_leggings": 1,
-      "minecraft:bread": 3,
-      "minecraft:diamond_boots": 1
+    "minecraft:killed": {
+      "minecraft:husk": 130
     },
     "minecraft:picked_up": {
+      "minecraft:diamond_sword": 1,
+      "minecraft:totem_of_undying": 1,
       "minecraft:cooked_beef": 32,
       "minecraft:diamond_helmet": 1,
       "minecraft:diamond_boots": 1,
       "minecraft:netherite_chestplate": 1,
+      "minecraft:stone_shovel": 1,
       "minecraft:torch": 1,
       "minecraft:diamond_pickaxe": 1,
       "minecraft:bread": 128,
-      "minecraft:cobbled_deepslate": 138,
+      "minecraft:cobbled_deepslate": 920,
+      "minecraft:tuff": 35,
+      "minecraft:stone_pickaxe": 1,
+      "minecraft:stone_axe": 1,
       "minecraft:mace": 1,
+      "minecraft:diamond": 2,
       "minecraft:shield": 1,
       "minecraft:netherite_helmet": 1,
       "minecraft:diamond_leggings": 2,
       "minecraft:golden_apple": 5
     },
+    "minecraft:dropped": {
+      "minecraft:stone_shovel": 2,
+      "minecraft:stone_sword": 1,
+      "minecraft:stone_axe": 2,
+      "minecraft:stone_pickaxe": 2
+    },
     "minecraft:custom": {
-      "minecraft:time_since_rest": 23714,
-      "minecraft:walk_one_cm": 22723,
-      "minecraft:leave_game": 2,
-      "minecraft:damage_taken": 17,
-      "minecraft:damage_dealt": 23,
-      "minecraft:play_time": 23714,
-      "minecraft:jump": 349,
-      "minecraft:time_since_death": 23714,
-      "minecraft:sprint_one_cm": 35736,
-      "minecraft:open_chest": 9,
-      "minecraft:fall_one_cm": 19273,
-      "minecraft:total_world_time": 23714,
-      "minecraft:fly_one_cm": 87764,
-      "minecraft:crouch_one_cm": 480,
-      "minecraft:sneak_time": 467
+      "minecraft:time_since_rest": 116587,
+      "minecraft:walk_one_cm": 208327,
+      "minecraft:leave_game": 5,
+      "minecraft:play_noteblock": 23,
+      "minecraft:mob_kills": 130,
+      "minecraft:damage_taken": 3352,
+      "minecraft:play_time": 116587,
+      "minecraft:damage_dealt": 5329,
+      "minecraft:damage_absorbed": 191,
+      "minecraft:jump": 1876,
+      "minecraft:time_since_death": 116587,
+      "minecraft:drop": 7,
+      "minecraft:sprint_one_cm": 220012,
+      "minecraft:open_chest": 12,
+      "minecraft:fall_one_cm": 82657,
+      "minecraft:tune_noteblock": 65,
+      "minecraft:total_world_time": 116587,
+      "minecraft:fly_one_cm": 299844,
+      "minecraft:interact_with_anvil": 1,
+      "minecraft:walk_on_water_one_cm": 349,
+      "minecraft:crouch_one_cm": 12167,
+      "minecraft:sneak_time": 4920,
+      "minecraft:climb_one_cm": 1129
+    },
+    "minecraft:used": {
+      "minecraft:golden_apple": 5,
+      "minecraft:netherite_helmet": 1,
+      "minecraft:cobbled_deepslate": 7,
+      "minecraft:diamond_pickaxe": 923,
+      "minecraft:netherite_chestplate": 1,
+      "minecraft:diamond_leggings": 1,
+      "minecraft:diamond_sword": 434,
+      "minecraft:torch": 1,
+      "minecraft:bread": 4,
+      "minecraft:mace": 415,
+      "minecraft:diamond_boots": 1
+    },
+    "minecraft:mined": {
+      "minecraft:tuff": 33,
+      "minecraft:wall_torch": 1,
+      "minecraft:deepslate": 887,
+      "minecraft:deepslate_diamond_ore": 2
     }
   },
   "DataVersion": 4903

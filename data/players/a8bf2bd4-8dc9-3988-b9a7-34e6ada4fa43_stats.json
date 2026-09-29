@@ -1,0 +1,23 @@
+{
+  "stats": {
+    "minecraft:dropped": {
+      "minecraft:stone_shovel": 1,
+      "minecraft:stone_sword": 1,
+      "minecraft:stone_axe": 1,
+      "minecraft:stone_pickaxe": 1
+    },
+    "minecraft:custom": {
+      "minecraft:sprint_one_cm": 3380,
+      "minecraft:time_since_rest": 1274,
+      "minecraft:walk_one_cm": 1536,
+      "minecraft:total_world_time": 1274,
+      "minecraft:leave_game": 2,
+      "minecraft:fly_one_cm": 2122,
+      "minecraft:play_time": 1274,
+      "minecraft:jump": 9,
+      "minecraft:time_since_death": 1274,
+      "minecraft:drop": 4
+    }
+  },
+  "DataVersion": 4903
+}
