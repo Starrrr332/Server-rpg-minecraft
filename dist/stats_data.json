@@ -3,8 +3,8 @@
     "total_players": 14,
     "total_play_time_hours": 77.2,
     "total_blocks_mined": 55340,
-    "total_mobs_slain": 2895,
-    "total_distance_km": 381.7,
+    "total_mobs_slain": 2897,
+    "total_distance_km": 381.9,
     "server_ip": "ut09.holy.gg:25898",
     "map_url": "http://ut09.holy.gg:25898/"
   },
@@ -20,7 +20,7 @@
         "name": "Stargolden",
         "uuid": "f0d03f69-7585-3e09-aaaa-cba59086d8db",
         "avatar": "https://mc-heads.net/avatar/f0d03f69-7585-3e09-aaaa-cba59086d8db/100",
-        "score": "15h 41m"
+        "score": "15h 44m"
       },
       {
         "name": "mocosupremo777",
@@ -150,7 +150,7 @@
         "name": "Stargolden",
         "uuid": "f0d03f69-7585-3e09-aaaa-cba59086d8db",
         "avatar": "https://mc-heads.net/avatar/f0d03f69-7585-3e09-aaaa-cba59086d8db/100",
-        "score": "378"
+        "score": "380"
       },
       {
         "name": "divk2",
@@ -398,7 +398,7 @@
         "name": "Stargolden",
         "uuid": "f0d03f69-7585-3e09-aaaa-cba59086d8db",
         "avatar": "https://mc-heads.net/avatar/f0d03f69-7585-3e09-aaaa-cba59086d8db/100",
-        "score": "77.23 km"
+        "score": "77.41 km"
       },
       {
         "name": "divk2",
@@ -472,7 +472,7 @@
         "name": "Stargolden",
         "uuid": "f0d03f69-7585-3e09-aaaa-cba59086d8db",
         "avatar": "https://mc-heads.net/avatar/f0d03f69-7585-3e09-aaaa-cba59086d8db/100",
-        "score": "42.0 K/D"
+        "score": "42.22 K/D"
       },
       {
         "name": ".ElExiliao19",
@@ -818,26 +818,26 @@
       "is_bedrock": false,
       "avatar": "https://mc-heads.net/avatar/f0d03f69-7585-3e09-aaaa-cba59086d8db/100",
       "bust": "https://mc-heads.net/bust/f0d03f69-7585-3e09-aaaa-cba59086d8db/160",
-      "play_time_seconds": 56463,
-      "play_time_str": "15h 41m",
+      "play_time_seconds": 56651,
+      "play_time_str": "15h 44m",
       "deaths": 9,
-      "mob_kills": 378,
+      "mob_kills": 380,
       "player_kills": 2,
-      "kdr": 42.0,
-      "damage_dealt": 3024,
-      "damage_taken": 618,
-      "jumps": 12312,
+      "kdr": 42.22,
+      "damage_dealt": 3044,
+      "damage_taken": 620,
+      "jumps": 12367,
       "distances": {
-        "walk_km": 19.17,
-        "sprint_km": 22.28,
-        "fly_km": 26.3,
+        "walk_km": 19.26,
+        "sprint_km": 22.33,
+        "fly_km": 26.35,
         "boat_km": 0.95,
         "horse_km": 8.52,
-        "total_km": 77.23
+        "total_km": 77.41
       },
       "total_mined": 5885,
       "total_crafted": 2172,
-      "total_picked_up": 10995,
+      "total_picked_up": 10996,
       "skills": [
         {
           "id": "auraskills/fishing",
@@ -851,7 +851,7 @@
           "name": "Combate",
           "icon": "⚔️",
           "level": 4,
-          "xp": 575.2
+          "xp": 597.2
         },
         {
           "id": "auraskills/alchemy",
@@ -907,7 +907,7 @@
           "name": "Defensa",
           "icon": "🛡️",
           "level": 4,
-          "xp": 1222.0
+          "xp": 1244.0
         },
         {
           "id": "auraskills/enchanting",
@@ -1094,9 +1094,9 @@
           "count": 12
         },
         {
-          "id": "minecraft:pig",
-          "name": "Cerdo",
-          "count": 7
+          "id": "minecraft:phantom",
+          "name": "Fantasma",
+          "count": 8
         }
       ],
       "deaths_by": [

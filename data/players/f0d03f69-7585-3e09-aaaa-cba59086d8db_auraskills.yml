@@ -5,7 +5,7 @@ skills:
     xp: 0.0
   auraskills/fighting:
     level: 4
-    xp: 575.2000000000015
+    xp: 597.2000000000015
   auraskills/alchemy:
     level: 3
     xp: 396.0
@@ -29,7 +29,7 @@ skills:
     xp: 338.39000000006223
   auraskills/defense:
     level: 4
-    xp: 1222.0001029968275
+    xp: 1244.000102996828
   auraskills/enchanting:
     level: 1
     xp: 50.0
@@ -37,7 +37,7 @@ mana: 34.0
 action_bar:
   idle: true
 ability_data:
-  auraskills/xp_convert:
-    xp: 6.818340000000141
   auraskills/first_strike:
-    counter: 11
+    counter: 12
+  auraskills/xp_convert:
+    xp: 20.818340000000134

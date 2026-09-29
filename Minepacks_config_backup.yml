@@ -1,0 +1,105 @@
+AllowedGameModes:
+- SURVIVAL
+BackpackTitle: '&bBackpack'
+BackpackTitleOther: '&b{OwnerName}''s Backpack'
+Cooldown:
+  AddOnJoin: true
+  CleanupInterval: 600
+  ClearOnLeave: false
+  Command: -1
+  Sync: false
+Database:
+  AutoCleanup:
+    MaxInactiveDays: -1
+  Cache:
+    UnCache:
+      Delay: 600
+      Interval: 600
+      Strategy: interval
+  ForceSaveOnUnload: false
+  SQL:
+    Database: minecraft
+    Host: localhost:3306
+    IdleTimeout: -1
+    MaxConnections: 2
+    MaxLifetime: -1
+    Password: minecraft
+    Properties: []
+    User: minecraft
+  Tables:
+    Backpack: backpacks
+    Cooldown: backpack_cooldowns
+    Fields:
+      Backpack:
+        ItemStacks: itemstacks
+        LastUpdate: lastupdate
+        Owner_ID: owner
+        Version: version
+      Cooldown:
+        Player_ID: id
+        Time: time
+      User:
+        Name: name
+        Player_ID: player_id
+        UUID: uuid
+    User: backpack_players
+  Type: SQLite
+  UUID_Type: auto
+  UseUUIDSeparators: false
+DropOnDeath: true
+FullInventory:
+  CheckInterval: 1
+  CollectItems: false
+  CollectRadius: 1.5
+  IsToggleAllowed: false
+HonorKeepInventoryOnDeath: false
+InventoryManagement:
+  ClearCommand:
+    Enabled: true
+ItemFilter:
+  Enabled: false
+  Lore: []
+  Materials: []
+  Mode: blacklist
+  Names: []
+ItemShortcut:
+  BlockAsHat: false
+  BlockItemFromMoving: false
+  Enabled: true
+  HeadTextureValue: eyJ0ZXh0dXJlcyI6IHsiU0tJTiI6IHsidXJsIjogImh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzU0NTk0ODA2OGQzODRkZGVmNDM5YTQ5MjE3OWQwZmNjYTZkNzdmYjVhZWZjOGE0MmFjNDE1YmZmZGVkNzllNzQifX19
+  ImproveDeathChestCompatibility: false
+  ItemName: '&eBackpack'
+  OpenContainerOnRightClick: false
+  PreferredSlotId: -1
+Language:
+  Language: en
+  UpdateMode: Upgrade
+MaxSize: 6
+Misc:
+  AutoUpdate:
+    Channel: Release
+    Enabled: true
+  UseBungeeCord: false
+ShrinkApproach: Sort
+Shulkerboxes:
+  DisableShulkerboxes: false
+  Existing: Ignore
+  PreventInBackpack: true
+Sound:
+  CloseSound: auto
+  Enabled: true
+  OpenSound: auto
+UseDynamicTitle: true
+Version: 35
+WorldSettings:
+  BlockMode: Message
+  FilterType: blacklist
+  FilteredWorlds: []
+backpack:
+  custom_model_data: 1001
+  display_name: '&6Mochila Personalizada'
+  lore:
+  - '&7Una mochila 3D personalizada'
+  - '&7para almacenar tus items'
+  model: backpack_model
+  texture: backpack_main.png
