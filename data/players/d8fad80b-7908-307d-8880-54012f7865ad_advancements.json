@@ -3747,27 +3747,27 @@
     },
     "done": true
   },
-  "minecraft:recipes/misc/melon_seeds": {
-    "criteria": {
-      "has_melon": "2026-09-28 23:07:09 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/food/beetroot_soup": {
     "criteria": {
       "has_beetroot": "2026-09-28 23:07:00 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/brewing/glistering_melon_slice": {
+  "minecraft:recipes/misc/red_dye_from_beetroot": {
+    "criteria": {
+      "has_beetroot": "2026-09-28 23:07:00 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/melon_seeds": {
     "criteria": {
       "has_melon": "2026-09-28 23:07:09 +0000"
     },
     "done": true
   },
-  "minecraft:recipes/misc/red_dye_from_beetroot": {
+  "minecraft:recipes/brewing/glistering_melon_slice": {
     "criteria": {
-      "has_beetroot": "2026-09-28 23:07:00 +0000"
+      "has_melon": "2026-09-28 23:07:09 +0000"
     },
     "done": true
   },

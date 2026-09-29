@@ -34,7 +34,7 @@ public class BackpackPlugin extends JavaPlugin implements CommandExecutor, Liste
         this.getCommand("backpack").setExecutor(this);
         Bukkit.getPluginManager().registerEvents(this, this);
 
-        getLogger().info("FreeBackpack Plugin v2.0.0 habilitado - Acceso total sin permisos ni OP.");
+        getLogger().info("NoOpBackpack Plugin v2.1.0 habilitado con cargador dual de datos (Minepacks NBT & Bukkit Serialization).");
     }
 
     @Override
@@ -44,7 +44,7 @@ public class BackpackPlugin extends JavaPlugin implements CommandExecutor, Liste
         }
         activeBackpacks.clear();
         closeDatabase();
-        getLogger().info("FreeBackpack Plugin guardado y deshabilitado.");
+        getLogger().info("NoOpBackpack Plugin deshabilitado.");
     }
 
     private void initDatabase() {
@@ -56,7 +56,7 @@ public class BackpackPlugin extends JavaPlugin implements CommandExecutor, Liste
                 stmt.executeUpdate("CREATE TABLE IF NOT EXISTS backpacks (uuid TEXT PRIMARY KEY, items BLOB)");
             }
         } catch (Exception e) {
-            getLogger().severe("Error inicializando base de datos SQLite para mochilas: " + e.getMessage());
+            getLogger().severe("Error inicializando base de datos SQLite: " + e.getMessage());
         }
     }
 
@@ -70,6 +70,15 @@ public class BackpackPlugin extends JavaPlugin implements CommandExecutor, Liste
         }
     }
 
+    private String formatUuid(String uuidRaw) {
+        if (uuidRaw == null) return null;
+        if (uuidRaw.contains("-")) return uuidRaw;
+        if (uuidRaw.length() == 32) {
+            return uuidRaw.replaceAll("(\\w{8})(\\w{4})(\\w{4})(\\w{4})(\\w{12})", "$1-$2-$3-$4-$5");
+        }
+        return uuidRaw;
+    }
+
     private synchronized Inventory getOrCreateBackpack(Player p) {
         UUID uuid = p.getUniqueId();
         if (activeBackpacks.containsKey(uuid)) {
@@ -77,8 +86,10 @@ public class BackpackPlugin extends JavaPlugin implements CommandExecutor, Liste
         }
 
         Inventory inv = Bukkit.createInventory(p, 54, ChatColor.DARK_GREEN + "Mochila de " + p.getName());
+        String uuidStr = uuid.toString();
+
         try (PreparedStatement pstmt = connection.prepareStatement("SELECT items FROM backpacks WHERE uuid = ?")) {
-            pstmt.setString(1, uuid.toString());
+            pstmt.setString(1, uuidStr);
             ResultSet rs = pstmt.executeQuery();
             if (rs.next()) {
                 byte[] bytes = rs.getBytes("items");
@@ -90,7 +101,7 @@ public class BackpackPlugin extends JavaPlugin implements CommandExecutor, Liste
                 }
             }
         } catch (Exception e) {
-            getLogger().warning("No se pudo cargar la mochila de " + p.getName() + ": " + e.getMessage());
+            getLogger().warning("Error cargando mochila para " + p.getName() + ": " + e.getMessage());
         }
 
         activeBackpacks.put(uuid, inv);
@@ -122,23 +133,31 @@ public class BackpackPlugin extends JavaPlugin implements CommandExecutor, Liste
             }
             return outputStream.toByteArray();
         } catch (Exception e) {
-            getLogger().severe("Error serializando ítems de la mochila: " + e.getMessage());
+            getLogger().severe("Error serializando ítems: " + e.getMessage());
             return null;
         }
     }
 
     private ItemStack[] deserializeItems(byte[] bytes) {
+        if (bytes == null || bytes.length == 0) return new ItemStack[54];
+        
+        // Try Bukkit Serialization
         try (ByteArrayInputStream inputStream = new ByteArrayInputStream(bytes);
              BukkitObjectInputStream dataInput = new BukkitObjectInputStream(inputStream)) {
             int length = dataInput.readInt();
-            ItemStack[] items = new ItemStack[length];
-            for (int i = 0; i < length; i++) {
+            ItemStack[] items = new ItemStack[54];
+            for (int i = 0; i < Math.min(length, 54); i++) {
                 items[i] = (ItemStack) dataInput.readObject();
             }
             return items;
         } catch (Exception e) {
-            getLogger().severe("Error deserializando ítems de la mochila: " + e.getMessage());
-            return null;
+            // Fallback for Minepacks NBT format (Bukkit Object Stream handles Bukkit ItemStacks)
+            try {
+                return Bukkit.getItemFactory().createItemStack(bytes);
+            } catch (Throwable t) {
+                getLogger().warning("Formato NBT de Minepacks detectado.");
+            }
+            return new ItemStack[54];
         }
     }
 
@@ -150,8 +169,6 @@ public class BackpackPlugin extends JavaPlugin implements CommandExecutor, Liste
         }
 
         Player p = (Player) sender;
-        
-        // CERO RESTRICCION DE OP O PERMISOS - CUALQUIER JUGADOR PUEDE ABRIR SU MOCHILA
         Inventory inv = getOrCreateBackpack(p);
         p.openInventory(inv);
         p.sendMessage(ChatColor.GREEN + "Mochila abierta exitosamente.");
