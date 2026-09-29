@@ -2,10 +2,10 @@ uuid: bb10c232-6946-3ac6-b291-f2740233ce28
 skills:
   auraskills/excavation:
     level: 3
-    xp: 90.56999999999455
+    xp: 96.83999999999452
   auraskills/archery:
     level: 0
-    xp: 71.0
+    xp: 81.0
   auraskills/alchemy:
     level: 6
     xp: 777.0
@@ -25,20 +25,14 @@ skills:
     level: 0
     xp: 0.0
   auraskills/enchanting:
-    level: 0
-    xp: 0.0
+    level: 1
+    xp: 20.0
   auraskills/mining:
     level: 4
-    xp: 564.1300000000485
+    xp: 986.5300000000633
   auraskills/agility:
     level: 5
-    xp: 363.9064600000006
+    xp: 417.3677800000006
 mana: 40.0
 action_bar:
   idle: true
-stat_modifiers:
-  '0':
-    name: AbilityModifier-WiseEffect
-    stat: auraskills/wisdom
-    operation: ADD
-    value: 1.0

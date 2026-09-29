@@ -21,10 +21,11 @@ def main():
     print(f"[1/3] Getting signed upload URL...")
     resp = requests.get(f"{base_url}/files/upload", headers=headers, params={"directory": upload_dir}, timeout=30)
     resp.raise_for_status()
-    data = resp.json().get('data', {})
-    signed_url = data.get('url') or data.get('attributes', {}).get('url')
+    signed_url = resp.json().get('attributes', {}).get('url')
     if not signed_url:
-        print("ERROR: Could not get signed URL")
+        signed_url = resp.json().get('data', {}).get('attributes', {}).get('url')
+    if not signed_url:
+        print(f"ERROR: Could not get signed URL. Response: {resp.text}")
         return
 
     # Step 2: Upload the ZIP file
