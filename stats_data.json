@@ -1,10 +1,10 @@
 {
   "summary": {
     "total_players": 15,
-    "total_play_time_hours": 77.8,
+    "total_play_time_hours": 77.9,
     "total_blocks_mined": 55365,
     "total_mobs_slain": 2900,
-    "total_distance_km": 385.7,
+    "total_distance_km": 386.7,
     "server_ip": "ut09.holy.gg:25898",
     "map_url": "http://ut09.holy.gg:25898/"
   },
@@ -20,13 +20,13 @@
         "name": "Stargolden",
         "uuid": "f0d03f69-7585-3e09-aaaa-cba59086d8db",
         "avatar": "https://mc-heads.net/avatar/f0d03f69-7585-3e09-aaaa-cba59086d8db/100",
-        "score": "16h 4m"
+        "score": "16h 10m"
       },
       {
         "name": "mocosupremo777",
         "uuid": "d8fad80b-7908-307d-8880-54012f7865ad",
         "avatar": "https://mc-heads.net/avatar/d8fad80b-7908-307d-8880-54012f7865ad/100",
-        "score": "15h 2m"
+        "score": "15h 5m"
       },
       {
         "name": "divk2",
@@ -392,13 +392,13 @@
         "name": "mocosupremo777",
         "uuid": "d8fad80b-7908-307d-8880-54012f7865ad",
         "avatar": "https://mc-heads.net/avatar/d8fad80b-7908-307d-8880-54012f7865ad/100",
-        "score": "79.34 km"
+        "score": "79.75 km"
       },
       {
         "name": "Stargolden",
         "uuid": "f0d03f69-7585-3e09-aaaa-cba59086d8db",
         "avatar": "https://mc-heads.net/avatar/f0d03f69-7585-3e09-aaaa-cba59086d8db/100",
-        "score": "79.15 km"
+        "score": "79.71 km"
       },
       {
         "name": "divk2",
@@ -818,22 +818,22 @@
       "is_bedrock": false,
       "avatar": "https://mc-heads.net/avatar/f0d03f69-7585-3e09-aaaa-cba59086d8db/100",
       "bust": "https://mc-heads.net/bust/f0d03f69-7585-3e09-aaaa-cba59086d8db/160",
-      "play_time_seconds": 57887,
-      "play_time_str": "16h 4m",
+      "play_time_seconds": 58216,
+      "play_time_str": "16h 10m",
       "deaths": 9,
       "mob_kills": 382,
       "player_kills": 2,
       "kdr": 42.44,
       "damage_dealt": 3066,
       "damage_taken": 627,
-      "jumps": 12590,
+      "jumps": 12689,
       "distances": {
-        "walk_km": 19.46,
-        "sprint_km": 22.83,
-        "fly_km": 27.38,
+        "walk_km": 19.5,
+        "sprint_km": 23.0,
+        "fly_km": 27.73,
         "boat_km": 0.95,
         "horse_km": 8.52,
-        "total_km": 79.15
+        "total_km": 79.71
       },
       "total_mined": 5885,
       "total_crafted": 2172,
@@ -1123,22 +1123,22 @@
       "is_bedrock": false,
       "avatar": "https://mc-heads.net/avatar/d8fad80b-7908-307d-8880-54012f7865ad/100",
       "bust": "https://mc-heads.net/bust/d8fad80b-7908-307d-8880-54012f7865ad/160",
-      "play_time_seconds": 54168,
-      "play_time_str": "15h 2m",
+      "play_time_seconds": 54332,
+      "play_time_str": "15h 5m",
       "deaths": 9,
       "mob_kills": 776,
       "player_kills": 1,
       "kdr": 86.22,
       "damage_dealt": 4758,
-      "damage_taken": 1071,
-      "jumps": 14971,
+      "damage_taken": 1072,
+      "jumps": 15036,
       "distances": {
-        "walk_km": 26.27,
-        "sprint_km": 20.75,
-        "fly_km": 29.26,
+        "walk_km": 26.33,
+        "sprint_km": 20.9,
+        "fly_km": 29.47,
         "boat_km": 0.23,
         "horse_km": 2.82,
-        "total_km": 79.34
+        "total_km": 79.75
       },
       "total_mined": 13771,
       "total_crafted": 3025,
@@ -1177,7 +1177,7 @@
           "name": "Agilidad",
           "icon": "⚡",
           "level": 6,
-          "xp": 2241.1
+          "xp": 2245.7
         },
         {
           "id": "auraskills/excavation",

@@ -20,7 +20,7 @@ skills:
     xp: 638.1
   auraskills/agility:
     level: 6
-    xp: 2241.103219999997
+    xp: 2245.7232199999967
   auraskills/enchanting:
     level: 1
     xp: 68.0
@@ -40,4 +40,4 @@ ability_data:
   auraskills/first_strike:
     counter: 56
   auraskills/xp_convert:
-    xp: 28.18292619579166
+    xp: 2.802926195791656
