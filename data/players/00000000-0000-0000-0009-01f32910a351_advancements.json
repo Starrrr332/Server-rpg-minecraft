@@ -20,14 +20,16 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:badlands": "2026-09-25 22:20:01 +0000",
-      "minecraft:old_growth_birch_forest": "2026-09-28 04:58:32 +0000",
       "minecraft:beach": "2026-10-01 14:36:41 +0000",
       "minecraft:dark_forest": "2026-10-01 14:36:29 +0000",
       "minecraft:forest": "2026-09-25 22:11:09 +0000",
       "minecraft:taiga": "2026-09-25 22:09:40 +0000",
       "minecraft:river": "2026-09-28 02:21:59 +0000",
-      "minecraft:birch_forest": "2026-09-25 21:59:35 +0000",
       "minecraft:snowy_plains": "2026-09-27 04:04:15 +0000",
+      "minecraft:old_growth_birch_forest": "2026-09-28 04:58:32 +0000",
+      "minecraft:sulfur_caves": "2026-10-01 14:56:12 +0000",
+      "minecraft:ocean": "2026-10-01 15:51:17 +0000",
+      "minecraft:birch_forest": "2026-09-25 21:59:35 +0000",
       "minecraft:old_growth_spruce_taiga": "2026-10-01 14:38:44 +0000",
       "minecraft:plains": "2026-09-27 00:53:35 +0000"
     },
@@ -2075,6 +2077,114 @@
   "minecraft:recipes/building_blocks/polished_granite_stairs_from_granite_stonecutting": {
     "criteria": {
       "has_granite": "2026-09-28 04:43:13 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_helmet": {
+    "criteria": {
+      "has_leather": "2026-10-01 15:05:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_leggings": {
+    "criteria": {
+      "has_leather": "2026-10-01 15:05:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/andesite_stairs": {
+    "criteria": {
+      "has_andesite": "2026-10-01 15:30:42 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_chestplate": {
+    "criteria": {
+      "has_leather": "2026-10-01 15:05:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/andesite_wall_from_andesite_stonecutting": {
+    "criteria": {
+      "has_andesite": "2026-10-01 15:30:42 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite_slab_from_andesite_stonecutting": {
+    "criteria": {
+      "has_andesite": "2026-10-01 15:30:42 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/leather_horse_armor": {
+    "criteria": {
+      "has_leather": "2026-10-01 15:05:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/saddle": {
+    "criteria": {
+      "has_leather": "2026-10-01 15:05:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/andesite_slab_from_andesite_stonecutting": {
+    "criteria": {
+      "has_andesite": "2026-10-01 15:30:42 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/repeater": {
+    "criteria": {
+      "has_redstone_torch": "2026-10-01 15:22:30 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/andesite_stairs_from_andesite_stonecutting": {
+    "criteria": {
+      "has_andesite": "2026-10-01 15:30:42 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite_from_andesite_stonecutting": {
+    "criteria": {
+      "has_andesite": "2026-10-01 15:30:42 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/item_frame": {
+    "criteria": {
+      "has_leather": "2026-10-01 15:05:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite": {
+    "criteria": {
+      "has_andesite": "2026-10-01 15:30:42 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/leather_boots": {
+    "criteria": {
+      "has_leather": "2026-10-01 15:05:23 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/andesite_wall": {
+    "criteria": {
+      "has_andesite": "2026-10-01 15:30:42 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/andesite_slab": {
+    "criteria": {
+      "has_andesite": "2026-10-01 15:30:42 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_andesite_stairs_from_andesite_stonecutting": {
+    "criteria": {
+      "has_andesite": "2026-10-01 15:30:42 +0000"
     },
     "done": true
   },
