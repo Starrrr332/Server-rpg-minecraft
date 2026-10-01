@@ -5,7 +5,7 @@ skills:
     xp: 1919.4900000001876
   auraskills/fighting:
     level: 6
-    xp: 3026.3000000000006
+    xp: 3034.0000000000005
   auraskills/foraging:
     level: 8
     xp: 86.94000000010547
@@ -23,7 +23,7 @@ skills:
     xp: 329.0
   auraskills/agility:
     level: 8
-    xp: 1407.936299999994
+    xp: 1478.324699999994
   auraskills/fishing:
     level: 0
     xp: 0.0
@@ -38,6 +38,6 @@ action_bar:
   idle: true
 ability_data:
   auraskills/xp_convert:
-    xp: 11.979790017093832
+    xp: 0.06819001709383343
   auraskills/first_strike:
-    counter: 108
+    counter: 109
