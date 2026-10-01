@@ -419,16 +419,18 @@
     "criteria": {
       "minecraft:pillager": "2026-09-29 05:12:10 +0000",
       "minecraft:skeleton": "2026-09-30 14:30:28 +0000",
+      "minecraft:phantom": "2026-10-01 00:24:03 +0000",
+      "minecraft:zombified_piglin": "2026-10-01 00:24:44 +0000",
+      "minecraft:ravager": "2026-09-29 05:13:07 +0000",
+      "minecraft:husk": "2026-09-29 03:52:51 +0000",
+      "minecraft:ghast": "2026-09-30 18:47:31 +0000",
       "minecraft:piglin": "2026-09-30 17:13:04 +0000",
       "minecraft:zombie_horse": "2026-09-30 17:02:09 +0000",
       "minecraft:enderman": "2026-09-30 14:44:31 +0000",
       "minecraft:silverfish": "2026-09-30 15:56:25 +0000",
       "minecraft:spider": "2026-09-30 14:43:05 +0000",
       "minecraft:zombie": "2026-09-29 05:12:20 +0000",
-      "minecraft:creeper": "2026-09-30 14:30:34 +0000",
-      "minecraft:ravager": "2026-09-29 05:13:07 +0000",
-      "minecraft:husk": "2026-09-29 03:52:51 +0000",
-      "minecraft:ghast": "2026-09-30 18:47:31 +0000"
+      "minecraft:creeper": "2026-09-30 14:30:34 +0000"
     },
     "done": false
   },
@@ -3023,6 +3025,138 @@
   "minecraft:recipes/misc/coast_armor_trim_smithing_template": {
     "criteria": {
       "has_coast_armor_trim_smithing_template": "2026-09-30 22:15:21 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/soul_torch": {
+    "criteria": {
+      "has_soul_sand": "2026-10-01 00:25:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/soul_campfire": {
+    "criteria": {
+      "has_soul_sand": "2026-10-01 00:25:44 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/magenta_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-01 00:26:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/yellow_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-01 00:26:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/red_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-01 00:26:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/green_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-01 00:26:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/purple_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-01 00:26:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/white_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-01 00:26:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/light_gray_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-01 00:26:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/gray_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-01 00:26:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/black_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-01 00:26:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/pink_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-01 00:26:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/orange_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-01 00:26:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/light_blue_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-01 00:26:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/cyan_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-01 00:26:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/brown_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-01 00:26:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/lime_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-01 00:26:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/blue_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-01 00:26:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal_from_bone_block": {
+    "criteria": {
+      "has_bone_block": "2026-10-01 00:26:43 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget_from_smelting": {
+    "criteria": {
+      "has_golden_sword": "2026-10-01 00:29:17 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/gold_nugget_from_blasting": {
+    "criteria": {
+      "has_golden_sword": "2026-10-01 00:29:17 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/enchant_item": {
+    "criteria": {
+      "enchanted_item": "2026-10-01 00:50:12 +0000"
     },
     "done": true
   },

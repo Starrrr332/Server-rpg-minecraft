@@ -55,8 +55,10 @@ public class GuildAIEconomy extends JavaPlugin {
         this.customItemManager = new CustomItemManager(this);
         this.chestManager = new BotChestManager(this);
 
-        // Escanear e Integrar ítems de EliteMobs automáticamente
-        this.eliteMobsHook.scanAndRegisterEliteMobsItems(this.customItemManager);
+        // Escanear e Integrar ítems de EliteMobs automáticamente en segundo plano (Async) para no retrasar el inicio del servidor
+        getServer().getScheduler().runTaskAsynchronously(this, () -> {
+            this.eliteMobsHook.scanAndRegisterEliteMobsItems(this.customItemManager);
+        });
 
         // Inicializar Aldeano NPC
         this.merchantVillager = new MerchantVillager(this);
@@ -91,7 +93,9 @@ public class GuildAIEconomy extends JavaPlugin {
         this.marketEngine.loadFromConfig(getConfig());
         this.chestManager.loadChestLocation();
         this.customItemManager.load();
-        this.eliteMobsHook.scanAndRegisterEliteMobsItems(this.customItemManager);
+        getServer().getScheduler().runTaskAsynchronously(this, () -> {
+            this.eliteMobsHook.scanAndRegisterEliteMobsItems(this.customItemManager);
+        });
         String apiKey = getConfig().getString("gemini.api_key", "");
         String model = getConfig().getString("gemini.model", "gemini-2.5-flash");
         this.geminiClient = new GeminiClient(apiKey, model);

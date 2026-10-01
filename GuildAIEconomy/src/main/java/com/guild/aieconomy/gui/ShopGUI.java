@@ -16,15 +16,31 @@ import java.util.Map;
 
 public class ShopGUI implements InventoryHolder {
 
+    public enum ShopType {
+        VANILLA,
+        CUSTOM_RPG
+    }
+
     private final GuildAIEconomy plugin;
     private final Inventory inventory;
+    private final ShopType shopType;
     private final int page;
 
-    public ShopGUI(GuildAIEconomy plugin, int page) {
+    public ShopGUI(GuildAIEconomy plugin, ShopType shopType, int page) {
         this.plugin = plugin;
+        this.shopType = shopType != null ? shopType : ShopType.VANILLA;
         this.page = Math.max(1, page);
-        this.inventory = Bukkit.createInventory(this, 54, "§8🤖 Tienda del Gremio - Pág " + this.page);
+
+        String title = (this.shopType == ShopType.VANILLA)
+                ? "§8🧱 Tienda Vanilla Bloques - Pág " + this.page
+                : "§8⚔️ Tienda Custom RPG - Pág " + this.page;
+
+        this.inventory = Bukkit.createInventory(this, 54, title);
         setupItems();
+    }
+
+    public ShopType getShopType() {
+        return shopType;
     }
 
     public int getPage() {
@@ -34,8 +50,11 @@ public class ShopGUI implements InventoryHolder {
     public void setupItems() {
         inventory.clear();
 
-        // Decoración bordes con cristales
-        ItemStack glassBorder = createGuiItem(Material.GRAY_STAINED_GLASS_PANE, " ", null);
+        // Decoración bordes con cristales según tipo de tienda
+        ItemStack glassBorder = (shopType == ShopType.VANILLA) 
+                ? createGuiItem(Material.CYAN_STAINED_GLASS_PANE, " ", null)
+                : createGuiItem(Material.PURPLE_STAINED_GLASS_PANE, " ", null);
+
         for (int i = 0; i < 9; i++) {
             inventory.setItem(i, glassBorder);
             inventory.setItem(45 + i, glassBorder);
@@ -45,17 +64,18 @@ public class ShopGUI implements InventoryHolder {
             inventory.setItem(i + 8, glassBorder);
         }
 
-        // Ítems combinados: Vanilla + Custom (EliteMobs)
         List<ShopEntry> entries = new ArrayList<>();
 
-        // Vanilla
-        for (Map.Entry<Material, Double> entry : plugin.getMarketEngine().getBasePrices().entrySet()) {
-            entries.add(new ShopEntry(entry.getKey(), null));
-        }
-
-        // Custom Items
-        for (CustomEconomyItem customItem : plugin.getCustomItemManager().getCustomItems()) {
-            entries.add(new ShopEntry(null, customItem));
+        if (shopType == ShopType.VANILLA) {
+            // Mostrar todos los bloques e ítems de Vanilla
+            for (Map.Entry<Material, Double> entry : plugin.getMarketEngine().getBasePrices().entrySet()) {
+                entries.add(new ShopEntry(entry.getKey(), null));
+            }
+        } else {
+            // Mostrar exclusivamente ítems Custom RPG / EliteMobs (25,000+ monedas)
+            for (CustomEconomyItem customItem : plugin.getCustomItemManager().getCustomItems()) {
+                entries.add(new ShopEntry(null, customItem));
+            }
         }
 
         int itemsPerPage = 28;
@@ -77,7 +97,7 @@ public class ShopGUI implements InventoryHolder {
 
                 List<String> lore = new ArrayList<>();
                 lore.add("§7-----------------------------");
-                lore.add("§7Tipo: §eVanilla");
+                lore.add("§7Tipo: §bVanilla Bloque/Ítem");
                 lore.add("§7Stock disponible: §e" + currentStock + " unidades");
                 lore.add("§7Tendencia Mercado: " + trend);
                 lore.add("");
@@ -89,7 +109,6 @@ public class ShopGUI implements InventoryHolder {
             } else {
                 CustomEconomyItem custom = entry.customItem;
                 ItemStack baseItem = custom.getItemStack();
-                int currentStock = plugin.getChestManager().getItemStock(baseItem.getType());
                 double buyPrice = custom.getBuyPrice();
                 double sellPrice = custom.getSellPrice();
 
@@ -97,7 +116,7 @@ public class ShopGUI implements InventoryHolder {
                 List<String> lore = (meta != null && meta.hasLore()) ? new ArrayList<>(meta.getLore()) : new ArrayList<>();
                 lore.add("§7-----------------------------");
                 lore.add("§7Tipo: §dCustom / RPG (EliteMobs)");
-                lore.add("§7Stock disponible: §e" + currentStock + " unidades");
+                lore.add("§7Precio de Lista: §e" + plugin.getVaultHook().format(buyPrice));
                 lore.add("");
                 lore.add("§a▶ Clic Izquierdo: §fComprar 1 x " + plugin.getVaultHook().format(buyPrice));
                 lore.add("§c▶ Clic Derecho: §fVender 1 x " + plugin.getVaultHook().format(sellPrice));
@@ -133,8 +152,9 @@ public class ShopGUI implements InventoryHolder {
         List<String> infoLore = new ArrayList<>();
         infoLore.add("§7Página §e" + page + " §7de §e" + totalPages);
         infoLore.add("§7Ítems totales: §a" + entries.size());
+        infoLore.add("§7Tipo de Tienda: " + (shopType == ShopType.VANILLA ? "§bVanilla (Bloques)" : "§dCustom RPG (EliteMobs)"));
         infoLore.add("§7Impuesto del Gremio: §a" + plugin.getMarketEngine().getGuildTaxPercent() + "%");
-        inventory.setItem(49, createGuiItem(Material.BOOK, "§e📊 Información Económica", infoLore));
+        inventory.setItem(49, createGuiItem(Material.BOOK, "§e📊 Información de Tienda", infoLore));
     }
 
     private ItemStack createGuiItem(Material material, String name, List<String> lore) {

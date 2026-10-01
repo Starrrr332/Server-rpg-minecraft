@@ -122,10 +122,12 @@ public class EliteMobsHook {
                     item.setItemMeta(meta);
                 }
 
-                double buyPrice = config.getDouble("buyPrice", config.getDouble("price", 350.0));
-                double sellPrice = config.getDouble("sellPrice", buyPrice * 0.7);
+                // Los ítems custom de EliteMobs son mucho más caros (Default 25,000 monedas por pieza)
+                double rawBuy = config.getDouble("buyPrice", config.getDouble("price", 25000.0));
+                double buyPrice = Math.max(25000.0, rawBuy);
+                double sellPrice = config.getDouble("sellPrice", buyPrice * 0.70);
 
-                if (itemManager.addCustomItem(id, item, buyPrice, sellPrice)) {
+                if (itemManager.addCustomItem(id, item, buyPrice, sellPrice, false)) {
                     registeredCount++;
                 }
             } catch (Exception e) {
@@ -133,7 +135,11 @@ public class EliteMobsHook {
             }
         }
 
-        plugin.getLogger().info("[GuildAIEconomy] Escaneo completado: " + registeredCount + " ítems de EliteMobs integrados en la tienda.");
+        if (registeredCount > 0) {
+            itemManager.save();
+        }
+
+        plugin.getLogger().info("[GuildAIEconomy] Escaneo completado: " + registeredCount + " ítems de EliteMobs integrados a la tienda RPG (25,000+ monedas/pieza).");
         return registeredCount;
     }
 

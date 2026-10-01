@@ -73,8 +73,9 @@ public class CustomItemManager {
         if (config.isConfigurationSection("items")) {
             for (String key : config.getConfigurationSection("items").getKeys(false)) {
                 ItemStack item = config.getItemStack("items." + key + ".item");
-                double buyPrice = config.getDouble("items." + key + ".buy_price", 100.0);
-                double sellPrice = config.getDouble("items." + key + ".sell_price", 70.0);
+                double rawBuy = config.getDouble("items." + key + ".buy_price", 25000.0);
+                double buyPrice = Math.max(25000.0, rawBuy);
+                double sellPrice = config.getDouble("items." + key + ".sell_price", buyPrice * 0.70);
                 if (item != null) {
                     customItems.put(key, new CustomEconomyItem(key, item, buyPrice, sellPrice));
                 }
@@ -85,14 +86,15 @@ public class CustomItemManager {
             loadDefaultRPGItems();
         }
 
-        plugin.getLogger().info("[GuildAIEconomy] Cargados " + customItems.size() + " ítems personalizados para la economía.");
+        plugin.getLogger().info("[GuildAIEconomy] Cargados " + customItems.size() + " ítems RPG personalizados a 25,000+ monedas/pieza.");
     }
 
     private void loadDefaultRPGItems() {
-        addCustomItemInternal("espada_elite_dragon", createSampleItem(Material.DIAMOND_SWORD, "§6⚔️ Espada del Dragón Élite", Arrays.asList("§7Forjada con escamas de dragón", "§eEfecto: Fuego II & Filo V"), Enchantment.DAMAGE_ALL, 5, Enchantment.FIRE_ASPECT, 2), 450.0, 300.0);
-        addCustomItemInternal("arco_elven_legendario", createSampleItem(Material.BOW, "§a🏹 Arco Élfico Legendario", Arrays.asList("§7Bendecido por los ancianos", "§eEfecto: Poder V & Inmortalidad"), Enchantment.ARROW_DAMAGE, 5, Enchantment.ARROW_INFINITE, 1), 380.0, 250.0);
-        addCustomItemInternal("coraza_titan_netherita", createSampleItem(Material.NETHERITE_CHESTPLATE, "§c🛡️ Coraza del Titán", Arrays.asList("§7Forjada en las profundidades del Nether", "§eEfecto: Protección IV"), Enchantment.PROTECTION_ENVIRONMENTAL, 4, Enchantment.DURABILITY, 3), 850.0, 600.0);
-        addCustomItemInternal("pocion_vida_ancestral", createSampleItem(Material.HONEY_BOTTLE, "§b🧪 Poción de Salud Ancestral", Arrays.asList("§7Restaura la vitalidad por completo"), null, 0, null, 0), 120.0, 80.0);
+        addCustomItemInternal("espada_elite_dragon", createSampleItem(Material.DIAMOND_SWORD, "§6⚔️ Espada del Dragón Élite", Arrays.asList("§7Forjada con escamas de dragón legendario", "§eEfecto: Fuego II & Filo V"), Enchantment.DAMAGE_ALL, 5, Enchantment.FIRE_ASPECT, 2), 25000.0, 17500.0, false);
+        addCustomItemInternal("arco_elven_legendario", createSampleItem(Material.BOW, "§a🏹 Arco Élfico Legendario", Arrays.asList("§7Bendecido por los ancianos élficos", "§eEfecto: Poder V & Inmortalidad"), Enchantment.ARROW_DAMAGE, 5, Enchantment.ARROW_INFINITE, 1), 25000.0, 17500.0, false);
+        addCustomItemInternal("coraza_titan_netherita", createSampleItem(Material.NETHERITE_CHESTPLATE, "§c🛡️ Coraza del Titán", Arrays.asList("§7Forjada en el fuego primigenio del Nether", "§eEfecto: Protección IV & Irrompibilidad III"), Enchantment.PROTECTION_ENVIRONMENTAL, 4, Enchantment.DURABILITY, 3), 35000.0, 24500.0, false);
+        addCustomItemInternal("pocion_vida_ancestral", createSampleItem(Material.HONEY_BOTTLE, "§b🧪 Poción de Salud Ancestral", Arrays.asList("§7Restaura la vitalidad por completo"), null, 0, null, 0), 10000.0, 7000.0, false);
+        save();
     }
 
     private ItemStack createSampleItem(Material mat, String name, List<String> lore, Enchantment enc1, int lvl1, Enchantment enc2, int lvl2) {
@@ -108,7 +110,7 @@ public class CustomItemManager {
         return item;
     }
 
-    private void addCustomItemInternal(String id, ItemStack item, double buyPrice, double sellPrice) {
+    private void addCustomItemInternal(String id, ItemStack item, double buyPrice, double sellPrice, boolean autoSave) {
         if (item == null) return;
         ItemStack singleItem = item.clone();
         singleItem.setAmount(1);
@@ -123,7 +125,9 @@ public class CustomItemManager {
         config.set("items." + id + ".item", singleItem);
         config.set("items." + id + ".buy_price", buyPrice);
         config.set("items." + id + ".sell_price", sellPrice);
-        save();
+        if (autoSave) {
+            save();
+        }
 
         customItems.put(id, new CustomEconomyItem(id, singleItem, buyPrice, sellPrice));
     }
@@ -137,8 +141,12 @@ public class CustomItemManager {
     }
 
     public boolean addCustomItem(String id, ItemStack item, double buyPrice, double sellPrice) {
+        return addCustomItem(id, item, buyPrice, sellPrice, true);
+    }
+
+    public boolean addCustomItem(String id, ItemStack item, double buyPrice, double sellPrice, boolean autoSave) {
         if (item == null) return false;
-        addCustomItemInternal(id, item, buyPrice, sellPrice);
+        addCustomItemInternal(id, item, buyPrice, sellPrice, autoSave);
         return true;
     }
 

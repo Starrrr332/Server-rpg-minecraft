@@ -32,6 +32,61 @@ public class DynamicMarketEngine {
         this.minPriceFactor = config.getDouble("economy.min_price_factor", 0.70);
         this.maxPriceFactor = config.getDouble("economy.max_price_factor", 1.50);
         this.guildTaxPercent = config.getDouble("economy.guild_tax_percent", 5.0);
+
+        populateAllObtainableVanillaBlocks();
+    }
+
+    public void populateAllObtainableVanillaBlocks() {
+        for (Material mat : Material.values()) {
+            if (!mat.isItem() || !mat.isBlock()) continue;
+            if (mat.isAir()) continue;
+            String name = mat.name();
+            if (name.startsWith("LEGACY_")) continue;
+
+            // Excluir bloques técnicos / inobtenibles / de comandos
+            if (name.contains("COMMAND_BLOCK") || name.equals("BEDROCK") || name.equals("BARRIER") ||
+                name.contains("STRUCTURE") || name.equals("JIGSAW") || name.equals("LIGHT") ||
+                name.contains("PORTAL") || name.contains("CAULDRON") || name.contains("STEM") ||
+                name.equals("FIRE") || name.equals("SOUL_FIRE") || name.equals("WATER") || name.equals("LAVA") ||
+                name.equals("BUBBLE_COLUMN") || name.equals("POWDER_SNOW") || name.contains("PISTON") ||
+                name.contains("VINES_PLANT") || name.equals("FROGSPAWN") || name.equals("TRIPWIRE")) {
+                continue;
+            }
+
+            if (!basePrices.containsKey(mat)) {
+                double price = calculateDefaultVanillaBlockPrice(mat);
+                basePrices.put(mat, price);
+            }
+        }
+    }
+
+    private double calculateDefaultVanillaBlockPrice(Material mat) {
+        String name = mat.name();
+        if (name.contains("DIRT") || name.contains("COBBLESTONE") || name.contains("SAND") || name.contains("GRAVEL") || name.contains("NETHERRACK") || name.equals("STONE")) {
+            return 2.0;
+        }
+        if (name.contains("DEEPSLATE") || name.contains("TUFF") || name.contains("MUD") || name.contains("GRANITE") || name.contains("DIORITE") || name.contains("ANDESITE") || name.contains("BASALT")) {
+            return 3.0;
+        }
+        if (name.contains("LOG") || name.contains("WOOD") || name.contains("PLANKS") || name.contains("BRICKS") || name.contains("GLASS") || name.contains("TERRACOTTA") || name.contains("WOOL") || name.contains("CONCRETE")) {
+            return 5.0;
+        }
+        if (name.contains("QUARTZ") || name.contains("PRISMARINE") || name.contains("PURPUR") || name.contains("COPPER") || name.contains("GLOWSTONE") || name.contains("SEA_LANTERN") || name.contains("SPONGE")) {
+            return 25.0;
+        }
+        if (name.contains("COAL_BLOCK") || name.contains("IRON_BLOCK") || name.contains("REDSTONE_BLOCK") || name.contains("LAPIS_BLOCK")) {
+            return 90.0;
+        }
+        if (name.contains("GOLD_BLOCK") || name.contains("EMERALD_BLOCK")) {
+            return 300.0;
+        }
+        if (name.contains("DIAMOND_BLOCK")) {
+            return 900.0;
+        }
+        if (name.contains("NETHERITE_BLOCK")) {
+            return 4500.0;
+        }
+        return 10.0;
     }
 
     public Map<Material, Double> getBasePrices() {
@@ -57,7 +112,6 @@ public class DynamicMarketEngine {
 
     public double calculateSellPrice(Material material, int currentStock) {
         double buyPrice = calculateBuyPrice(material, currentStock);
-        // El precio de venta al bot es 70% del precio de compra menos impuesto del gremio
         double sellPrice = buyPrice * 0.70 * (1.0 - (guildTaxPercent / 100.0));
         return Math.max(0.1, Math.round(sellPrice * 100.0) / 100.0);
     }

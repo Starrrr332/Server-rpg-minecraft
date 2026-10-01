@@ -4,6 +4,7 @@ com\guild\aieconomy\gui\ShopGUI.class
 com\guild\aieconomy\economy\VaultHook.class
 com\guild\aieconomy\economy\DatabaseManager.class
 com\guild\aieconomy\gui\ShopGUI$ShopEntry.class
+com\guild\aieconomy\gui\ShopGUI$ShopType.class
 com\guild\aieconomy\npc\MerchantListener.class
 com\guild\aieconomy\economy\DynamicMarketEngine.class
 com\guild\aieconomy\ai\GeminiClient.class

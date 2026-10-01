@@ -3,6 +3,7 @@ package com.guild.aieconomy.npc;
 import com.guild.aieconomy.GuildAIEconomy;
 import com.guild.aieconomy.economy.CustomItemManager.CustomEconomyItem;
 import com.guild.aieconomy.gui.ShopGUI;
+import com.guild.aieconomy.gui.ShopGUI.ShopType;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -62,7 +63,10 @@ public class MerchantListener implements Listener {
             event.setCancelled(true);
             Player player = event.getPlayer();
             
-            ShopGUI gui = new ShopGUI(plugin, 1);
+            String merchantType = plugin.getMerchantVillager().getMerchantType(event.getRightClicked());
+            ShopType shopType = "custom".equalsIgnoreCase(merchantType) ? ShopType.CUSTOM_RPG : ShopType.VANILLA;
+
+            ShopGUI gui = new ShopGUI(plugin, shopType, 1);
             gui.open(player);
         }
     }
@@ -79,11 +83,11 @@ public class MerchantListener implements Listener {
             int slot = event.getRawSlot();
 
             if (slot == 48 && clickedItem.getType() == Material.ARROW) {
-                ShopGUI prevGui = new ShopGUI(plugin, gui.getPage() - 1);
+                ShopGUI prevGui = new ShopGUI(plugin, gui.getShopType(), gui.getPage() - 1);
                 prevGui.open(player);
                 return;
             } else if (slot == 50 && clickedItem.getType() == Material.ARROW) {
-                ShopGUI nextGui = new ShopGUI(plugin, gui.getPage() + 1);
+                ShopGUI nextGui = new ShopGUI(plugin, gui.getShopType(), gui.getPage() + 1);
                 nextGui.open(player);
                 return;
             }
