@@ -14,7 +14,7 @@ skills:
     xp: 76.5
   auraskills/agility:
     level: 6
-    xp: 1622.6994600000007
+    xp: 1624.2394600000007
   auraskills/excavation:
     level: 3
     xp: 204.39999999999537
@@ -37,7 +37,7 @@ mana: 34.0
 action_bar:
   idle: true
 ability_data:
-  auraskills/xp_convert:
-    xp: 28.889087366409857
   auraskills/first_strike:
-    counter: 15
+    counter: 16
+  auraskills/xp_convert:
+    xp: 0.42908736640985623

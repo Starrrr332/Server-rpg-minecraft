@@ -27,7 +27,7 @@ farewell:
 - Vuelve con más ingredientes exóticos de los jefes.
 canTalk: true
 activationRadius: 3.5
-interactionType: CHAT
+interactionType: BUY_OR_SELL
 syncMovement: true
 scripts: []
 transportRoutes: []
