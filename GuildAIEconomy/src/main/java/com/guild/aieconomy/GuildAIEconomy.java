@@ -3,8 +3,10 @@ package com.guild.aieconomy;
 import com.guild.aieconomy.ai.GeminiClient;
 import com.guild.aieconomy.commands.MerchantCommand;
 import com.guild.aieconomy.economy.*;
+import com.guild.aieconomy.holograms.HologramManager;
 import com.guild.aieconomy.npc.MerchantListener;
 import com.guild.aieconomy.npc.MerchantVillager;
+import com.guild.aieconomy.ranks.GuildRankManager;
 import org.bukkit.Material;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -21,6 +23,8 @@ public class GuildAIEconomy extends JavaPlugin {
     private CustomItemManager customItemManager;
     private EliteMobsHook eliteMobsHook;
     private DatabaseManager databaseManager;
+    private GuildRankManager rankManager;
+    private HologramManager hologramManager;
 
     @Override
     public void onEnable() {
@@ -41,6 +45,12 @@ public class GuildAIEconomy extends JavaPlugin {
         // Inicializar Base de Datos SQL
         this.databaseManager = new DatabaseManager(this);
 
+        // Inicializar Gestor de Rangos del Gremio
+        this.rankManager = new GuildRankManager(this);
+
+        // Inicializar Gestor de Hologramas
+        this.hologramManager = new HologramManager(this);
+
         // Inicializar Motor Económico
         this.marketEngine = new DynamicMarketEngine();
         this.marketEngine.loadFromConfig(getConfig());
@@ -55,7 +65,7 @@ public class GuildAIEconomy extends JavaPlugin {
         this.customItemManager = new CustomItemManager(this);
         this.chestManager = new BotChestManager(this);
 
-        // Escanear e Integrar ítems de EliteMobs automáticamente en segundo plano (Async) para no retrasar el inicio del servidor
+        // Escanear e Integrar ítems de EliteMobs automáticamente en segundo plano (Async)
         getServer().getScheduler().runTaskAsynchronously(this, () -> {
             this.eliteMobsHook.scanAndRegisterEliteMobsItems(this.customItemManager);
         });
@@ -75,8 +85,8 @@ public class GuildAIEconomy extends JavaPlugin {
         }
 
         getLogger().info("============================================");
-        getLogger().info(" GuildAIEconomy v1.2.0 activado correctamente!");
-        getLogger().info(" Mercader IA, EliteMobs y BD SQL listos.");
+        getLogger().info(" GuildAIEconomy v1.3.0 - Gremio Activado!");
+        getLogger().info(" Mercaderes IA, Hologramas y Rangos Listos.");
         getLogger().info("============================================");
     }
 
@@ -135,5 +145,13 @@ public class GuildAIEconomy extends JavaPlugin {
 
     public DatabaseManager getDatabaseManager() {
         return databaseManager;
+    }
+
+    public GuildRankManager getRankManager() {
+        return rankManager;
+    }
+
+    public HologramManager getHologramManager() {
+        return hologramManager;
     }
 }

@@ -2,6 +2,7 @@ package com.guild.aieconomy.npc;
 
 import com.guild.aieconomy.GuildAIEconomy;
 import com.guild.aieconomy.economy.CustomItemManager.CustomEconomyItem;
+import com.guild.aieconomy.gui.GuildMenuGUI;
 import com.guild.aieconomy.gui.ShopGUI;
 import com.guild.aieconomy.gui.ShopGUI.ShopType;
 import org.bukkit.Bukkit;
@@ -64,15 +65,47 @@ public class MerchantListener implements Listener {
             Player player = event.getPlayer();
             
             String merchantType = plugin.getMerchantVillager().getMerchantType(event.getRightClicked());
-            ShopType shopType = "custom".equalsIgnoreCase(merchantType) ? ShopType.CUSTOM_RPG : ShopType.VANILLA;
-
-            ShopGUI gui = new ShopGUI(plugin, shopType, 1);
-            gui.open(player);
+            if ("cacerias".equalsIgnoreCase(merchantType) || "quests".equalsIgnoreCase(merchantType)) {
+                player.performCommand("em quests");
+            } else if ("comandante".equalsIgnoreCase(merchantType) || "ranks".equalsIgnoreCase(merchantType)) {
+                GuildMenuGUI menu = new GuildMenuGUI(plugin, player);
+                menu.open(player);
+            } else {
+                ShopType shopType = "custom".equalsIgnoreCase(merchantType) ? ShopType.CUSTOM_RPG : ShopType.VANILLA;
+                ShopGUI gui = new ShopGUI(plugin, shopType, 1);
+                gui.open(player);
+            }
         }
     }
 
     @EventHandler(priority = EventPriority.HIGH)
     public void onShopClick(InventoryClickEvent event) {
+        if (event.getInventory().getHolder() instanceof com.guild.aieconomy.gui.GuildMenuGUI) {
+            event.setCancelled(true);
+            if (!(event.getWhoClicked() instanceof Player player)) return;
+
+            int slot = event.getRawSlot();
+            if (slot == 10) {
+                ShopGUI gui = new ShopGUI(plugin, ShopType.VANILLA, 1);
+                gui.open(player);
+            } else if (slot == 12) {
+                ShopGUI gui = new ShopGUI(plugin, ShopType.CUSTOM_RPG, 1);
+                gui.open(player);
+            } else if (slot == 14) {
+                player.sendMessage("§a[Gremio] Tu Rango actual es: " + plugin.getRankManager().getPlayerData(player).getRank().getDisplayName());
+                player.sendMessage("§eProgreso: " + plugin.getRankManager().getRankProgressFormatted(player));
+            } else if (slot == 16) {
+                org.bukkit.World gWorld = Bukkit.getWorld("em_adventurers_guild");
+                if (gWorld != null) {
+                    player.teleport(new org.bukkit.Location(gWorld, 308.5, 78.0, 212.5));
+                    player.sendMessage("§a[Gremio] ¡Teletransportado al Salón Principal del Gremio de Aventureros!");
+                } else {
+                    player.sendMessage("§cEl mundo del Gremio no está cargado.");
+                }
+            }
+            return;
+        }
+
         if (event.getInventory().getHolder() instanceof ShopGUI gui) {
             event.setCancelled(true);
             

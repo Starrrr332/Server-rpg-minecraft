@@ -27,12 +27,15 @@ public class MerchantVillager {
     public Villager spawnMerchant(Location location, String customName, String professionName, String merchantType) {
         if (location == null || location.getWorld() == null) return null;
 
-        final String type = (merchantType != null && merchantType.equalsIgnoreCase("custom")) ? "custom" : "vanilla";
+        final String type = (merchantType != null) ? merchantType.toLowerCase() : "vanilla";
 
         return location.getWorld().spawn(location, Villager.class, villager -> {
-            String defaultName = "custom".equals(type)
-                    ? "§d⚔️ [IA] Mercader RPG & EliteMobs"
-                    : "§b🧱 [IA] Mercader Vanilla";
+            String defaultName = switch (type) {
+                case "custom", "rpg" -> "§d⚔️ [IA] Mercader RPG & EliteMobs";
+                case "cacerias", "quests" -> "§e📜 Maestro de Cacerías del Gremio";
+                case "comandante", "ranks" -> "§a🏆 Comandante del Gremio (Rangos)";
+                default -> "§b🧱 [IA] Mercader Vanilla";
+            };
 
             String name = (customName != null && !customName.isBlank()) 
                     ? ChatColor.translateAlternateColorCodes('&', customName)
@@ -41,9 +44,12 @@ public class MerchantVillager {
             villager.setCustomName(name);
             villager.setCustomNameVisible(true);
             
-            Villager.Profession profession = "custom".equals(type)
-                    ? Villager.Profession.WEAPONSMITH
-                    : Villager.Profession.LIBRARIAN;
+            Villager.Profession profession = switch (type) {
+                case "custom", "rpg" -> Villager.Profession.WEAPONSMITH;
+                case "cacerias", "quests" -> Villager.Profession.FLETCHER;
+                case "comandante", "ranks" -> Villager.Profession.ARMORER;
+                default -> Villager.Profession.LIBRARIAN;
+            };
 
             try {
                 if (professionName != null && !professionName.isBlank()) {

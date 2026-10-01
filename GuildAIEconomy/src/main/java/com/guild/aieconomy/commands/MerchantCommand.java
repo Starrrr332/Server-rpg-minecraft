@@ -42,6 +42,32 @@ public class MerchantCommand implements CommandExecutor {
         String sub = args[0].toLowerCase();
 
         switch (sub) {
+            case "menu", "gremio" -> {
+                if (sender instanceof Player player) {
+                    com.guild.aieconomy.gui.GuildMenuGUI menu = new com.guild.aieconomy.gui.GuildMenuGUI(plugin, player);
+                    menu.open(player);
+                    return true;
+                } else {
+                    sendHelp(sender);
+                    return true;
+                }
+            }
+            case "rank", "rango" -> {
+                if (sender instanceof Player player) {
+                    var data = plugin.getRankManager().getPlayerData(player);
+                    player.sendMessage("§a[Gremio] Tu Rango: " + data.getRank().getDisplayName());
+                    player.sendMessage("§eProgreso: " + plugin.getRankManager().getRankProgressFormatted(player));
+                    return true;
+                } else {
+                    sender.sendMessage("Comando solo para jugadores.");
+                    return true;
+                }
+            }
+            case "setup" -> {
+                plugin.getHologramManager().setupGuildHolograms();
+                sender.sendMessage("§a[GuildAIEconomy] ¡Hologramas 3D del Gremio configurados en sus posiciones!");
+                return true;
+            }
             case "customshop", "rpgshop" -> {
                 if (sender instanceof Player player) {
                     ShopGUI gui = new ShopGUI(plugin, ShopType.CUSTOM_RPG, 1);
@@ -57,13 +83,21 @@ public class MerchantCommand implements CommandExecutor {
                     sender.sendMessage("Solo jugadores pueden ejecutar este comando.");
                     return true;
                 }
-                String type = (args.length >= 2 && (args[1].equalsIgnoreCase("custom") || args[1].equalsIgnoreCase("rpg"))) ? "custom" : "vanilla";
+                String type = (args.length >= 2) ? args[1].toLowerCase() : "vanilla";
                 
-                String customName = "custom".equals(type) 
-                        ? plugin.getConfig().getString("merchant.custom_name", "§d⚔️ [IA] Mercader RPG & EliteMobs")
-                        : plugin.getConfig().getString("merchant.vanilla_name", "§b🧱 [IA] Mercader Vanilla");
+                String customName = switch (type) {
+                    case "custom", "rpg" -> "§d⚔️ [IA] Mercader RPG & EliteMobs";
+                    case "cacerias", "quests" -> "§e📜 Maestro de Cacerías del Gremio";
+                    case "comandante", "ranks" -> "§a🏆 Comandante del Gremio (Rangos)";
+                    default -> "§b🧱 [IA] Mercader Vanilla";
+                };
 
-                String profession = "custom".equals(type) ? "WEAPONSMITH" : "LIBRARIAN";
+                String profession = switch (type) {
+                    case "custom", "rpg" -> "WEAPONSMITH";
+                    case "cacerias", "quests" -> "FLETCHER";
+                    case "comandante", "ranks" -> "ARMORER";
+                    default -> "LIBRARIAN";
+                };
 
                 Location spawnLoc = player.getLocation();
                 Villager v = plugin.getMerchantVillager().spawnMerchant(spawnLoc, customName, profession, type);
@@ -71,10 +105,9 @@ public class MerchantCommand implements CommandExecutor {
                 if (v != null && v.isValid()) {
                     player.playSound(spawnLoc, Sound.ENTITY_PLAYER_LEVELUP, 1.0f, 1.0f);
                     player.getWorld().spawnParticle(Particle.VILLAGER_HAPPY, spawnLoc.clone().add(0, 1, 0), 30, 0.3, 0.5, 0.3, 0.1);
-                    player.sendMessage("§a[GuildAIEconomy] ¡Aldeano Mercader NPC (" + type.toUpperCase() + ") generado con éxito!");
-                    player.sendMessage("§eMundo: §f" + spawnLoc.getWorld().getName() + " §e| X: §f" + spawnLoc.getBlockX() + " §eY: §f" + spawnLoc.getBlockY() + " §eZ: §f" + spawnLoc.getBlockZ());
+                    player.sendMessage("§a[GuildAIEconomy] ¡NPC (" + type.toUpperCase() + ") generado con éxito!");
                 } else {
-                    player.sendMessage("§c[GuildAIEconomy] Error: Un plugin de protección (WorldGuard/ClearLag) bloqueó la aparición.");
+                    player.sendMessage("§c[GuildAIEconomy] Error al generar el NPC.");
                 }
             }
             case "additem" -> {
@@ -200,10 +233,13 @@ public class MerchantCommand implements CommandExecutor {
     }
 
     private void sendHelp(CommandSender sender) {
-        sender.sendMessage("§b=== GuildAIEconomy v1.2.0 ===");
+        sender.sendMessage("§b=== GuildAIEconomy v1.3.0 - Gremio de Aventureros ===");
+        sender.sendMessage("§e/guildai menu §7- Abre el Menú Principal Interactivo del Gremio");
+        sender.sendMessage("§e/guildai rank §7- Muestra tu Rango de Aventurero y Progreso de EXP");
         sender.sendMessage("§e/guildai shop §7- Abre la tienda Vanilla (Bloques y Materiales)");
         sender.sendMessage("§e/guildai customshop §7- Abre la tienda Custom RPG / EliteMobs (25,000+ monedas)");
-        sender.sendMessage("§e/guildai spawn [vanilla|custom] §7- Spawnea el Aldeano Mercader NPC seleccionado");
+        sender.sendMessage("§e/guildai spawn <vanilla|custom|cacerias|comandante> §7- Spawnea un NPC en tu posición");
+        sender.sendMessage("§e/guildai setup §7- Genera los Hologramas 3D del Gremio en sus puestos");
         sender.sendMessage("§e/guildai setkey <api_key> §7- Configura la Gemini API Key del Bot IA");
         sender.sendMessage("§e/guildai additem <id> <compra> [venta] §7- Agrega ítem RPG en mano");
         sender.sendMessage("§e/guildai removeitem <id> §7- Elimina un ítem RPG custom de la tienda");

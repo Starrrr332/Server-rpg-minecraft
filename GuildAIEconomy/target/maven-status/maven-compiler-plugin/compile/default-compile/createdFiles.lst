@@ -1,7 +1,9 @@
 com\guild\aieconomy\economy\CustomItemManager$CustomEconomyItem.class
 com\guild\aieconomy\npc\MerchantVillager.class
 com\guild\aieconomy\gui\ShopGUI.class
+com\guild\aieconomy\ranks\GuildRankManager$PlayerGuildData.class
 com\guild\aieconomy\economy\VaultHook.class
+com\guild\aieconomy\gui\GuildMenuGUI.class
 com\guild\aieconomy\economy\DatabaseManager.class
 com\guild\aieconomy\gui\ShopGUI$ShopEntry.class
 com\guild\aieconomy\gui\ShopGUI$ShopType.class
@@ -10,6 +12,9 @@ com\guild\aieconomy\economy\DynamicMarketEngine.class
 com\guild\aieconomy\ai\GeminiClient.class
 com\guild\aieconomy\economy\CustomItemManager.class
 com\guild\aieconomy\commands\MerchantCommand.class
+com\guild\aieconomy\holograms\HologramManager.class
 com\guild\aieconomy\economy\EliteMobsHook.class
 com\guild\aieconomy\GuildAIEconomy.class
 com\guild\aieconomy\economy\BotChestManager.class
+com\guild\aieconomy\ranks\GuildRankManager$GuildRank.class
+com\guild\aieconomy\ranks\GuildRankManager.class
