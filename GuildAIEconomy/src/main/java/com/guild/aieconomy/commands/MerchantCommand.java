@@ -124,6 +124,21 @@ public class MerchantCommand implements CommandExecutor {
                 plugin.getChestManager().setChestLocation(block.getLocation());
                 player.sendMessage("§a[GuildAIEconomy] ¡Cofre de Economía del Chatbot configurado en X:" + block.getX() + " Y:" + block.getY() + " Z:" + block.getZ() + "!");
             }
+            case "setkey" -> {
+                if (!sender.hasPermission("guildai.admin")) {
+                    sender.sendMessage("§cNo tienes permiso para configurar la API Key de la IA.");
+                    return true;
+                }
+                if (args.length < 2) {
+                    sender.sendMessage("§cUso: /guildai setkey <tu_gemini_api_key>");
+                    return true;
+                }
+                String key = args[1].trim();
+                plugin.getConfig().set("gemini.api_key", key);
+                plugin.saveConfig();
+                plugin.reloadPluginConfig();
+                sender.sendMessage("§a[GuildAIEconomy] ¡API Key de Gemini guardada correctamente! El bot IA conversacional está activado.");
+            }
             case "reload" -> {
                 plugin.reloadPluginConfig();
                 sender.sendMessage("§a[GuildAIEconomy] Configuración recargada con éxito.");
@@ -169,8 +184,9 @@ public class MerchantCommand implements CommandExecutor {
     }
 
     private void sendHelp(CommandSender sender) {
-        sender.sendMessage("§b=== GuildAIEconomy v1.1.0 ===");
+        sender.sendMessage("§b=== GuildAIEconomy v1.2.0 ===");
         sender.sendMessage("§e/guildai shop §7- Abre la tienda interactiva paginada");
+        sender.sendMessage("§e/guildai setkey <api_key> §7- Configura la Gemini API Key del Bot IA");
         sender.sendMessage("§e/guildai additem <id> <compra> [venta] §7- Agrega el ítem sostenido en mano (Vanilla/EliteMobs)");
         sender.sendMessage("§e/guildai removeitem <id> §7- Elimina un ítem custom de la tienda");
         sender.sendMessage("§e/guildai spawn §7- Spawnea el Aldeano Mercader NPC");
