@@ -14,13 +14,13 @@ skills:
     xp: 76.5
   auraskills/agility:
     level: 6
-    xp: 1624.2394600000007
+    xp: 1653.1344800000006
   auraskills/excavation:
     level: 3
     xp: 204.39999999999537
   auraskills/foraging:
     level: 4
-    xp: 1220.2599999999961
+    xp: 1695.459999999996
   auraskills/archery:
     level: 1
     xp: 24.0
@@ -36,8 +36,14 @@ skills:
 mana: 34.0
 action_bar:
   idle: true
+stat_modifiers:
+  '0':
+    name: foraging-valor
+    stat: auraskills/strength
+    operation: ADD
+    value: 1.0
 ability_data:
   auraskills/first_strike:
     counter: 16
   auraskills/xp_convert:
-    xp: 0.42908736640985623
+    xp: 24.524107366409886
