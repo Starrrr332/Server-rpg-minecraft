@@ -1,18 +1,25 @@
-# -*- coding: utf-8 -*-
 import json
 import requests
+import time
 
-with open("bot_config.json", "r", encoding="utf-8") as f:
+with open("bot_config.json", "r") as f:
     cfg = json.load(f)
 
 base_url = f"{cfg['panel_url'].rstrip('/')}/api/client/servers/{cfg['server_id']}"
-headers = {"Authorization": f"Bearer {cfg['api_key']}", "Accept": "application/json"}
+headers = {
+    "Authorization": f"Bearer {cfg['api_key']}",
+    "Content-Type": "application/json",
+    "Accept": "application/json"
+}
+
+r = requests.post(f"{base_url}/command", headers=headers, json={"command": "chunky progress"}, timeout=10)
+print("Respuesta comando 'chunky progress':", r.status_code)
+
+time.sleep(2)
 
 r_log = requests.get(f"{base_url}/files/contents", headers=headers, params={'file': 'logs/latest.log'}, timeout=10)
 if r_log.status_code == 200:
     lines = r_log.text.splitlines()
-    chunky_lines = [l for l in lines if '[chunky]' in l.lower()]
-    print(f"Total líneas de Chunky registradas: {len(chunky_lines)}")
-    print("\n--- ÚLTIMOS REPORTES DE PROGRESO DE CHUNKY ---")
-    for cl in chunky_lines[-15:]:
-        print(" ", cl.encode('ascii', errors='replace').decode('ascii'))
+    print("\n--- ÚLTIMAS 15 LÍNEAS DE LOG ---")
+    for l in lines[-15:]:
+        print(l.encode('ascii', errors='replace').decode('ascii'))
