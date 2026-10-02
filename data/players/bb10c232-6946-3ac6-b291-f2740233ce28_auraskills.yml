@@ -32,7 +32,7 @@ skills:
     xp: 1956.0800000001404
   auraskills/agility:
     level: 8
-    xp: 456.13815999999156
+    xp: 512.9967999999916
 mana: 50.0
 action_bar:
   idle: true
@@ -43,7 +43,7 @@ stat_modifiers:
     operation: ADD
     value: 3.0
 ability_data:
+  auraskills/xp_convert:
+    xp: 6.7579617862908705
   auraskills/first_strike:
     counter: 46
-  auraskills/xp_convert:
-    xp: 9.899321786290876

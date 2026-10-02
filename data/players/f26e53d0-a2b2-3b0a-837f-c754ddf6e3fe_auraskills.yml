@@ -23,7 +23,7 @@ skills:
     xp: 329.0
   auraskills/agility:
     level: 8
-    xp: 2778.295499999994
+    xp: 3050.3642999999934
   auraskills/fishing:
     level: 0
     xp: 0.0
@@ -40,4 +40,4 @@ ability_data:
   auraskills/first_strike:
     counter: 122
   auraskills/xp_convert:
-    xp: 0.24577808014116087
+    xp: 2.3145780801411533

@@ -20,7 +20,7 @@ skills:
     xp: 204.39999999999537
   auraskills/foraging:
     level: 5
-    xp: 81.69999999999659
+    xp: 199.61999999999665
   auraskills/archery:
     level: 1
     xp: 24.0
@@ -37,7 +37,7 @@ mana: 34.0
 action_bar:
   idle: true
 ability_data:
+  auraskills/xp_convert:
+    xp: 21.07192736640991
   auraskills/first_strike:
     counter: 16
-  auraskills/xp_convert:
-    xp: 23.151927366409897

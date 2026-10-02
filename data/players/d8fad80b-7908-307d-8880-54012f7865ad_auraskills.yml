@@ -37,7 +37,7 @@ mana: 44.0
 action_bar:
   idle: true
 ability_data:
-  auraskills/first_strike:
-    counter: 89
   auraskills/xp_convert:
     xp: 14.85497217803839
+  auraskills/first_strike:
+    counter: 89
