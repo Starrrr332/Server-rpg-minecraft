@@ -134,10 +134,12 @@
       "minecraft:ravager": "2026-09-29 05:19:37 +0000",
       "minecraft:bogged": "2026-09-29 17:50:19 +0000",
       "minecraft:ghast": "2026-09-29 03:47:55 +0000",
+      "minecraft:hoglin": "2026-10-02 03:56:17 +0000",
       "minecraft:breeze": "2026-09-26 06:02:06 +0000",
       "minecraft:vindicator": "2026-09-27 02:18:38 +0000",
       "minecraft:magma_cube": "2026-09-28 04:45:12 +0000",
       "minecraft:spider": "2026-09-25 21:52:22 +0000",
+      "minecraft:piglin_brute": "2026-10-02 03:50:03 +0000",
       "minecraft:creeper": "2026-09-25 21:52:29 +0000",
       "minecraft:slime": "2026-09-26 04:23:32 +0000",
       "minecraft:evoker": "2026-09-28 04:52:30 +0000",
@@ -146,6 +148,7 @@
       "minecraft:witch": "2026-09-27 03:39:44 +0000",
       "minecraft:husk": "2026-09-25 21:58:55 +0000",
       "minecraft:cave_spider": "2026-09-27 03:42:20 +0000",
+      "minecraft:piglin": "2026-10-02 03:49:53 +0000",
       "minecraft:enderman": "2026-09-26 04:30:32 +0000",
       "minecraft:silverfish": "2026-09-28 04:25:29 +0000",
       "minecraft:stray": "2026-09-28 04:23:26 +0000",
@@ -4457,7 +4460,10 @@
   },
   "minecraft:nether/explore_nether": {
     "criteria": {
-      "minecraft:nether_wastes": "2026-10-01 00:28:22 +0000"
+      "minecraft:crimson_forest": "2026-10-02 03:48:40 +0000",
+      "minecraft:nether_wastes": "2026-10-01 00:28:22 +0000",
+      "minecraft:soul_sand_valley": "2026-10-02 03:47:49 +0000",
+      "minecraft:warped_forest": "2026-10-02 03:53:21 +0000"
     },
     "done": false
   },
@@ -4665,12 +4671,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/waxed_lightning_rod_from_honeycomb": {
-    "criteria": {
-      "has_lightning_rod": "2026-10-02 02:42:06 +0000"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/brick_stairs_from_bricks_stonecutting": {
     "criteria": {
       "has_bricks": "2026-10-02 02:32:34 +0000"
@@ -4692,6 +4692,402 @@
   "minecraft:recipes/decorations/brick_wall_from_bricks_stonecutting": {
     "criteria": {
       "has_bricks": "2026-10-02 02:32:34 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/waxed_lightning_rod_from_honeycomb": {
+    "criteria": {
+      "has_lightning_rod": "2026-10-02 02:42:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_brick_slab": {
+    "criteria": {
+      "has_polished_blackstone_bricks": "2026-10-02 03:48:53 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/dye_magenta_carpet": {
+    "criteria": {
+      "has_needed_dye": "2026-10-02 04:43:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/magenta_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:05:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_brick_stairs": {
+    "criteria": {
+      "has_polished_blackstone_bricks": "2026-10-02 03:48:53 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/yellow_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:05:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond": {
+    "criteria": {
+      "has_diamond_block": "2026-10-02 04:59:16 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_warped_hyphae": {
+    "criteria": {
+      "has_log": "2026-10-02 03:53:27 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/waxed_weathered_copper_door_from_honeycomb": {
+    "criteria": {
+      "has_weathered_copper_door": "2026-10-02 04:15:52 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_brick_stairs": {
+    "criteria": {
+      "has_nether_bricks": "2026-10-02 03:59:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cracked_polished_blackstone_bricks": {
+    "criteria": {
+      "has_polished_blackstone_bricks": "2026-10-02 03:48:53 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_brick_slab": {
+    "criteria": {
+      "has_nether_bricks": "2026-10-02 03:59:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/red_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:05:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_brick_stairs_from_nether_bricks_stonecutting": {
+    "criteria": {
+      "has_nether_bricks": "2026-10-02 03:59:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/green_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:05:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/totem_of_undying": {
+    "criteria": {
+      "used_totem": "2026-10-02 05:13:25 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/dye_magenta_bed": {
+    "criteria": {
+      "has_needed_dye": "2026-10-02 04:43:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/magenta_candle": {
+    "criteria": {
+      "has_magenta_dye": "2026-10-02 04:43:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/diorite": {
+    "criteria": {
+      "has_quartz": "2026-10-02 03:51:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/warped_hyphae": {
+    "criteria": {
+      "has_log": "2026-10-02 03:53:27 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/purple_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:05:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/white_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:05:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/granite": {
+    "criteria": {
+      "has_quartz": "2026-10-02 03:51:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_brick_stairs_from_polished_blackstone_bricks_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone_bricks": "2026-10-02 03:48:53 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_block": {
+    "criteria": {
+      "has_quartz": "2026-10-02 03:51:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/nether_brick_fence": {
+    "criteria": {
+      "has_nether_bricks": "2026-10-02 03:59:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/daylight_detector": {
+    "criteria": {
+      "has_quartz": "2026-10-02 03:51:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_blasting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2026-10-02 05:00:02 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/light_gray_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:05:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/observer": {
+    "criteria": {
+      "has_quartz": "2026-10-02 03:51:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/magenta_bundle": {
+    "criteria": {
+      "has_magenta_dye": "2026-10-02 04:43:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/distract_piglin": {
+    "criteria": {
+      "distract_piglin": "2026-10-02 03:55:58 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/comparator": {
+    "criteria": {
+      "has_quartz": "2026-10-02 03:51:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/gray_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:05:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cracked_nether_bricks": {
+    "criteria": {
+      "has_nether_bricks": "2026-10-02 03:59:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_smelting_deepslate_diamond_ore": {
+    "criteria": {
+      "has_deepslate_diamond_ore": "2026-10-02 05:00:02 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/black_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:05:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/pink_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:05:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/orange_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:05:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dye_magenta_wool": {
+    "criteria": {
+      "has_needed_dye": "2026-10-02 04:43:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_smelting_diamond_ore": {
+    "criteria": {
+      "has_diamond_ore": "2026-10-02 04:22:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_nether_bricks_from_nether_bricks_stonecutting": {
+    "criteria": {
+      "has_nether_bricks": "2026-10-02 03:59:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/netherite_ingot_from_netherite_block": {
+    "criteria": {
+      "has_netherite_block": "2026-10-02 05:01:30 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/light_blue_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:05:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/loot_bastion": {
+    "criteria": {
+      "loot_bastion_bridge": "2026-10-02 03:55:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_blackstone_brick_wall_from_polished_blackstone_bricks_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone_bricks": "2026-10-02 03:48:53 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_blackstone_brick_slab_from_polished_blackstone_bricks_stonecutting": {
+    "criteria": {
+      "has_polished_blackstone_bricks": "2026-10-02 03:48:53 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/cyan_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:05:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/dye_magenta_harness": {
+    "criteria": {
+      "has_needed_dye": "2026-10-02 04:43:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/waxed_oxidized_copper_door_from_honeycomb": {
+    "criteria": {
+      "has_oxidized_copper_door": "2026-10-02 04:11:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/nether_brick_wall_from_nether_bricks_stonecutting": {
+    "criteria": {
+      "has_nether_bricks": "2026-10-02 03:59:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/magenta_stained_glass_pane_from_glass_pane": {
+    "criteria": {
+      "has_magenta_dye": "2026-10-02 04:43:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/brown_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:05:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/diamond_from_blasting_diamond_ore": {
+    "criteria": {
+      "has_diamond_ore": "2026-10-02 04:22:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_blackstone_brick_wall": {
+    "criteria": {
+      "has_polished_blackstone_bricks": "2026-10-02 03:48:53 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/mud_bricks": {
+    "criteria": {
+      "has_packed_mud": "2026-10-02 03:39:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/warped_planks": {
+    "criteria": {
+      "has_logs": "2026-10-02 03:53:27 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/nether_brick_slab_from_nether_bricks_stonecutting": {
+    "criteria": {
+      "has_nether_bricks": "2026-10-02 03:59:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/find_bastion": {
+    "criteria": {
+      "bastion": "2026-10-02 03:48:40 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/nether_brick_wall": {
+    "criteria": {
+      "has_nether_bricks": "2026-10-02 03:59:12 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/warped_hanging_sign": {
+    "criteria": {
+      "has_stripped_log": "2026-10-02 03:53:27 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/lime_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:05:07 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/blue_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:05:08 +0000"
+    },
+    "done": true
+  },
+  "minecraft:nether/find_fortress": {
+    "criteria": {
+      "fortress": "2026-10-02 03:59:14 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/nether_brick": {
+    "criteria": {
+      "has_netherrack": "2026-10-02 03:48:27 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/warped_shelf": {
+    "criteria": {
+      "has_stripped_warped_stem": "2026-10-02 03:53:27 +0000"
     },
     "done": true
   },

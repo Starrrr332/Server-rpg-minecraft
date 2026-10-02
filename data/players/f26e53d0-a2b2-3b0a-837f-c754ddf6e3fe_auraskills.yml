@@ -2,10 +2,10 @@ uuid: f26e53d0-a2b2-3b0a-837f-c754ddf6e3fe
 skills:
   auraskills/mining:
     level: 7
-    xp: 2023.2900000001591
+    xp: 4168.8900000007725
   auraskills/fighting:
     level: 7
-    xp: 736.6999999999929
+    xp: 1234.6999999999937
   auraskills/foraging:
     level: 8
     xp: 86.94000000010547
@@ -13,8 +13,8 @@ skills:
     level: 4
     xp: 412.2000000000002
   auraskills/defense:
-    level: 6
-    xp: 3581.0576889753247
+    level: 7
+    xp: 100.4644770383751
   auraskills/excavation:
     level: 5
     xp: 129.79999999997153
@@ -23,7 +23,7 @@ skills:
     xp: 329.0
   auraskills/agility:
     level: 8
-    xp: 1868.353739999994
+    xp: 2778.295499999994
   auraskills/fishing:
     level: 0
     xp: 0.0
@@ -32,23 +32,12 @@ skills:
     xp: 98.0
   auraskills/archery:
     level: 4
-    xp: 562.4
+    xp: 682.3000000000003
 mana: 46.0
 action_bar:
   idle: true
-stat_modifiers:
-  '0':
-    name: mining-stamina
-    stat: auraskills/toughness
-    operation: ADD
-    value: 1.0
-  '1':
-    name: AbilityModifier-EnchantedStrength
-    stat: auraskills/strength
-    operation: ADD
-    value: 1.5
 ability_data:
   auraskills/first_strike:
-    counter: 116
+    counter: 122
   auraskills/xp_convert:
-    xp: 7.3972300170938485
+    xp: 0.24577808014116087

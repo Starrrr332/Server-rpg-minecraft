@@ -6,6 +6,7 @@ com\guild\aieconomy\economy\VaultHook.class
 com\guild\aieconomy\gui\GuildMenuGUI.class
 com\guild\aieconomy\economy\DatabaseManager.class
 com\guild\aieconomy\gui\ShopGUI$ShopEntry.class
+com\guild\aieconomy\economy\ItemResolver.class
 com\guild\aieconomy\gui\ShopGUI$ShopType.class
 com\guild\aieconomy\npc\MerchantListener.class
 com\guild\aieconomy\economy\DynamicMarketEngine.class

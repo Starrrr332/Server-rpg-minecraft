@@ -29,12 +29,15 @@
       "minecraft:river": "2026-09-27 03:24:40 +0000",
       "minecraft:snowy_plains": "2026-09-27 04:04:15 +0000",
       "minecraft:dripstone_caves": "2026-09-30 07:03:12 +0000",
+      "minecraft:old_growth_birch_forest": "2026-10-02 08:53:16 +0000",
+      "minecraft:sulfur_caves": "2026-10-02 08:39:53 +0000",
       "minecraft:jungle": "2026-09-27 03:24:43 +0000",
       "minecraft:cherry_grove": "2026-09-27 16:07:56 +0000",
       "minecraft:sunflower_plains": "2026-09-30 06:48:43 +0000",
       "minecraft:meadow": "2026-09-30 07:00:48 +0000",
       "minecraft:birch_forest": "2026-09-26 06:13:05 +0000",
       "minecraft:windswept_hills": "2026-09-27 17:14:29 +0000",
+      "minecraft:old_growth_spruce_taiga": "2026-10-02 08:53:42 +0000",
       "minecraft:plains": "2026-09-26 06:41:20 +0000"
     },
     "done": false
@@ -65,6 +68,7 @@
       "minecraft:zoglin": "2026-09-27 17:26:33 +0000",
       "minecraft:phantom": "2026-10-01 17:42:04 +0000",
       "minecraft:zombified_piglin": "2026-09-27 17:14:44 +0000",
+      "minecraft:witch": "2026-10-02 08:49:33 +0000",
       "minecraft:wither_skeleton": "2026-09-27 18:01:07 +0000",
       "minecraft:husk": "2026-09-26 06:20:27 +0000",
       "minecraft:ghast": "2026-09-27 17:45:19 +0000",
@@ -162,14 +166,15 @@
       "cooked_porkchop": "2026-09-26 06:42:16 +0000",
       "bread": "2026-09-27 00:02:54 +0000",
       "golden_apple": "2026-09-27 04:04:59 +0000",
-      "cooked_rabbit": "2026-09-29 02:50:29 +0000",
-      "cooked_chicken": "2026-09-27 00:02:11 +0000",
       "rotten_flesh": "2026-09-26 06:17:33 +0000",
       "cookie": "2026-09-27 04:05:58 +0000",
-      "enchanted_golden_apple": "2026-09-27 04:06:05 +0000",
       "cooked_mutton": "2026-09-27 00:25:12 +0000",
       "cooked_beef": "2026-09-27 00:21:54 +0000",
       "baked_potato": "2026-09-30 07:10:46 +0000",
+      "golden_carrot": "2026-10-02 05:06:15 +0000",
+      "cooked_rabbit": "2026-09-29 02:50:29 +0000",
+      "cooked_chicken": "2026-09-27 00:02:11 +0000",
+      "enchanted_golden_apple": "2026-09-27 04:06:05 +0000",
       "carrot": "2026-09-30 06:41:58 +0000"
     },
     "done": false
@@ -3805,6 +3810,492 @@
   "minecraft:recipes/misc/coal": {
     "criteria": {
       "has_coal_block": "2026-10-01 19:42:50 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/warped_fungus_on_a_stick": {
+    "criteria": {
+      "has_warped_fungus": "2026-10-02 03:55:15 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/magenta_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:00:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/yellow_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:00:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/red_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:00:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/green_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:00:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/purple_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:00:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/white_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:00:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/light_gray_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:00:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/gray_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:00:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/black_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:00:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/pink_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:00:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/orange_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:00:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/light_blue_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:00:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/cyan_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:00:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/brown_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:00:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/lime_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:00:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/combat/blue_harness": {
+    "criteria": {
+      "has_dried_ghast": "2026-10-02 04:00:39 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_sulfur_slab_from_sulfur_stonecutting": {
+    "criteria": {
+      "has_sulfur": "2026-10-02 08:40:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/melon_seeds": {
+    "criteria": {
+      "has_melon": "2026-10-02 08:50:01 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_cinnabar_stairs": {
+    "criteria": {
+      "has_polished_cinnabar": "2026-10-02 08:42:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_cinnabar_stairs_from_polished_cinnabar_stonecutting": {
+    "criteria": {
+      "has_polished_cinnabar": "2026-10-02 08:42:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bookshelf": {
+    "criteria": {
+      "has_book": "2026-10-02 08:51:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_cinnabar_from_cinnabar_stonecutting": {
+    "criteria": {
+      "has_cinnabar": "2026-10-02 08:39:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_cinnabar_from_cinnabar_stonecutting": {
+    "criteria": {
+      "has_cinnabar": "2026-10-02 08:39:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_cinnabar_wall_from_polished_cinnabar_stonecutting": {
+    "criteria": {
+      "has_polished_cinnabar": "2026-10-02 08:42:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cinnabar_brick_slab_from_cinnabar_bricks_stonecutting": {
+    "criteria": {
+      "has_cinnabar_bricks": "2026-10-02 08:42:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_cinnabar_slab": {
+    "criteria": {
+      "has_polished_cinnabar": "2026-10-02 08:42:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cinnabar_slab": {
+    "criteria": {
+      "has_cinnabar": "2026-10-02 08:39:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cinnabar_brick_stairs_from_polished_cinnabar_stonecutting": {
+    "criteria": {
+      "has_polished_cinnabar": "2026-10-02 08:42:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cinnabar_brick_slab_from_polished_cinnabar_stonecutting": {
+    "criteria": {
+      "has_polished_cinnabar": "2026-10-02 08:42:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_sulfur": {
+    "criteria": {
+      "has_sulfur": "2026-10-02 08:40:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_cinnabar": {
+    "criteria": {
+      "has_cinnabar": "2026-10-02 08:39:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cinnabar_brick_wall": {
+    "criteria": {
+      "has_cinnabar_bricks": "2026-10-02 08:42:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_rabbit": {
+    "criteria": {
+      "has_rabbit": "2026-10-02 08:49:58 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_cinnabar_slab_from_polished_cinnabar_stonecutting": {
+    "criteria": {
+      "has_polished_cinnabar": "2026-10-02 08:42:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cinnabar_brick_wall_from_polished_cinnabar_stonecutting": {
+    "criteria": {
+      "has_polished_cinnabar": "2026-10-02 08:42:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_cinnabar_wall": {
+    "criteria": {
+      "has_polished_cinnabar": "2026-10-02 08:42:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_rabbit_from_smoking": {
+    "criteria": {
+      "has_rabbit": "2026-10-02 08:49:58 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cinnabar_brick_slab": {
+    "criteria": {
+      "has_cinnabar_bricks": "2026-10-02 08:42:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/potent_sulfur": {
+    "criteria": {
+      "has_sulfur": "2026-10-02 08:40:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/spyglass": {
+    "criteria": {
+      "has_amethyst_shard": "2026-10-02 08:55:03 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/lectern": {
+    "criteria": {
+      "has_book": "2026-10-02 08:51:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_cinnabar_stairs_from_cinnabar_stonecutting": {
+    "criteria": {
+      "has_cinnabar": "2026-10-02 08:39:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_rabbit_from_campfire_cooking": {
+    "criteria": {
+      "has_rabbit": "2026-10-02 08:49:58 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cinnabar_wall": {
+    "criteria": {
+      "has_cinnabar": "2026-10-02 08:39:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cinnabar_bricks": {
+    "criteria": {
+      "has_polished_cinnabar": "2026-10-02 08:42:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_bookshelf": {
+    "criteria": {
+      "has_book": "2026-10-02 08:51:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cinnabar_bricks_from_polished_cinnabar_stonecutting": {
+    "criteria": {
+      "has_polished_cinnabar": "2026-10-02 08:42:06 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cinnabar_brick_stairs_from_cinnabar_stonecutting": {
+    "criteria": {
+      "has_cinnabar": "2026-10-02 08:39:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/writable_book": {
+    "criteria": {
+      "has_book": "2026-10-02 08:51:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/sulfur_wall_from_sulfur_stonecutting": {
+    "criteria": {
+      "has_sulfur": "2026-10-02 08:40:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cinnabar_brick_stairs": {
+    "criteria": {
+      "has_cinnabar_bricks": "2026-10-02 08:42:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/sulfur_wall": {
+    "criteria": {
+      "has_sulfur": "2026-10-02 08:40:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cinnabar_bricks_from_cinnabar_stonecutting": {
+    "criteria": {
+      "has_cinnabar": "2026-10-02 08:39:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/calibrated_sculk_sensor": {
+    "criteria": {
+      "has_amethyst_shard": "2026-10-02 08:55:03 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/tinted_glass": {
+    "criteria": {
+      "has_amethyst_shard": "2026-10-02 08:55:03 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/glistering_melon_slice": {
+    "criteria": {
+      "has_melon": "2026-10-02 08:50:01 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sulfur_bricks_from_sulfur_stonecutting": {
+    "criteria": {
+      "has_sulfur": "2026-10-02 08:40:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cinnabar_wall_from_cinnabar_stonecutting": {
+    "criteria": {
+      "has_cinnabar": "2026-10-02 08:39:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sulfur_stairs_from_sulfur_stonecutting": {
+    "criteria": {
+      "has_sulfur": "2026-10-02 08:40:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cinnabar_brick_wall_from_cinnabar_stonecutting": {
+    "criteria": {
+      "has_cinnabar": "2026-10-02 08:39:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sulfur_brick_slab_from_sulfur_stonecutting": {
+    "criteria": {
+      "has_sulfur": "2026-10-02 08:40:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sulfur_stairs": {
+    "criteria": {
+      "has_sulfur": "2026-10-02 08:40:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/melon": {
+    "criteria": {
+      "has_melon": "2026-10-02 08:50:01 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cinnabar_stairs": {
+    "criteria": {
+      "has_cinnabar": "2026-10-02 08:39:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/sulfur_brick_wall_from_sulfur_stonecutting": {
+    "criteria": {
+      "has_sulfur": "2026-10-02 08:40:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cinnabar_slab_from_cinnabar_stonecutting": {
+    "criteria": {
+      "has_cinnabar": "2026-10-02 08:39:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/amethyst_block": {
+    "criteria": {
+      "has_amethyst_shard": "2026-10-02 08:55:03 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sulfur_slab_from_sulfur_stonecutting": {
+    "criteria": {
+      "has_sulfur": "2026-10-02 08:40:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_sulfur_wall_from_sulfur_stonecutting": {
+    "criteria": {
+      "has_sulfur": "2026-10-02 08:40:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_sulfur_from_sulfur_stonecutting": {
+    "criteria": {
+      "has_sulfur": "2026-10-02 08:40:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_cinnabar_slab_from_cinnabar_stonecutting": {
+    "criteria": {
+      "has_cinnabar": "2026-10-02 08:39:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/polished_sulfur_stairs_from_sulfur_stonecutting": {
+    "criteria": {
+      "has_sulfur": "2026-10-02 08:40:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sulfur_slab": {
+    "criteria": {
+      "has_sulfur": "2026-10-02 08:40:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/polished_cinnabar_wall_from_cinnabar_stonecutting": {
+    "criteria": {
+      "has_cinnabar": "2026-10-02 08:39:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/cinnabar_brick_wall_from_cinnabar_bricks_stonecutting": {
+    "criteria": {
+      "has_cinnabar_bricks": "2026-10-02 08:42:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cinnabar_brick_stairs_from_cinnabar_bricks_stonecutting": {
+    "criteria": {
+      "has_cinnabar_bricks": "2026-10-02 08:42:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cinnabar_stairs_from_cinnabar_stonecutting": {
+    "criteria": {
+      "has_cinnabar": "2026-10-02 08:39:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sulfur_brick_stairs_from_sulfur_stonecutting": {
+    "criteria": {
+      "has_sulfur": "2026-10-02 08:40:09 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cinnabar_brick_slab_from_cinnabar_stonecutting": {
+    "criteria": {
+      "has_cinnabar": "2026-10-02 08:39:56 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_sulfur_from_sulfur_stonecutting": {
+    "criteria": {
+      "has_sulfur": "2026-10-02 08:40:09 +0000"
     },
     "done": true
   },

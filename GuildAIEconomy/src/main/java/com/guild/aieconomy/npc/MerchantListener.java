@@ -216,17 +216,19 @@ public class MerchantListener implements Listener {
         String msg = event.getMessage().trim();
         String lowerMsg = msg.toLowerCase();
         
-        if (lowerMsg.startsWith("!bot") || lowerMsg.startsWith("@bot") || lowerMsg.startsWith("bot") || lowerMsg.startsWith("vendedor") || lowerMsg.startsWith("mercader")) {
-            String promptText = msg.replaceFirst("(?i)^(!bot|@bot|bot|vendedor|mercader)\\s*", "").trim();
+        if (lowerMsg.startsWith("!bot") || lowerMsg.startsWith("@bot") || lowerMsg.startsWith("bot") || lowerMsg.startsWith("vendedor") || lowerMsg.startsWith("mercader") || lowerMsg.startsWith("merchant")) {
+            String promptText = msg.replaceFirst("(?i)^(!bot|@bot|bot|vendedor|mercader|merchant)\\s*", "").trim();
             if (promptText.isEmpty()) {
                 promptText = "Hola";
             }
             Player player = event.getPlayer();
 
-            boolean isBuyIntent = lowerMsg.contains("compr") || lowerMsg.contains("quiero") || lowerMsg.contains("dame");
-            boolean isSellIntent = lowerMsg.contains("vend") || lowerMsg.contains("te doy");
+            boolean isBuyIntent = lowerMsg.contains("compr") || lowerMsg.contains("quiero") || lowerMsg.contains("dame") ||
+                                  lowerMsg.contains("buy") || lowerMsg.contains("purchase") || lowerMsg.contains("get");
 
-            // Extraer Cantidad (Ej: "vender 64 diamante", "comprar 10 oro", "vender todo el hierro")
+            boolean isSellIntent = lowerMsg.contains("vend") || lowerMsg.contains("te doy") || lowerMsg.contains("sell");
+
+            // Extraer Cantidad (Ej: "vender 64 diamante", "buy 16 gold ingot", "vender todo el hierro")
             int parsedAmount = 1;
             boolean isAll = lowerMsg.contains("todo") || lowerMsg.contains("toda") || lowerMsg.contains("all");
 
@@ -243,14 +245,8 @@ public class MerchantListener implements Listener {
             // Coincidencia Ítem Custom / EliteMobs
             CustomEconomyItem matchedCustom = plugin.getCustomItemManager().findCustomItem(promptText);
 
-            // Coincidencia Ítem Vanilla
-            Material targetMat = null;
-            for (Map.Entry<String, Material> entry : spanishMaterialMap.entrySet()) {
-                if (lowerMsg.contains(entry.getKey())) {
-                    targetMat = entry.getValue();
-                    break;
-                }
-            }
+            // Coincidencia Ítem Vanilla Multilingüe
+            Material targetMat = (matchedCustom == null) ? plugin.getItemResolver().resolveVanillaMaterial(promptText) : null;
 
             if ((matchedCustom != null || targetMat != null) && (isBuyIntent || isSellIntent)) {
                 final CustomEconomyItem customItem = matchedCustom;
@@ -268,7 +264,8 @@ public class MerchantListener implements Listener {
                             double totalPrice = unitBuy * amountToBuy;
 
                             if (!plugin.getVaultHook().withdraw(player, totalPrice)) {
-                                Bukkit.broadcastMessage("§b🤖 Mercader: §f¡Uy " + player.getName() + "! " + amountToBuy + "x " + customItem.getId() + " cuestan " + plugin.getVaultHook().format(totalPrice) + ", pero no tienes suficiente dinero.");
+                                String failMsg = "§b🤖 Mercader: §f" + player.getName() + ", " + amountToBuy + "x " + customItem.getId() + " cuestan " + plugin.getVaultHook().format(totalPrice) + ". ¡No tienes suficiente dinero!";
+                                Bukkit.broadcastMessage(failMsg);
                                 return;
                             }
 
@@ -281,7 +278,7 @@ public class MerchantListener implements Listener {
                                 remainingToGive -= stackSize;
                             }
 
-                            Bukkit.broadcastMessage("§b🤖 Mercader: §f¡Trato hecho, " + player.getName() + "! Te he entregado " + amountToBuy + "x " + customItem.getId() + " por " + plugin.getVaultHook().format(totalPrice) + ".");
+                            sendConversationalTradeResponse(player, "comprar", amountToBuy, customItem.getId(), totalPrice, msg);
                         } else {
                             int invCount = 0;
                             for (ItemStack is : player.getInventory().getContents()) {
@@ -291,7 +288,7 @@ public class MerchantListener implements Listener {
                             }
 
                             if (invCount <= 0) {
-                                Bukkit.broadcastMessage("§b🤖 Mercader: §f¡" + player.getName() + ", parece que no tienes ese ítem personalizado en tu inventario para vendérmelo!");
+                                Bukkit.broadcastMessage("§b🤖 Mercader: §f" + player.getName() + ", ¡no tienes ese ítem personalizado en tu inventario para vendérmelo!");
                                 return;
                             }
 
@@ -309,14 +306,15 @@ public class MerchantListener implements Listener {
                             }
 
                             plugin.getVaultHook().deposit(player, totalPrice);
-                            Bukkit.broadcastMessage("§b🤖 Mercader: §f¡Excelente negocio, " + player.getName() + "! Te he comprado " + amountToSell + "x " + customItem.getId() + " por " + plugin.getVaultHook().format(totalPrice) + ".");
+                            sendConversationalTradeResponse(player, "vender", amountToSell, customItem.getId(), totalPrice, msg);
                         }
                     } else {
                         int stock = plugin.getChestManager().getItemStock(mat);
+                        String itemName = plugin.getItemResolver().getItemDisplayName(mat);
 
                         if (buy) {
                             if (stock <= 0) {
-                                Bukkit.broadcastMessage("§b🤖 Mercader: §f¡Hola " + player.getName() + "! Por el momento no tengo stock de " + mat.name() + " en mi cofre.");
+                                Bukkit.broadcastMessage("§b🤖 Mercader: §f" + player.getName() + ", sin stock de " + itemName + " en este momento.");
                                 return;
                             }
 
@@ -325,7 +323,7 @@ public class MerchantListener implements Listener {
                             double totalPrice = unitPrice * amountToBuy;
 
                             if (!plugin.getVaultHook().withdraw(player, totalPrice)) {
-                                Bukkit.broadcastMessage("§b🤖 Mercader: §f¡Uy " + player.getName() + "! " + amountToBuy + "x " + mat.name() + " cuestan " + plugin.getVaultHook().format(totalPrice) + ", pero no tienes suficiente oro.");
+                                Bukkit.broadcastMessage("§b🤖 Mercader: §f" + player.getName() + ", " + amountToBuy + "x " + itemName + " cuestan " + plugin.getVaultHook().format(totalPrice) + ". ¡No tienes dinero suficiente!");
                                 return;
                             }
 
@@ -337,10 +335,10 @@ public class MerchantListener implements Listener {
                                     remainingToGive -= stackSize;
                                 }
                                 plugin.getMarketEngine().registerDemand(mat, amountToBuy);
-                                Bukkit.broadcastMessage("§b🤖 Mercader: §f¡Trato hecho, " + player.getName() + "! Te he vendido " + amountToBuy + "x " + mat.name() + " por " + plugin.getVaultHook().format(totalPrice) + ". ¡Gracias por tu compra!");
+                                sendConversationalTradeResponse(player, "comprar", amountToBuy, itemName, totalPrice, msg);
                             } else {
                                 plugin.getVaultHook().deposit(player, totalPrice);
-                                Bukkit.broadcastMessage("§b🤖 Mercader: §fHubo un problema con mi cofre de stock.");
+                                Bukkit.broadcastMessage("§b🤖 Mercader: §fHubo un problema al retirar el ítem del cofre.");
                             }
                         } else {
                             int invCount = 0;
@@ -351,7 +349,7 @@ public class MerchantListener implements Listener {
                             }
 
                             if (invCount <= 0) {
-                                Bukkit.broadcastMessage("§b🤖 Mercader: §f¡" + player.getName() + ", parece que no tienes " + mat.name() + " en tu inventario para vendérmelo!");
+                                Bukkit.broadcastMessage("§b🤖 Mercader: §f" + player.getName() + ", ¡no tienes " + itemName + " en tu inventario para vendérmelo!");
                                 return;
                             }
 
@@ -372,9 +370,9 @@ public class MerchantListener implements Listener {
 
                                 plugin.getVaultHook().deposit(player, totalPrice);
                                 plugin.getMarketEngine().registerDemand(mat, -amountToSell);
-                                Bukkit.broadcastMessage("§b🤖 Mercader: §f¡Excelente trato, " + player.getName() + "! Me he quedado con tu " + amountToSell + "x " + mat.name() + " y te he entregado " + plugin.getVaultHook().format(totalPrice) + ".");
+                                sendConversationalTradeResponse(player, "vender", amountToSell, itemName, totalPrice, msg);
                             } else {
-                                Bukkit.broadcastMessage("§b🤖 Mercader: §f¡Mi cofre de economía está lleno por ahora!");
+                                Bukkit.broadcastMessage("§b🤖 Mercader: §f¡El cofre de economía está lleno por ahora!");
                             }
                         }
                     }
@@ -384,13 +382,35 @@ public class MerchantListener implements Listener {
 
             player.sendMessage("§b🤖 Mercader (" + player.getName() + "): §7Pensando...");
 
-            String systemPrompt = plugin.getConfig().getString("gemini.system_prompt", "Eres Gilderbot, el amigable y libre conversador mercader del gremio.");
+            String systemPrompt = "Eres Gilderbot, el mercader comerciante del Gremio de Aventureros. Eres libre, conversacional, amigable y muy inteligente. IMPORTANTE: Responde SIEMPRE en el MISMO IDIOMA en que te hable el jugador (Español, Inglés, Portugués, Francés, etc.). Responde de forma amigable en 1 a 3 oraciones.";
             
-            plugin.getGeminiClient().askMerchant(systemPrompt, promptText).thenAccept(reply -> {
+            plugin.getGeminiClient().askMerchant(systemPrompt, msg).thenAccept(reply -> {
                 Bukkit.getScheduler().runTask(plugin, () -> {
                     Bukkit.broadcastMessage("§b🤖 Mercader: §f" + ChatColor.translateAlternateColorCodes('&', reply));
                 });
             });
+        }
+    }
+
+    private void sendConversationalTradeResponse(Player player, String action, int amount, String itemName, double totalPrice, String originalPlayerMessage) {
+        String formattedPrice = plugin.getVaultHook().format(totalPrice);
+
+        if (plugin.getGeminiClient().isConfigured()) {
+            String tradePrompt = String.format("El jugador '%s' acaba de %s %dx '%s' por %s monedas en el servidor. Responde en 1 o 2 oraciones alegres y entusiastas en el MISMO IDIOMA que usó el jugador ('%s') celebrando la transacción.",
+                    player.getName(), action, amount, itemName, formattedPrice, originalPlayerMessage);
+
+            String sysPrompt = "Eres Gilderbot, el carismático mercader comerciante del Gremio de Aventureros. Hablas con fluidez el idioma del jugador.";
+
+            plugin.getGeminiClient().askMerchant(sysPrompt, tradePrompt).thenAccept(reply -> {
+                Bukkit.getScheduler().runTask(plugin, () -> {
+                    Bukkit.broadcastMessage("§b🤖 Mercader: §f" + ChatColor.translateAlternateColorCodes('&', reply));
+                });
+            });
+        } else {
+            String defaultReply = action.equals("comprar") 
+                    ? "¡Trato hecho, " + player.getName() + "! Te he vendido " + amount + "x " + itemName + " por " + formattedPrice + ". ¡Gracias por tu compra!"
+                    : "¡Excelente negocio, " + player.getName() + "! Te he comprado " + amount + "x " + itemName + " por " + formattedPrice + ".";
+            Bukkit.broadcastMessage("§b🤖 Mercader: §f" + defaultReply);
         }
     }
 }

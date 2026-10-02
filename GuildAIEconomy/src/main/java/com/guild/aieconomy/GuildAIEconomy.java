@@ -25,11 +25,15 @@ public class GuildAIEconomy extends JavaPlugin {
     private DatabaseManager databaseManager;
     private GuildRankManager rankManager;
     private HologramManager hologramManager;
+    private ItemResolver itemResolver;
 
     @Override
     public void onEnable() {
         instance = this;
         saveDefaultConfig();
+
+        // Inicializar Resolvedor de Ítems Multilingüe
+        this.itemResolver = new ItemResolver();
 
         // Inicializar economía Vault
         this.vaultHook = new VaultHook(this);
@@ -153,5 +157,9 @@ public class GuildAIEconomy extends JavaPlugin {
 
     public HologramManager getHologramManager() {
         return hologramManager;
+    }
+
+    public ItemResolver getItemResolver() {
+        return itemResolver;
     }
 }

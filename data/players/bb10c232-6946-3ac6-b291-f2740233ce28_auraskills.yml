@@ -2,10 +2,10 @@ uuid: bb10c232-6946-3ac6-b291-f2740233ce28
 skills:
   auraskills/excavation:
     level: 3
-    xp: 636.9400000000079
+    xp: 676.4300000000072
   auraskills/archery:
     level: 1
-    xp: 140.0
+    xp: 184.0
   auraskills/alchemy:
     level: 6
     xp: 777.0
@@ -13,42 +13,37 @@ skills:
     level: 0
     xp: 0.0
   auraskills/fighting:
-    level: 4
-    xp: 1263.2500000000023
+    level: 5
+    xp: 108.85000000000397
   auraskills/foraging:
     level: 6
-    xp: 271.3000000000042
+    xp: 610.980000000004
   auraskills/defense:
     level: 6
-    xp: 149.76480256319675
+    xp: 701.5688003182466
   auraskills/farming:
     level: 2
-    xp: 200.92499999999987
+    xp: 444.30000000000086
   auraskills/enchanting:
     level: 2
     xp: 252.0
   auraskills/mining:
     level: 6
-    xp: 1773.4800000001312
+    xp: 1956.0800000001404
   auraskills/agility:
-    level: 7
-    xp: 3346.0504799999926
+    level: 8
+    xp: 456.13815999999156
 mana: 50.0
 action_bar:
   idle: true
 stat_modifiers:
   '0':
-    name: mining-stamina
-    stat: auraskills/toughness
-    operation: ADD
-    value: 1.0
-  '1':
     name: AbilityModifier-WiseEffect
     stat: auraskills/wisdom
     operation: ADD
     value: 3.0
 ability_data:
   auraskills/first_strike:
-    counter: 38
+    counter: 46
   auraskills/xp_convert:
-    xp: 3.2626440312402556
+    xp: 9.899321786290876
