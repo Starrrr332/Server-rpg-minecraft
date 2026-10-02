@@ -1,10 +1,10 @@
 {
   "summary": {
     "total_players": 17,
-    "total_play_time_hours": 121.3,
-    "total_blocks_mined": 86977,
-    "total_mobs_slain": 3845,
-    "total_distance_km": 581.9,
+    "total_play_time_hours": 126.1,
+    "total_blocks_mined": 87877,
+    "total_mobs_slain": 4009,
+    "total_distance_km": 605.7,
     "server_ip": "ut09.holy.gg:25898",
     "map_url": "http://ut09.holy.gg:25898/"
   },
@@ -14,7 +14,7 @@
         "name": "Kiruao",
         "uuid": "f26e53d0-a2b2-3b0a-837f-c754ddf6e3fe",
         "avatar": "https://mc-heads.net/avatar/f26e53d0-a2b2-3b0a-837f-c754ddf6e3fe/100",
-        "score": "1d 5h 18m"
+        "score": "1d 5h 53m"
       },
       {
         "name": "mocosupremo777",
@@ -26,7 +26,7 @@
         "name": "divk2",
         "uuid": "bb10c232-6946-3ac6-b291-f2740233ce28",
         "avatar": "https://mc-heads.net/avatar/bb10c232-6946-3ac6-b291-f2740233ce28/100",
-        "score": "21h 0m"
+        "score": "23h 37m"
       },
       {
         "name": "Stargolden",
@@ -35,16 +35,16 @@
         "score": "19h 50m"
       },
       {
+        "name": ".ElExiliao19",
+        "uuid": "00000000-0000-0000-0009-01f32910a351",
+        "avatar": "https://minotar.net/helm/.ElExiliao19/100.png",
+        "score": "11h 18m"
+      },
+      {
         "name": ".Maxwarui6485",
         "uuid": "00000000-0000-0000-0009-01fed1985468",
         "avatar": "https://minotar.net/helm/.Maxwarui6485/100.png",
         "score": "10h 38m"
-      },
-      {
-        "name": ".ElExiliao19",
-        "uuid": "00000000-0000-0000-0009-01f32910a351",
-        "avatar": "https://minotar.net/helm/.ElExiliao19/100.png",
-        "score": "9h 38m"
       },
       {
         "name": "pene",
@@ -76,7 +76,7 @@
         "name": "Kiruao",
         "uuid": "f26e53d0-a2b2-3b0a-837f-c754ddf6e3fe",
         "avatar": "https://mc-heads.net/avatar/f26e53d0-a2b2-3b0a-837f-c754ddf6e3fe/100",
-        "score": "Nivel 54 (Prom: 4.9)"
+        "score": "Nivel 55 (Prom: 5.0)"
       },
       {
         "name": "mocosupremo777",
@@ -138,7 +138,7 @@
         "name": "Kiruao",
         "uuid": "f26e53d0-a2b2-3b0a-837f-c754ddf6e3fe",
         "avatar": "https://mc-heads.net/avatar/f26e53d0-a2b2-3b0a-837f-c754ddf6e3fe/100",
-        "score": "1,308"
+        "score": "1,443"
       },
       {
         "name": "mocosupremo777",
@@ -156,7 +156,7 @@
         "name": "divk2",
         "uuid": "bb10c232-6946-3ac6-b291-f2740233ce28",
         "avatar": "https://mc-heads.net/avatar/bb10c232-6946-3ac6-b291-f2740233ce28/100",
-        "score": "403"
+        "score": "417"
       },
       {
         "name": ".Maxwarui6485",
@@ -168,7 +168,7 @@
         "name": ".ElExiliao19",
         "uuid": "00000000-0000-0000-0009-01f32910a351",
         "avatar": "https://minotar.net/helm/.ElExiliao19/100.png",
-        "score": "188"
+        "score": "203"
       },
       {
         "name": "pene",
@@ -221,15 +221,15 @@
         "score": "0"
       },
       {
-        "name": ".Maxwarui6485",
-        "uuid": "00000000-0000-0000-0009-01fed1985468",
-        "avatar": "https://minotar.net/helm/.Maxwarui6485/100.png",
-        "score": "0"
-      },
-      {
         "name": ".ElExiliao19",
         "uuid": "00000000-0000-0000-0009-01f32910a351",
         "avatar": "https://minotar.net/helm/.ElExiliao19/100.png",
+        "score": "0"
+      },
+      {
+        "name": ".Maxwarui6485",
+        "uuid": "00000000-0000-0000-0009-01fed1985468",
+        "avatar": "https://minotar.net/helm/.Maxwarui6485/100.png",
         "score": "0"
       },
       {
@@ -262,7 +262,7 @@
         "name": "Kiruao",
         "uuid": "f26e53d0-a2b2-3b0a-837f-c754ddf6e3fe",
         "avatar": "https://mc-heads.net/avatar/f26e53d0-a2b2-3b0a-837f-c754ddf6e3fe/100",
-        "score": "20,578"
+        "score": "20,588"
       },
       {
         "name": "mocosupremo777",
@@ -274,7 +274,7 @@
         "name": "divk2",
         "uuid": "bb10c232-6946-3ac6-b291-f2740233ce28",
         "avatar": "https://mc-heads.net/avatar/bb10c232-6946-3ac6-b291-f2740233ce28/100",
-        "score": "16,877"
+        "score": "17,204"
       },
       {
         "name": ".Maxwarui6485",
@@ -286,7 +286,7 @@
         "name": ".ElExiliao19",
         "uuid": "00000000-0000-0000-0009-01f32910a351",
         "avatar": "https://minotar.net/helm/.ElExiliao19/100.png",
-        "score": "7,082"
+        "score": "7,645"
       },
       {
         "name": "Stargolden",
@@ -324,7 +324,7 @@
         "name": "divk2",
         "uuid": "bb10c232-6946-3ac6-b291-f2740233ce28",
         "avatar": "https://mc-heads.net/avatar/bb10c232-6946-3ac6-b291-f2740233ce28/100",
-        "score": "15,760"
+        "score": "17,558"
       },
       {
         "name": "mocosupremo777",
@@ -339,16 +339,16 @@
         "score": "5,229"
       },
       {
+        "name": ".ElExiliao19",
+        "uuid": "00000000-0000-0000-0009-01f32910a351",
+        "avatar": "https://minotar.net/helm/.ElExiliao19/100.png",
+        "score": "3,506"
+      },
+      {
         "name": ".Maxwarui6485",
         "uuid": "00000000-0000-0000-0009-01fed1985468",
         "avatar": "https://minotar.net/helm/.Maxwarui6485/100.png",
         "score": "2,819"
-      },
-      {
-        "name": ".ElExiliao19",
-        "uuid": "00000000-0000-0000-0009-01f32910a351",
-        "avatar": "https://minotar.net/helm/.ElExiliao19/100.png",
-        "score": "2,730"
       },
       {
         "name": "Stargolden",
@@ -386,7 +386,7 @@
         "name": "Kiruao",
         "uuid": "f26e53d0-a2b2-3b0a-837f-c754ddf6e3fe",
         "avatar": "https://mc-heads.net/avatar/f26e53d0-a2b2-3b0a-837f-c754ddf6e3fe/100",
-        "score": "131.87 km"
+        "score": "134.64 km"
       },
       {
         "name": "mocosupremo777",
@@ -398,7 +398,7 @@
         "name": "divk2",
         "uuid": "bb10c232-6946-3ac6-b291-f2740233ce28",
         "avatar": "https://mc-heads.net/avatar/bb10c232-6946-3ac6-b291-f2740233ce28/100",
-        "score": "100.02 km"
+        "score": "112.12 km"
       },
       {
         "name": "Stargolden",
@@ -410,7 +410,7 @@
         "name": ".ElExiliao19",
         "uuid": "00000000-0000-0000-0009-01f32910a351",
         "avatar": "https://minotar.net/helm/.ElExiliao19/100.png",
-        "score": "49.26 km"
+        "score": "58.14 km"
       },
       {
         "name": ".Maxwarui6485",
@@ -448,13 +448,13 @@
         "name": "Kiruao",
         "uuid": "f26e53d0-a2b2-3b0a-837f-c754ddf6e3fe",
         "avatar": "https://mc-heads.net/avatar/f26e53d0-a2b2-3b0a-837f-c754ddf6e3fe/100",
-        "score": "218.0 K/D"
+        "score": "240.5 K/D"
       },
       {
         "name": "divk2",
         "uuid": "bb10c232-6946-3ac6-b291-f2740233ce28",
         "avatar": "https://mc-heads.net/avatar/bb10c232-6946-3ac6-b291-f2740233ce28/100",
-        "score": "201.5 K/D"
+        "score": "208.5 K/D"
       },
       {
         "name": "mocosupremo777",
@@ -478,7 +478,7 @@
         "name": ".ElExiliao19",
         "uuid": "00000000-0000-0000-0009-01f32910a351",
         "avatar": "https://minotar.net/helm/.ElExiliao19/100.png",
-        "score": "31.33 K/D"
+        "score": "33.83 K/D"
       },
       {
         "name": "Stargolden",
@@ -513,26 +513,26 @@
       "is_bedrock": false,
       "avatar": "https://mc-heads.net/avatar/f26e53d0-a2b2-3b0a-837f-c754ddf6e3fe/100",
       "bust": "https://mc-heads.net/bust/f26e53d0-a2b2-3b0a-837f-c754ddf6e3fe/160",
-      "play_time_seconds": 105491,
-      "play_time_str": "1d 5h 18m",
+      "play_time_seconds": 107596,
+      "play_time_str": "1d 5h 53m",
       "deaths": 6,
-      "mob_kills": 1308,
+      "mob_kills": 1443,
       "player_kills": 1,
-      "kdr": 218.0,
-      "damage_dealt": 9337,
-      "damage_taken": 1611,
-      "jumps": 21199,
+      "kdr": 240.5,
+      "damage_dealt": 9706,
+      "damage_taken": 1834,
+      "jumps": 21506,
       "distances": {
-        "walk_km": 55.02,
-        "sprint_km": 31.97,
-        "fly_km": 39.66,
+        "walk_km": 56.49,
+        "sprint_km": 32.73,
+        "fly_km": 40.2,
         "boat_km": 3.61,
         "horse_km": 1.61,
-        "total_km": 131.87
+        "total_km": 134.64
       },
-      "total_mined": 20578,
+      "total_mined": 20588,
       "total_crafted": 5229,
-      "total_picked_up": 20375,
+      "total_picked_up": 20394,
       "skills": [
         {
           "id": "auraskills/fishing",
@@ -545,8 +545,8 @@
           "id": "auraskills/fighting",
           "name": "Combate",
           "icon": "⚔️",
-          "level": 6,
-          "xp": 3034.0
+          "level": 7,
+          "xp": 712.7
         },
         {
           "id": "auraskills/alchemy",
@@ -560,14 +560,14 @@
           "name": "Agricultura",
           "icon": "🌾",
           "level": 1,
-          "xp": 66.0
+          "xp": 98.0
         },
         {
           "id": "auraskills/agility",
           "name": "Agilidad",
           "icon": "⚡",
           "level": 8,
-          "xp": 1478.3
+          "xp": 1849.9
         },
         {
           "id": "auraskills/excavation",
@@ -588,7 +588,7 @@
           "name": "Tiro con arco",
           "icon": "🏹",
           "level": 4,
-          "xp": 505.2
+          "xp": 562.4
         },
         {
           "id": "auraskills/mining",
@@ -602,7 +602,7 @@
           "name": "Defensa",
           "icon": "🛡️",
           "level": 6,
-          "xp": 2859.5
+          "xp": 3570.1
         },
         {
           "id": "auraskills/enchanting",
@@ -612,8 +612,8 @@
           "xp": 412.2
         }
       ],
-      "total_skill_level": 54,
-      "skill_average": 4.9,
+      "total_skill_level": 55,
+      "skill_average": 5.0,
       "mana": 46.0,
       "advancements_count": 37,
       "advancements": [
@@ -746,7 +746,7 @@
         {
           "id": "minecraft:zombie",
           "name": "Zombi",
-          "count": 335
+          "count": 410
         },
         {
           "id": "minecraft:skeleton",
@@ -756,12 +756,17 @@
         {
           "id": "minecraft:spider",
           "name": "Araña",
-          "count": 114
+          "count": 116
         },
         {
           "id": "minecraft:creeper",
           "name": "Creeper",
           "count": 93
+        },
+        {
+          "id": "minecraft:pillager",
+          "name": "Saqueador",
+          "count": 73
         },
         {
           "id": "minecraft:cave_spider",
@@ -777,11 +782,6 @@
           "id": "minecraft:piglin",
           "name": "Piglin",
           "count": 42
-        },
-        {
-          "id": "minecraft:pillager",
-          "name": "Saqueador",
-          "count": 29
         },
         {
           "id": "minecraft:vindicator",
@@ -1138,26 +1138,26 @@
       "is_bedrock": false,
       "avatar": "https://mc-heads.net/avatar/bb10c232-6946-3ac6-b291-f2740233ce28/100",
       "bust": "https://mc-heads.net/bust/bb10c232-6946-3ac6-b291-f2740233ce28/160",
-      "play_time_seconds": 75656,
-      "play_time_str": "21h 0m",
+      "play_time_seconds": 85047,
+      "play_time_str": "23h 37m",
       "deaths": 2,
-      "mob_kills": 403,
+      "mob_kills": 417,
       "player_kills": 0,
-      "kdr": 201.5,
-      "damage_dealt": 2791,
-      "damage_taken": 904,
-      "jumps": 14799,
+      "kdr": 208.5,
+      "damage_dealt": 2920,
+      "damage_taken": 939,
+      "jumps": 16365,
       "distances": {
-        "walk_km": 37.93,
-        "sprint_km": 26.15,
-        "fly_km": 31.74,
+        "walk_km": 44.62,
+        "sprint_km": 28.4,
+        "fly_km": 34.89,
         "boat_km": 0.0,
         "horse_km": 4.2,
-        "total_km": 100.02
+        "total_km": 112.12
       },
-      "total_mined": 16877,
-      "total_crafted": 15760,
-      "total_picked_up": 26043,
+      "total_mined": 17204,
+      "total_crafted": 17558,
+      "total_picked_up": 26596,
       "skills": [
         {
           "id": "auraskills/fishing",
@@ -1171,7 +1171,7 @@
           "name": "Combate",
           "icon": "⚔️",
           "level": 4,
-          "xp": 1153.3
+          "xp": 1263.3
         },
         {
           "id": "auraskills/alchemy",
@@ -1185,14 +1185,14 @@
           "name": "Agricultura",
           "icon": "🌾",
           "level": 2,
-          "xp": 185.8
+          "xp": 200.9
         },
         {
           "id": "auraskills/agility",
           "name": "Agilidad",
           "icon": "⚡",
           "level": 7,
-          "xp": 1068.8
+          "xp": 3195.8
         },
         {
           "id": "auraskills/excavation",
@@ -1213,21 +1213,21 @@
           "name": "Tiro con arco",
           "icon": "🏹",
           "level": 1,
-          "xp": 120.0
+          "xp": 130.0
         },
         {
           "id": "auraskills/mining",
           "name": "Minería",
           "icon": "💎",
           "level": 6,
-          "xp": 740.3
+          "xp": 1671.8
         },
         {
           "id": "auraskills/defense",
           "name": "Defensa",
           "icon": "🛡️",
           "level": 6,
-          "xp": 82.3
+          "xp": 147.6
         },
         {
           "id": "auraskills/enchanting",
@@ -1239,8 +1239,8 @@
       ],
       "total_skill_level": 43,
       "skill_average": 3.9,
-      "mana": 44.0,
-      "advancements_count": 31,
+      "mana": 50.0,
+      "advancements_count": 32,
       "advancements": [
         "Story ▸ Upgrade Tools",
         "Adventure ▸ Root",
@@ -1267,7 +1267,7 @@
         {
           "id": "minecraft:stone",
           "name": "Piedra",
-          "count": 4269
+          "count": 4274
         },
         {
           "id": "minecraft:andesite",
@@ -1277,7 +1277,7 @@
         {
           "id": "minecraft:basalt",
           "name": "Basalt",
-          "count": 1248
+          "count": 1293
         },
         {
           "id": "minecraft:sand",
@@ -1285,14 +1285,14 @@
           "count": 1211
         },
         {
+          "id": "minecraft:deepslate",
+          "name": "Pizarra profunda",
+          "count": 992
+        },
+        {
           "id": "minecraft:grass_block",
           "name": "Bloque de pasto",
           "count": 964
-        },
-        {
-          "id": "minecraft:deepslate",
-          "name": "Pizarra profunda",
-          "count": 922
         },
         {
           "id": "minecraft:cherry_log",
@@ -1302,7 +1302,7 @@
         {
           "id": "minecraft:dirt",
           "name": "Tierra",
-          "count": 474
+          "count": 476
         },
         {
           "id": "minecraft:coal_ore",
@@ -1324,12 +1324,12 @@
         {
           "id": "minecraft:polished_andesite",
           "name": "Polished Andesite",
-          "count": 2716
+          "count": 3244
         },
         {
           "id": "minecraft:polished_blackstone_bricks",
           "name": "Polished Blackstone Bricks",
-          "count": 972
+          "count": 1100
         },
         {
           "id": "minecraft:cherry_planks",
@@ -1337,9 +1337,19 @@
           "count": 700
         },
         {
+          "id": "minecraft:stone",
+          "name": "Piedra",
+          "count": 646
+        },
+        {
           "id": "minecraft:polished_deepslate",
           "name": "Polished Deepslate",
           "count": 632
+        },
+        {
+          "id": "minecraft:polished_basalt",
+          "name": "Polished Basalt",
+          "count": 624
         },
         {
           "id": "minecraft:torch",
@@ -1347,36 +1357,31 @@
           "count": 616
         },
         {
+          "id": "minecraft:iron_nugget",
+          "name": "Iron Nugget",
+          "count": 612
+        },
+        {
           "id": "minecraft:cracked_polished_blackstone_bricks",
           "name": "Cracked Polished Blackstone Bricks",
           "count": 593
-        },
-        {
-          "id": "minecraft:stone",
-          "name": "Piedra",
-          "count": 584
-        },
-        {
-          "id": "minecraft:iron_nugget",
-          "name": "Iron Nugget",
-          "count": 468
-        },
-        {
-          "id": "minecraft:cherry_slab",
-          "name": "Cherry Slab",
-          "count": 462
         }
       ],
       "top_mobs_killed": [
         {
           "id": "minecraft:zombie",
           "name": "Zombi",
-          "count": 127
+          "count": 131
         },
         {
           "id": "minecraft:skeleton",
           "name": "Esqueleto",
-          "count": 70
+          "count": 71
+        },
+        {
+          "id": "minecraft:creeper",
+          "name": "Creeper",
+          "count": 25
         },
         {
           "id": "minecraft:piglin",
@@ -1384,9 +1389,9 @@
           "count": 22
         },
         {
-          "id": "minecraft:creeper",
-          "name": "Creeper",
-          "count": 21
+          "id": "minecraft:spider",
+          "name": "Araña",
+          "count": 20
         },
         {
           "id": "minecraft:husk",
@@ -1396,12 +1401,7 @@
         {
           "id": "minecraft:pillager",
           "name": "Saqueador",
-          "count": 17
-        },
-        {
-          "id": "minecraft:spider",
-          "name": "Araña",
-          "count": 17
+          "count": 18
         },
         {
           "id": "minecraft:drowned",
@@ -1743,6 +1743,296 @@
       ]
     },
     {
+      "uuid": "00000000-0000-0000-0009-01f32910a351",
+      "name": ".ElExiliao19",
+      "is_bedrock": true,
+      "avatar": "https://minotar.net/helm/.ElExiliao19/100.png",
+      "bust": "https://minotar.net/bust/.ElExiliao19/160.png",
+      "play_time_seconds": 40735,
+      "play_time_str": "11h 18m",
+      "deaths": 6,
+      "mob_kills": 203,
+      "player_kills": 0,
+      "kdr": 33.83,
+      "damage_dealt": 1876,
+      "damage_taken": 669,
+      "jumps": 7217,
+      "distances": {
+        "walk_km": 32.13,
+        "sprint_km": 22.28,
+        "fly_km": 3.74,
+        "boat_km": 0.0,
+        "horse_km": 0.0,
+        "total_km": 58.14
+      },
+      "total_mined": 7645,
+      "total_crafted": 3506,
+      "total_picked_up": 13303,
+      "skills": [
+        {
+          "id": "auraskills/fishing",
+          "name": "Pesca",
+          "icon": "🎣",
+          "level": 0,
+          "xp": 0.0
+        },
+        {
+          "id": "auraskills/fighting",
+          "name": "Combate",
+          "icon": "⚔️",
+          "level": 3,
+          "xp": 799.8
+        },
+        {
+          "id": "auraskills/alchemy",
+          "name": "Alquimia",
+          "icon": "🧪",
+          "level": 4,
+          "xp": 779.0
+        },
+        {
+          "id": "auraskills/farming",
+          "name": "Agricultura",
+          "icon": "🌾",
+          "level": 2,
+          "xp": 114.2
+        },
+        {
+          "id": "auraskills/agility",
+          "name": "Agilidad",
+          "icon": "⚡",
+          "level": 6,
+          "xp": 2119.1
+        },
+        {
+          "id": "auraskills/excavation",
+          "name": "Excavación",
+          "icon": "⛏️",
+          "level": 3,
+          "xp": 486.8
+        },
+        {
+          "id": "auraskills/foraging",
+          "name": "Tala / Recolección",
+          "icon": "🪓",
+          "level": 3,
+          "xp": 617.8
+        },
+        {
+          "id": "auraskills/archery",
+          "name": "Tiro con arco",
+          "icon": "🏹",
+          "level": 0,
+          "xp": 28.0
+        },
+        {
+          "id": "auraskills/mining",
+          "name": "Minería",
+          "icon": "💎",
+          "level": 7,
+          "xp": 3958.8
+        },
+        {
+          "id": "auraskills/defense",
+          "name": "Defensa",
+          "icon": "🛡️",
+          "level": 4,
+          "xp": 243.3
+        },
+        {
+          "id": "auraskills/enchanting",
+          "name": "Encantamiento",
+          "icon": "✨",
+          "level": 0,
+          "xp": 0.0
+        }
+      ],
+      "total_skill_level": 32,
+      "skill_average": 2.9,
+      "mana": 34.0,
+      "advancements_count": 15,
+      "advancements": [
+        "Story ▸ Upgrade Tools",
+        "Adventure ▸ Root",
+        "Husbandry ▸ Plant Seed",
+        "Story ▸ Root",
+        "Husbandry ▸ Root",
+        "Adventure ▸ Sleep In Bed",
+        "Story ▸ Mine Stone",
+        "Adventure ▸ Kill A Mob",
+        "Story ▸ Smelt Iron",
+        "Story ▸ Shiny Gear",
+        "Story ▸ Iron Tools",
+        "Story ▸ Obtain Armor",
+        "Adventure ▸ Voluntary Exile",
+        "Story ▸ Deflect Arrow",
+        "Story ▸ Mine Diamond"
+      ],
+      "top_mined": [
+        {
+          "id": "minecraft:stone",
+          "name": "Piedra",
+          "count": 2843
+        },
+        {
+          "id": "minecraft:grass_block",
+          "name": "Bloque de pasto",
+          "count": 1237
+        },
+        {
+          "id": "minecraft:dirt",
+          "name": "Tierra",
+          "count": 812
+        },
+        {
+          "id": "minecraft:deepslate",
+          "name": "Pizarra profunda",
+          "count": 542
+        },
+        {
+          "id": "minecraft:coal_ore",
+          "name": "Mineral de carbón",
+          "count": 510
+        },
+        {
+          "id": "minecraft:iron_ore",
+          "name": "Mineral de hierro",
+          "count": 174
+        },
+        {
+          "id": "minecraft:deepslate_redstone_ore",
+          "name": "Mineral de redstone de pizarra",
+          "count": 160
+        },
+        {
+          "id": "minecraft:gravel",
+          "name": "Grava",
+          "count": 129
+        },
+        {
+          "id": "minecraft:deepslate_iron_ore",
+          "name": "Mineral de hierro de pizarra",
+          "count": 123
+        },
+        {
+          "id": "minecraft:deepslate_gold_ore",
+          "name": "Mineral de oro de pizarra",
+          "count": 115
+        }
+      ],
+      "top_crafted": [
+        {
+          "id": "minecraft:torch",
+          "name": "Antorcha",
+          "count": 968
+        },
+        {
+          "id": "minecraft:stone",
+          "name": "Piedra",
+          "count": 444
+        },
+        {
+          "id": "minecraft:stick",
+          "name": "Stick",
+          "count": 408
+        },
+        {
+          "id": "minecraft:stone_bricks",
+          "name": "Stone Bricks",
+          "count": 368
+        },
+        {
+          "id": "minecraft:birch_planks",
+          "name": "Birch Planks",
+          "count": 172
+        },
+        {
+          "id": "minecraft:copper_ingot",
+          "name": "Copper Ingot",
+          "count": 132
+        },
+        {
+          "id": "minecraft:bone_meal",
+          "name": "Bone Meal",
+          "count": 129
+        },
+        {
+          "id": "minecraft:oak_planks",
+          "name": "Oak Planks",
+          "count": 128
+        },
+        {
+          "id": "minecraft:iron_ingot",
+          "name": "Iron Ingot",
+          "count": 109
+        },
+        {
+          "id": "minecraft:chiseled_stone_bricks",
+          "name": "Chiseled Stone Bricks",
+          "count": 70
+        }
+      ],
+      "top_mobs_killed": [
+        {
+          "id": "minecraft:zombie",
+          "name": "Zombi",
+          "count": 106
+        },
+        {
+          "id": "minecraft:skeleton",
+          "name": "Esqueleto",
+          "count": 58
+        },
+        {
+          "id": "minecraft:spider",
+          "name": "Araña",
+          "count": 12
+        },
+        {
+          "id": "minecraft:pillager",
+          "name": "Saqueador",
+          "count": 7
+        },
+        {
+          "id": "minecraft:phantom",
+          "name": "Fantasma",
+          "count": 3
+        },
+        {
+          "id": "minecraft:creeper",
+          "name": "Creeper",
+          "count": 3
+        },
+        {
+          "id": "minecraft:sheep",
+          "name": "Oveja",
+          "count": 3
+        },
+        {
+          "id": "minecraft:stray",
+          "name": "Vagabundo",
+          "count": 1
+        },
+        {
+          "id": "minecraft:enderman",
+          "name": "Enderman",
+          "count": 1
+        },
+        {
+          "id": "minecraft:pig",
+          "name": "Cerdo",
+          "count": 1
+        }
+      ],
+      "deaths_by": [
+        {
+          "id": "minecraft:zombie",
+          "name": "Zombi",
+          "count": 3
+        }
+      ]
+    },
+    {
       "uuid": "00000000-0000-0000-0009-01fed1985468",
       "name": ".Maxwarui6485",
       "is_bedrock": true,
@@ -2044,296 +2334,6 @@
           "id": "minecraft:zombie",
           "name": "Zombi",
           "count": 1
-        }
-      ]
-    },
-    {
-      "uuid": "00000000-0000-0000-0009-01f32910a351",
-      "name": ".ElExiliao19",
-      "is_bedrock": true,
-      "avatar": "https://minotar.net/helm/.ElExiliao19/100.png",
-      "bust": "https://minotar.net/bust/.ElExiliao19/160.png",
-      "play_time_seconds": 34734,
-      "play_time_str": "9h 38m",
-      "deaths": 6,
-      "mob_kills": 188,
-      "player_kills": 0,
-      "kdr": 31.33,
-      "damage_dealt": 1719,
-      "damage_taken": 621,
-      "jumps": 6160,
-      "distances": {
-        "walk_km": 28.27,
-        "sprint_km": 18.26,
-        "fly_km": 2.73,
-        "boat_km": 0.0,
-        "horse_km": 0.0,
-        "total_km": 49.26
-      },
-      "total_mined": 7082,
-      "total_crafted": 2730,
-      "total_picked_up": 11960,
-      "skills": [
-        {
-          "id": "auraskills/fishing",
-          "name": "Pesca",
-          "icon": "🎣",
-          "level": 0,
-          "xp": 0.0
-        },
-        {
-          "id": "auraskills/fighting",
-          "name": "Combate",
-          "icon": "⚔️",
-          "level": 3,
-          "xp": 679.9
-        },
-        {
-          "id": "auraskills/alchemy",
-          "name": "Alquimia",
-          "icon": "🧪",
-          "level": 4,
-          "xp": 779.0
-        },
-        {
-          "id": "auraskills/farming",
-          "name": "Agricultura",
-          "icon": "🌾",
-          "level": 2,
-          "xp": 86.7
-        },
-        {
-          "id": "auraskills/agility",
-          "name": "Agilidad",
-          "icon": "⚡",
-          "level": 6,
-          "xp": 667.5
-        },
-        {
-          "id": "auraskills/excavation",
-          "name": "Excavación",
-          "icon": "⛏️",
-          "level": 3,
-          "xp": 482.7
-        },
-        {
-          "id": "auraskills/foraging",
-          "name": "Tala / Recolección",
-          "icon": "🪓",
-          "level": 3,
-          "xp": 336.2
-        },
-        {
-          "id": "auraskills/archery",
-          "name": "Tiro con arco",
-          "icon": "🏹",
-          "level": 0,
-          "xp": 28.0
-        },
-        {
-          "id": "auraskills/mining",
-          "name": "Minería",
-          "icon": "💎",
-          "level": 7,
-          "xp": 2957.0
-        },
-        {
-          "id": "auraskills/defense",
-          "name": "Defensa",
-          "icon": "🛡️",
-          "level": 4,
-          "xp": 147.5
-        },
-        {
-          "id": "auraskills/enchanting",
-          "name": "Encantamiento",
-          "icon": "✨",
-          "level": 0,
-          "xp": 0.0
-        }
-      ],
-      "total_skill_level": 32,
-      "skill_average": 2.9,
-      "mana": 34.0,
-      "advancements_count": 15,
-      "advancements": [
-        "Story ▸ Upgrade Tools",
-        "Adventure ▸ Root",
-        "Husbandry ▸ Plant Seed",
-        "Story ▸ Root",
-        "Husbandry ▸ Root",
-        "Adventure ▸ Sleep In Bed",
-        "Story ▸ Mine Stone",
-        "Adventure ▸ Kill A Mob",
-        "Story ▸ Smelt Iron",
-        "Story ▸ Shiny Gear",
-        "Story ▸ Iron Tools",
-        "Story ▸ Obtain Armor",
-        "Adventure ▸ Voluntary Exile",
-        "Story ▸ Deflect Arrow",
-        "Story ▸ Mine Diamond"
-      ],
-      "top_mined": [
-        {
-          "id": "minecraft:stone",
-          "name": "Piedra",
-          "count": 2744
-        },
-        {
-          "id": "minecraft:grass_block",
-          "name": "Bloque de pasto",
-          "count": 1186
-        },
-        {
-          "id": "minecraft:dirt",
-          "name": "Tierra",
-          "count": 811
-        },
-        {
-          "id": "minecraft:deepslate",
-          "name": "Pizarra profunda",
-          "count": 537
-        },
-        {
-          "id": "minecraft:coal_ore",
-          "name": "Mineral de carbón",
-          "count": 322
-        },
-        {
-          "id": "minecraft:deepslate_redstone_ore",
-          "name": "Mineral de redstone de pizarra",
-          "count": 156
-        },
-        {
-          "id": "minecraft:iron_ore",
-          "name": "Mineral de hierro",
-          "count": 129
-        },
-        {
-          "id": "minecraft:gravel",
-          "name": "Grava",
-          "count": 127
-        },
-        {
-          "id": "minecraft:deepslate_iron_ore",
-          "name": "Mineral de hierro de pizarra",
-          "count": 122
-        },
-        {
-          "id": "minecraft:deepslate_gold_ore",
-          "name": "Mineral de oro de pizarra",
-          "count": 107
-        }
-      ],
-      "top_crafted": [
-        {
-          "id": "minecraft:torch",
-          "name": "Antorcha",
-          "count": 800
-        },
-        {
-          "id": "minecraft:stone",
-          "name": "Piedra",
-          "count": 441
-        },
-        {
-          "id": "minecraft:stone_bricks",
-          "name": "Stone Bricks",
-          "count": 368
-        },
-        {
-          "id": "minecraft:stick",
-          "name": "Stick",
-          "count": 360
-        },
-        {
-          "id": "minecraft:birch_planks",
-          "name": "Birch Planks",
-          "count": 172
-        },
-        {
-          "id": "minecraft:copper_ingot",
-          "name": "Copper Ingot",
-          "count": 132
-        },
-        {
-          "id": "minecraft:bone_meal",
-          "name": "Bone Meal",
-          "count": 129
-        },
-        {
-          "id": "minecraft:oak_planks",
-          "name": "Oak Planks",
-          "count": 104
-        },
-        {
-          "id": "minecraft:chiseled_stone_bricks",
-          "name": "Chiseled Stone Bricks",
-          "count": 70
-        },
-        {
-          "id": "minecraft:bread",
-          "name": "Pan",
-          "count": 30
-        }
-      ],
-      "top_mobs_killed": [
-        {
-          "id": "minecraft:zombie",
-          "name": "Zombi",
-          "count": 102
-        },
-        {
-          "id": "minecraft:skeleton",
-          "name": "Esqueleto",
-          "count": 55
-        },
-        {
-          "id": "minecraft:spider",
-          "name": "Araña",
-          "count": 10
-        },
-        {
-          "id": "minecraft:pillager",
-          "name": "Saqueador",
-          "count": 3
-        },
-        {
-          "id": "minecraft:phantom",
-          "name": "Fantasma",
-          "count": 3
-        },
-        {
-          "id": "minecraft:sheep",
-          "name": "Oveja",
-          "count": 3
-        },
-        {
-          "id": "minecraft:creeper",
-          "name": "Creeper",
-          "count": 2
-        },
-        {
-          "id": "minecraft:stray",
-          "name": "Vagabundo",
-          "count": 1
-        },
-        {
-          "id": "minecraft:enderman",
-          "name": "Enderman",
-          "count": 1
-        },
-        {
-          "id": "minecraft:pig",
-          "name": "Cerdo",
-          "count": 1
-        }
-      ],
-      "deaths_by": [
-        {
-          "id": "minecraft:zombie",
-          "name": "Zombi",
-          "count": 3
         }
       ]
     },
