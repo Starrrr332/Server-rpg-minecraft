@@ -1,7 +1,7 @@
 {
   "summary": {
     "total_players": 18,
-    "total_play_time_hours": 143.0,
+    "total_play_time_hours": 143.2,
     "total_blocks_mined": 99114,
     "total_mobs_slain": 4256,
     "total_distance_km": 670.1,
@@ -32,7 +32,7 @@
         "name": "Stargolden",
         "uuid": "f0d03f69-7585-3e09-aaaa-cba59086d8db",
         "avatar": "https://mc-heads.net/avatar/f0d03f69-7585-3e09-aaaa-cba59086d8db/100",
-        "score": "20h 38m"
+        "score": "20h 51m"
       },
       {
         "name": ".ElExiliao19",
@@ -404,7 +404,7 @@
         "name": "Stargolden",
         "uuid": "f0d03f69-7585-3e09-aaaa-cba59086d8db",
         "avatar": "https://mc-heads.net/avatar/f0d03f69-7585-3e09-aaaa-cba59086d8db/100",
-        "score": "100.79 km"
+        "score": "100.85 km"
       },
       {
         "name": ".ElExiliao19",
@@ -1433,22 +1433,22 @@
       "is_bedrock": false,
       "avatar": "https://mc-heads.net/avatar/f0d03f69-7585-3e09-aaaa-cba59086d8db/100",
       "bust": "https://mc-heads.net/bust/f0d03f69-7585-3e09-aaaa-cba59086d8db/160",
-      "play_time_seconds": 74328,
-      "play_time_str": "20h 38m",
+      "play_time_seconds": 75071,
+      "play_time_str": "20h 51m",
       "deaths": 17,
       "mob_kills": 434,
       "player_kills": 2,
       "kdr": 25.53,
       "damage_dealt": 3460,
       "damage_taken": 1145,
-      "jumps": 16485,
+      "jumps": 16491,
       "distances": {
-        "walk_km": 25.22,
-        "sprint_km": 29.34,
-        "fly_km": 36.62,
+        "walk_km": 25.25,
+        "sprint_km": 29.37,
+        "fly_km": 36.63,
         "boat_km": 0.95,
         "horse_km": 8.65,
-        "total_km": 100.79
+        "total_km": 100.85
       },
       "total_mined": 6325,
       "total_crafted": 2875,
